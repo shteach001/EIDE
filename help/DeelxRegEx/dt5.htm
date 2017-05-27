@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>正则常量</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">正则常量</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">正则表达式支持库(Deelx版)</a></p><p>DEELX正则表达式用到的常量。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">单行模式</font></td>
+<td width="70%" valign="top">常量值为 1 。使小数点 "." 可以匹配包含换行符（\n）在内的任意字符。默认情况下，小数点只匹配换行符以外的任意字符，不匹配换行符。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">多行模式</font></td>
+<td width="70%" valign="top">常量值为 2 。使 ^ 符号除了能够匹配字符串开始位置外，还能匹配换行符（\n）之后的位置；使 $ 符号除了能够匹配字符串结束位置外，还能匹配换行符之前的位置。
+    默认情况下， ^ 符号只能匹配字符串开始位置， $ 符号只能匹配字符串结束位置。
+    单行模式(SINGLELINE) 和 多行模式(MULTILINE) 虽然听起来相互矛盾，但却是作用在不同的地方。因此它们是可以组合使用的。
+    在指定了 多行模式(MULTILINE) 之后，如果需要仅匹配字符串开始和结束位置，可以使用 \A 和 \Z。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">全局模式</font></td>
+<td width="70%" valign="top">常量值为 4 。使 \G 可以用来匹配本次查找匹配的开始位置，对于连续的匹配来说，也就是上次匹配的结束位置。默认情况下， \G 没有作用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">忽略大小写</font></td>
+<td width="70%" valign="top">常量值为 8 。匹配时忽略大小写。默认情况下，正则表达式是要区分大小写的。不管是否指定忽略大小写模式，字符类，比如 [A-Z] 是要区分大小写的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">从右向左</font></td>
+<td width="70%" valign="top">常量值为 16 。从右向左的进行匹配。从被匹配字符串的结束位置向前进行查找匹配，同时，在表达式中也是右侧的表达式先进行匹配。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">扩展模式</font></td>
+<td width="70%" valign="top">常量值为 32 。使 本正则支持库忽略表达式中的空白字符，并且把从 # 开始到该行行末的内容视为注释。默认情况下，正则表达式中的空格，换行等字符将可以匹配相应的字符。指定了 扩展模式(EXTENDED) 模式后，如果要在正则表达式中表示空白字符比如空格符号（space）时，应该用 \x20 表示，如果要在表达式中表示 # 符号，应该用 \# 表示。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

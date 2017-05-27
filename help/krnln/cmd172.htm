@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>写出数据</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">写出数据</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct13.htm">文件读写</a></p>
+<p>本命令应该与“读入数据”命令配合使用，用作写出一系列变量或数组变量的格式数据到文件中当前读写位置处。成功返回真，失败返回假。
+具体各种数据类型数据的写出格式为：
+  1、数值型、逻辑型、日期时间型、子程序指针型： 为其所对应的实际数据；
+  2、文本型：   为文本数据 + 字节 0 ；
+  3、字节集型： 为字节集数据长度（整数） + 字节集实际数据；
+  4、以上各种数据类型的数组型数据： 为非数组情况下数据格式的顺序排列。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 写出数据 （<font color="#000000">欲写出数据的文件号</font><font color="#000000">，&nbsp;</font><font color="#000000">欲写出的数据</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲写出数据的文件号</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。该文件号由“打开文件”命令所返回。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲写出的数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;<em>可扩充的</em>；通用型，参数数据可以同时提供数组或非数组数据。如果被写出数据的数据类型为用户自定义或库定义数据类型，命令将会失败。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>锁住增删</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">锁住增删</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct18.htm">数据库</a></p>
+<p>本命令执行后独占锁住对当前数据库的增删操作，其它用户可以读写已存在的任何记录，但是不能对数据库记录进行增删。也就是说：不能执行改变数据库记录数目的任何操作。注意：由于“删除”命令仅在记录上加上删除标志，并不实际删除记录，所以不在被加锁的范围内。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 锁住增删 （<font color="#000000">）</font></p>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

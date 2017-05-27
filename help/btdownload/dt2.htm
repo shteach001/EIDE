@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>服务器日志</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">服务器日志</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">BT下载支持库</a></p><p>本数据类型包括了与Tracker服务器通信过程中写入日志的类型。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器地址</font></td>
+<td width="70%" valign="top">常量值为 1 。得到一个服务器地址。参数三表示服务器地址，参数四表示此服务器的端口。参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接服务器</font></td>
+<td width="70%" valign="top">常量值为 2 。准备连接服务器。参数三表示服务器地址，参数四表示此服务器的端口。参数五无意义。以后的服务器操作都是针对这个服务器的，必要时可记录参数三和参数四的值，以备后用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接服务器失败</font></td>
+<td width="70%" valign="top">常量值为 3 。连接服务器失败。参数三表示服务器地址，参数四表示此服务器的端口。参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送请求</font></td>
+<td width="70%" valign="top">常量值为 4 。发送请求。参数三为请求内容，参数四和参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送请求失败</font></td>
+<td width="70%" valign="top">常量值为 5 。发送请求失败。参数三为请求内容，参数四和参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">准备接收数据</font></td>
+<td width="70%" valign="top">常量值为 6 。准备接收数据。参数三无意义，参数四无意义。参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">接收数据失败</font></td>
+<td width="70%" valign="top">常量值为 7 。接收数据失败。参数三无意义，参数四无意义。参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">分析返回数据</font></td>
+<td width="70%" valign="top">常量值为 8 。分析返回数据。参数三是服务器返回数据的文本形式，参数四是服务器返回数据的内存地址，参数五是服务器返回数据的数据长度（单位是字节）。考虑到服务器所返回的数据不一定是纯文本，所以额外提供了参数四和参数五，可使用“指针到字节集”命令读取。此处约定的参数含义可能会在后续版本中进行改动。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">分析返回数据失败</font></td>
+<td width="70%" valign="top">常量值为 9 。分析返回数据失败。参数三表示失败原因，参数四和参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">取到远程客户端</font></td>
+<td width="70%" valign="top">常量值为 10 。取到远程的客户端。参数四表示取到的远程客户端个数。参数三和参数五无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设置重试时间</font></td>
+<td width="70%" valign="top">常量值为 11 。设置下一次连接该服务器的时间。参数三表示要设置服务器的地址，参数四表示要设置服务器的端口，参数五表示重试时间（单位为毫秒）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">重定向</font></td>
+<td width="70%" valign="top">常量值为 12 。在此服务器上发生重定向，后续操作将自动连接重定向后的服务器。参数三和参数四分别表示重定向后的服务器地址和端口。参数五无意义。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

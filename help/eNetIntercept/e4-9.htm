@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>调定向接收 (网截)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">调定向接收</font></big>&nbsp;事件</strong>&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt4.htm">网截</a>
+&nbsp;&nbsp;&nbsp;操作系统支持：Windows</p>
+<p>&nbsp;&nbsp;&nbsp; 当Windows系统中WinSock使用程序调用recvfrom函数时触发此事件，您可以在本事件中读取或更改此次被调用函数的参数。如不更改任何参数并保持处理默认调用，返回0、#拦截操作.默认调用；如要处理本次调用为无效，返回1、#拦截操作.无效调用；如要更改本次调用的任何参数，返回2、#拦截操作.更改调用；如要关闭连接(closesocket)，返回3、#拦截操作.关闭拦截。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; _<em>网截</em>_调定向接收 （<font color="#000000">调用者信息</font><font color="#000000">，&nbsp;</font><font color="#000000">套接字句柄</font><font color="#000000">，&nbsp;</font><font color="#000000">网络数据</font><font color="#000000">，&nbsp;</font><font color="#000000">调用方式</font><font color="#000000">，&nbsp;</font><font color="#000000">网址</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调用者信息</font></td>
+<td width="70%" valign="top">调用者信息；&nbsp;传址；调用者的进程及当前使用线程的相关信息。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">套接字句柄</font></td>
+<td width="70%" valign="top">整数型；&nbsp;传址；WinSock的SOCKET句柄。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">网络数据</font></td>
+<td width="70%" valign="top">网络数据；&nbsp;传址；接收的网络数据。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调用方式</font></td>
+<td width="70%" valign="top">整数型；&nbsp;传址；该参数使用方法请参见WinSock2文档(建议参考MSDN)中关于"recvfrom"函数 "flags"参数的使用方法。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">网址</font></td>
+<td width="70%" valign="top">网址信息；&nbsp;传址；数据来源的IP、端口等其他信息。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

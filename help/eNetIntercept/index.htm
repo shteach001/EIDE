@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>网络拦截支持库</title>
+</head>
+<body>
+<p><strong><big><big><font color="#000000">网络拦截支持库1.1版</font></big></big></strong>&nbsp;&nbsp;&nbsp;<a href="../index.htm">返回首页</a></p>
+<p>本支持库在Win9x/ME/NT/2000/XP环境下实现了对WinSock2的函数拦截（包括如下函数：socket/closesocket/bind/listen/connect/accept/send/sendto/recv/recvfrom）。系统中任何程序使用WinSock2的函数都会被本支持库所拦截，并使用易语言事件触发的方式处理，您可以在被触发的事件中按照相应事件的规则自由的处理其他程序的WinSock调用。如果您对WinSock或Windows网络编程不是很了解，建议您在使用本支持库前阅读WinSock等其他相关文档或教程。注意：在使用本支持库前，您必须先正确安装网络服务提供者(ESPINN.dll(NN为当前版本))文件。网络服务提供者(ESPINN.dll(NN为当前版本))文件必须是随本支持库一起附带的网络服务提供者(ESPINN.dll(NN为当前版本))，否则安装将失败。当前本支持库对应的网络服务提供者版本是1.1。安装方法：使用"网络服务安装"中的"安装"命令(注意该命令的参数一定要填写正确)。卸载方法：首先您必须确定系统中和本支持库类似的拦截/过滤软件已正确卸载或没有卸载，否则请千万不要使用卸载方法！使用"网络服务安装"中的"卸载"命令，如果本方法没有执行成功，请千万不要删除已成功安装到系统路径下的网络服务提供者(ESPINN.dll(NN为当前版本))文件，原因请见下列警告。 [ 警告 ]如果网络服务提供者(ESPINN.dll(NN为当前版本))已经安装成功，并且"卸载"命令没有成功执行,(注意：只有"卸载"命令返回"真"才代表真正成功卸载了)，或根本没有使用"卸载"命令，系统路径下的网络服务提供者(ESPINN.dll(NN为当前版本))文件不可以改名、删除或移动路径，否则很有可能导致整个系统的WinSock瘫痪。如果上述情况真的发生了也不要紧，您可以将随本支持库附带的网络服务提供者(ESPINN.dll(NN为当前版本))文件再次复制到系统路径中(推荐使用此方法，因为后面的方法在某些特定情况下可能不保险)，或者直接执行"卸载"命令，并确定该命令是执行成功了。</p><p>操作系统支持： Windows</p><p><p><big><strong><a name="窗口组件数据类型"></a>窗口组件数据类型：</strong></big></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="dt4.htm">网截</a></td>
+<td width="20%"> </td><td width="20%"> </td><td width="20%"> </td></tr>
+</table>
+<p><big><strong><a name="其它数据类型"></a>其它数据类型：</strong></big></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="dt0.htm">调用者信息</a></td>
+<td width="20%"> <a href="dt1.htm">网址信息</a></td>
+<td width="20%"> <a href="dt2.htm">网络数据</a></td>
+<td width="20%"> <a href="dt3.htm">网络服务安装</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="dt5.htm">拦截操作</a></td>
+<td width="20%"> </td><td width="20%"> </td><td width="20%"> </td></tr>
+</table>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>新建索引</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">新建索引</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct18.htm">数据库</a></p>
+<p>在当前数据库中创建并打开一个索引文件。索引的存在将降低对数据库记录的更新速度，所以除非是较大的数据库（最起码在一千条记录以上），否则一般不用使用索引。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 新建索引 （<font color="#000000">欲创建索引文件的名称</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">索引类型</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">索引选项</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">索引块尺寸</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">被索引字段的名称</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲创建索引文件的名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引类型</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下常量值之一，如果被省略，默认为“#通常索引”：
+1、#通常索引；
+2、#读音索引： 在文本型索引字段中，所有汉字根据标准读音建立索引；
+3、#南方读音索引： 在文本型索引字段中，所有汉字根据南方读音建立索引（南方读音不区分卷舌音和平舌音）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引选项</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下常量值之一或者之和：
+1、#不区分大小写：文本型索引字段中不区分英文字母的大小写；
+2、#忽略所有空格：文本型索引字段中忽略所有的全、半角空格。
+如果本参数被省略，默认为 0 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引块尺寸</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值指定索引文件记录索引项时所使用索引块的大小，以 512 字节为单位，最大值为 10 。如果本参数被省略，默认值为 1 。仅在大型数据库中需要建立大索引块的索引文件，一般情况下使用默认值即可。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">被索引字段的名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;<em>可扩充的</em>；文本型，参数数据可以同时提供数组或非数组数据。本参数的各参数值顺序指定所有被索引字段的名称，支持以数组方式直接提供多个字段。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

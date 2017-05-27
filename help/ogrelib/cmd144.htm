@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建设备 (设备)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">创建设备</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt8.htm">设备</a></p>
+<p>创建设备对象，几乎所有的3D绘图功能都要通过它实现。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>设备</em>．创建设备 （<font color="#000000">设备参数</font><font color="#000000">，&nbsp;</font><font color="#000000">窗口句柄</font><font color="#000000">，&nbsp;</font><font color="#000000">设备类型</font><font color="#000000">，&nbsp;</font><font color="#000000">设备创建行为</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备参数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;设备参数。设备初始化参数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">窗口句柄</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。设备窗口句柄。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定设备的类型，为以下常量值之一：1、#设备常量.硬件加速；2、#设备常量.软件加速；3、#设备常量.第三方设备插件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备创建行为</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。控制设备创建行为，为以下常量值之一或之和：2、#设备常量.FPU保护；4、#设备常量.采用多线程；16、#设备常量.纯设备；32、#设备常量.软件顶点运算；64、#设备常量.硬件顶点运算；128、#设备常量.混合顶点运算；256、#设备常量.代替显卡驱动程序管理；512、#设备常量.驱动所有主适配器；。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

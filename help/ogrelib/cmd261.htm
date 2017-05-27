@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>从文件创建立体纹理扩展</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">从文件创建立体纹理扩展</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">纹理</a></p>
+<p>从指定的文件创建立体纹理。可以指定一些扩展参数。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 从文件创建立体纹理扩展 （<font color="#000000">设备</font><font color="#000000">，&nbsp;</font><font color="#000000">文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">宽度</font><font color="#000000">，&nbsp;</font><font color="#000000">高度</font><font color="#000000">，&nbsp;</font><font color="#000000">深度</font><font color="#000000">，&nbsp;</font><font color="#000000">渐进级数</font><font color="#000000">，&nbsp;</font><font color="#000000">用途</font><font color="#000000">，&nbsp;</font><font color="#000000">像素格式</font><font color="#000000">，&nbsp;</font><font color="#000000">内存池类型</font><font color="#000000">，&nbsp;</font><font color="#000000">纹理过滤器</font><font color="#000000">，&nbsp;</font><font color="#000000">渐进过滤器</font><font color="#000000">，&nbsp;</font><font color="#000000">关键色</font><font color="#000000">，&nbsp;</font><font color="#000000">源图像文件信息</font><font color="#000000">，&nbsp;</font><font color="#000000">调色板</font><font color="#000000">，&nbsp;</font><font color="#000000">立体纹理</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;设备。指定与立体纹理相关联的设备。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。指定文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">宽度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。立体纹理的宽度（以像素为单位）。如果参数值为0或-1，尺寸将从文件中取得。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">高度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。立体纹理的高度（以像素为单位）。如果参数值为0或-1，尺寸将从文件中取得。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">深度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。立体纹理的深度（以像素为单位）。如果参数值为0或-1，尺寸将从文件中取得。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">渐进级数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定渐进级数。如果参数值为0或-1，将创建一个完整的渐进映射链。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用途</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;资源用途。为“资源用途”常量值之一。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">像素格式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;页面格式。要取得的像素格式。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">内存池类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;内存池类型。指定纹理的放置位置。为“内存池类型”常量值之一。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理过滤器</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;纹理通道过滤。指定图像如何过滤。为“纹理通道过滤”常量值之一或组合。值为-1时相当于：#纹理通道过滤.由点生成目标点 + #纹理通道过滤.用抖动运算产生。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">渐进过滤器</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;纹理通道过滤。指定图像如何过滤。为“纹理通道过滤”常量值之一或组合。值为-1时等于：#纹理通道过滤.由区域生成目标点。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">关键色</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。表示被替换为Alpha = 0的透明色。设置为0，表示禁用透明色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">源图像文件信息</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;图像文件信息，参数数据只能提供变量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调色板</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;调色板单元，参数数据只能提供变量。返回256色调色板单元。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">立体纹理</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;立体纹理，参数数据只能提供变量。要创建的立体纹理对象。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

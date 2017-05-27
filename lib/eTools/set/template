@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="GB2312" />
+	<title>基本设置-秋城落叶易语言助手</title><!-- 设置的标题 -->
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="common.css" />
+</head>
+<body style="overflow-y : auto; padding: 20px;">
+	<div class="form-group">
+		<label>呼出模块窗口：</label>
+		<select name="呼出热键_模块" class="form-control">
+			<option value="0">无</option>
+			<option value="1">Ctrl + ~</option>
+			<option value="2">Ctrl + 1</option>
+			<option value="3">Ctrl + F1</option>
+			<option value="4">Alt + ~</option>
+			<option value="5">Alt + F1</option>
+			<option value="6">Alt + F2</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label>呼出便签窗口：</label>
+		<select name="呼出热键_便签" class="form-control">
+			<option value="0">无</option>
+			<option value="11">Ctrl + ~</option>
+			<option value="22">Ctrl + 1</option>
+			<option value="33">Ctrl + F1</option>
+			<option value="44">Alt + ~</option>
+			<option value="55">Alt + F1</option>
+			<option value="66">Alt + F2</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="下划线替换键" value="" placeholder=""> 按F11键代替输入“_”</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="不自动加载模块" value="" placeholder=""> 在编译模块环境下不自动加载模块</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="关联模块" value="" placeholder=""> 关联模块(关联后双击模块文件时，可直接查看此模块的信息)</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="radio" name="替换模块查看器" value="" placeholder=""> 在易语言里采用秋城落叶易语言助手模块信息查看器查看模块信息 *</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label>路径：</label>
+		<input type="text" class="form-control" placeholder="如：C:\e\backup\" name="备份源码目录"/>
+	</div>
+
+	<div class="form-group">
+		<label>命令行文本：</label>
+		<textarea class="form-control" name="命令行文本" rows="5" placeholder="如：C:\e\backup\"/></textarea>
+	</div>
+</body>
+</html>

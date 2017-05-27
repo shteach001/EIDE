@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>读 (外部数据库)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">读</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt45.htm">外部数据库</a></p>
+<p>返回指定记录集的当前记录处指定字段的数据内容，所返回数据的类型与字段SQL类型对照表如下：
+  返回数据类型   字段SQL类型
+  -------------------------------------------------
+  逻辑型         BIT
+  字节型         TINYINT
+  短整数型       SMALLINT
+  整数型         INTEGER
+  单精度型       REAL
+  双精度型       FLOAT、DOUBLE
+  日期时间型     DATE、TIME、TIMESTAMP
+  文本型         NUMERIC、DECIMAL、BIGINT、CHAR、VARCHAR、LONGVARCHAR
+  字节集型       BINARY、VARBINARY、LONGVARBINARY
+  如果因为找不到指定字段而导致读入失败将返回空文本，如果因为其他原因而读入失败将返回对应该字段类型的空数据，即：逻辑型返回假，日期时间型返回100年1月1日，文本型返回空文本，字节集型返回空字节集，其它所有数值型返回0。
+  另外，由于ODBC的支持特性，如果不移动记录指针，只能对当前记录上各字段的内容读入一次。因此，如果需要持续使用所读出的数据，请使用变量将其保存。
+  注：写入字段数据请用“UPDATE”SQL语句实现。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">通用型</font>&nbsp; <em>外部数据库</em>．读 （<font color="#000000">记录集句柄</font><font color="#000000">，&nbsp;</font><font color="#000000">字段名称或位置</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">记录集句柄</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定欲操作记录集的句柄。记录集句柄由“查询”命令返回。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字段名称或位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型。参数值可以为一个字段名称文本或者一个字段位置数值，字段位置数值从 1 开始。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

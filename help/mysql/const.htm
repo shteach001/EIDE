@@ -1,0 +1,120 @@
+<table border=1 cols=3 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="25%"><strong>常量</strong></td>
+<td width="25%"><strong>常量值</strong></td>
+<td width="50%"><strong>描 述</strong></td>
+</tr>
+<tr><td width="25%"><font color="#000000">#字段基本类型</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#字段附加类型</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#增加字段</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#修改字段</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#删除字段</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#增加索引</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#删除索引</font></td><td width="25%"><font color="#000000">5</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#增加主键</font></td><td width="25%"><font color="#000000">6</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#删除主键</font></td><td width="25%"><font color="#000000">7</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#最大长度</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#无符号</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#以0填充</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#二进制</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL未压缩浮点数型</font></td><td width="25%"><font color="#000000">0</font></td>
+<td width="50%">未压缩浮点数，不能无符号。行为如同一个文本型：“未压缩”意味着数字作为一个字符串被存储，值的每一位使用一个字符。值的最大范围与DOUBLE相同。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL字节型</font></td><td width="25%"><font color="#000000">101</font></td>
+<td width="50%">一个字节。有符号的范围是-128到127，无符号的范围是0到255。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL逻辑型</font></td><td width="25%"><font color="#000000">102</font></td>
+<td width="50%">逻辑型，一个字节。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL短整型</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%">短整型，有符号的范围是-32768到32767，无符号的范围是0到65535。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL整型</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%">整型，有符号的范围是-2147483648到2147483647，无符号的范围是0到4294967295。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL浮点型</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%">浮点型，不能无符号。允许的值是-3.402823466E+38到-1.175494351E-38，0 和1.175494351E-38到3.402823466E+38。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL双精度浮点型</font></td><td width="25%"><font color="#000000">5</font></td>
+<td width="50%">双精度浮点型，不能无符号。允许的值是-1.7976931348623157E+308到-2.2250738585072014E-308、 0和2.2250738585072014E-308到1.7976931348623157E+308。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL时间戳记型</font></td><td width="25%"><font color="#000000">7</font></td>
+<td width="50%">时间戳记，范围是'1970-01-01 00:00:00'到2037年的某时。MySQL以YYYYMMDDHHMMSS、YYMMDDHHMMSS、YYYYMMDD或YYMMDD格式来显示时间戳记的值。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL长整型</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%">长整型，有符号的范围是-9223372036854775808到9223372036854775807，无符号的范围是0到18446744073709551615。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL24位整型</font></td><td width="25%"><font color="#000000">9</font></td>
+<td width="50%">24整型，有符号的范围是-8388608到8388607，无符号的范围是0到16777215。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL日期型</font></td><td width="25%"><font color="#000000">10</font></td>
+<td width="50%">日期，支持的范围是'1000-01-01'到'9999-12-31'。MySQL以'YYYY-MM-DD'格式来显示日期值，但是允许你使用字符串或数字把值赋给类型为日期的列。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL时间型</font></td><td width="25%"><font color="#000000">11</font></td>
+<td width="50%">时间，范围是'-838:59:59'到'838:59:59'。MySQL以'HH:MM:SS'格式来显示时间值，但是允许你使用字符串或数字把值赋给类型为时间的列。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL日期与时间型</font></td><td width="25%"><font color="#000000">12</font></td>
+<td width="50%">日期与时间，支持的范围是'1000-01-01 00:00:00'到'9999-12-31 23:59:59'。MySQL以'YYYY-MM-DD HH:MM:SS'格式来显示日期与时间的值，但是允许你使用字符串或数字把值赋给属性是日期与时间的列。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL年份型</font></td><td width="25%"><font color="#000000">13</font></td>
+<td width="50%">年，允许的值是1901到2155，和0000（4位年格式），如果你使用2位，1970-2069( 70-69)。MySQL以YYYY格式来显示年的值，但是允许你把使用字符串或数字值赋给属性是年的列。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL短字节集</font></td><td width="25%"><font color="#000000">25201</font></td>
+<td width="50%">短字节集，最大长度为255(2^8-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL短备注型</font></td><td width="25%"><font color="#000000">25202</font></td>
+<td width="50%">短备注，最大长度为255(2^8-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL备注型</font></td><td width="25%"><font color="#000000">25203</font></td>
+<td width="50%">备注，最大长度为65535(2^16-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL字节集型</font></td><td width="25%"><font color="#000000">25204</font></td>
+<td width="50%">字节集，最大长度为65535(2^16-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL长字节集型</font></td><td width="25%"><font color="#000000">25205</font></td>
+<td width="50%">长字节集，最大长度为16777215(2^24-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL长备注型</font></td><td width="25%"><font color="#000000">25206</font></td>
+<td width="50%">长备注，最大长度为16777215(2^24-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL巨字节集型</font></td><td width="25%"><font color="#000000">25207</font></td>
+<td width="50%">巨字节集，最大长度为4294967295(2^32-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL巨备注型</font></td><td width="25%"><font color="#000000">25208</font></td>
+<td width="50%">巨备注，最大长度为4294967295(2^32-1)个字符。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL变长文本型</font></td><td width="25%"><font color="#000000">253</font></td>
+<td width="50%">变长文本型，一个变长字符串。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL枚举型</font></td><td width="25%"><font color="#000000">25401</font></td>
+<td width="50%">枚举，一个仅有一个值的字符串对象，这个值式选自与值列表'value1'、'value2', ...,或NULL。一个枚举最多能有65535不同的值。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL集合型</font></td><td width="25%"><font color="#000000">25402</font></td>
+<td width="50%">集合，能有零个或多个值的一个字符串对象，其中每一个必须从值列表'value1', 'value2', ...选出。一个集合最多能有64个成员。</td></tr>
+<tr><td width="25%"><font color="#000000">#MYSQL文本型</font></td><td width="25%"><font color="#000000">25403</font></td>
+<td width="50%">文本型，一个定长字符串。</td></tr>
+<tr><td width="25%"><font color="#000000">#字节与逻辑型</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%">字节与逻辑型，不能用与定义字段，可以使用他来判断字段类型。</td></tr>
+<tr><td width="25%"><font color="#000000">#备注与字节集型</font></td><td width="25%"><font color="#000000">252</font></td>
+<td width="50%">备注与字节集型，不能用与定义字段，可以使用他来判断字段类型。</td></tr>
+<tr><td width="25%"><font color="#000000">#枚举与集合型</font></td><td width="25%"><font color="#000000">254</font></td>
+<td width="50%">枚举与集合型，不能用与定义字段，可以使用他来判断字段类型。</td></tr>
+<tr><td width="25%"><font color="#000000">#无任何权限</font></td><td width="25%"><font color="#000000">0</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#查询权限</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#增加权限</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#更改权限</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#删除权限</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#索引权限</font></td><td width="25%"><font color="#000000">16</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#改变表权限</font></td><td width="25%"><font color="#000000">32</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#创建表或库或索引权限</font></td><td width="25%"><font color="#000000">64</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#删除表或库权限</font></td><td width="25%"><font color="#000000">128</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#备注表或库权限</font></td><td width="25%"><font color="#000000">256</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#重新装载服务器权限</font></td><td width="25%"><font color="#000000">512</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#关闭服务器权限</font></td><td width="25%"><font color="#000000">1024</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#服务器进程管理权限</font></td><td width="25%"><font color="#000000">2048</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#服务器文件存取权限</font></td><td width="25%"><font color="#000000">4096</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#所有权限</font></td><td width="25%"><font color="#000000">8192</font></td>
+<td width="50%"></td></tr>
+</table>

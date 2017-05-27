@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>二维傅立叶变换 (傅立叶变换)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">二维傅立叶变换</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt2.htm">傅立叶变换</a></p>
+<p>采用快速Fourier变换技术(FFT)计算由C x R个等距样本组成的数据集的二维Fourier变换。特别说明：1.行和列(c和r)必须是2的幂，例如2,4,8......128。2.为了保存内存，两个参数数组均被用于输入和输出(记住：在内存中浮点数占4字节，双精度数占8字节，因此，一个有1024个元素的向量要求4K~8K字节!)。如果你想要保留原始数据，把它拷贝到另一个变量中。3.二维FFT占用很多内存。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>傅立叶变换</em>．二维傅立叶变换 （<font color="#000000">数据集实值</font><font color="#000000">，&nbsp;</font><font color="#000000">数据集虚值</font><font color="#000000">，&nbsp;</font><font color="#000000">标志</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据集实值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为二维数组，它包含了从数组起始数据中的抽样数据的实值，并返回FFT调和函数的余弦系数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据集虚值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该数组的维数、行列数是和前一个参数一样的数组，它包含了从数组起始到本数组中的抽样数据的虚值，并返回FFT调和系数的正弦余数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标志</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型。真表示反变换，假表示正变换。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>筛选器返回值</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">筛选器返回值</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">互联网服务支持库</a></p><p>指示本筛选器对当前事件的执行结果，用作 HttpFilterProc() 的返回值。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已完成</font></td>
+<td width="70%" valign="top">常量值为 134217728 。表示已完成，服务器应断开会话连接(the server should disconnect the session)? SF_STATUS_REQ_FINISHED。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已完成_保持连接</font></td>
+<td width="70%" valign="top">常量值为 134217729 。表示此筛选器不被支持(this filter is not supported)? SF_STATUS_REQ_FINISHED_KEEP_CONN。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已处理_其他筛选器继续</font></td>
+<td width="70%" valign="top">常量值为 134217730 。表示此事件已处理，后面的筛选器继续处理。HttpFilterProc()多数情况下通常返回此常量值。SF_STATUS_REQ_NEXT_NOTIFICATION。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已处理_其他筛选器走开</font></td>
+<td width="70%" valign="top">常量值为 134217731 。表示此事件已处理，不必再让其他筛选器处理。SF_STATUS_REQ_HANDLED_NOTIFICATION。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已错误</font></td>
+<td width="70%" valign="top">常量值为 134217732 。表示已发生错误。返回此数值前应该调用Win32 API函数SetLastError()设定相应的错误号，以便IIS服务器做针对性处理。SF_STATUS_REQ_ERROR。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">继续读取数据</font></td>
+<td width="70%" valign="top">常量值为 134217733 。表示要求继续读取数据。The filter is an opaque stream filter (encrypted/compressed HTTP requests) and the session parameters are being negotiated. This is valid only for raw-read notification. This notification indicates that the full request has not yet been received; the Web server should issue another read and notify the filter with the additional data read. SF_STATUS_REQ_READ_NEXT。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

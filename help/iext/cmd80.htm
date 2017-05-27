@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>插入列 (超级列表框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">插入列</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt3.htm">超级列表框</a></p>
+<p>在报表型列表框中指定位置插入新的列，成功返回新列的位置索引，失败返回 -1 。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>超级列表框</em>．插入列 （<font color="#000000">［</font><font color="#000000">插入位置</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">标题</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">列宽</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">对齐方式</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图片索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图片是否居右</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">插入位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定新列插入时的位置索引，索引值从 0 开始。如果提供 -1 ，则插入到尾部。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标题</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数指定报表列的标题文本。如果被省略，默认值为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">列宽</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定报表列的宽度，单位为像素。如果被省略，默认值为 50 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">对齐方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数可以为以下常量之一： 0：#左对齐； 1：#中间对齐； 2：#右对齐。如果本参数被省略，默认值为“#左对齐”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。图片索引用于指定“表头图片组”属性中的某张图片。索引值从 0 开始，-1 表示无图片。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片是否居右</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。指定图片是否显示在右边，如果本参数被省略，默认值为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>任务参数</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">任务参数</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">网络传送支持库</a></p><p></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1 。指定任务类型 可以为以下常量 #下载 #上传 #覆盖 #续传 #改名 #跳过 #被动选择。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件地址</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。本参数指定欲读取文件在互联网上的地址，即（URL）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">本地文件路径</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。本参数指定被下载或待上传文件的本地保存位置，当作为下载文件保存路径使用时。如果没有给定文件名，那必须是一个以“\”结尾的文件路径。系统会根据“文件地址”指定的的文件名作为本地保存的文件名，系统会处理重定向情况。当收到“下载上传开始”消息后可以通过“取本地文件路径”获得包含文件名的文件路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户名</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“anonymous”。需要身份验证时使用的用户名,当前只用做FTP登录时使用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户密码</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“anonymous@123.com”。需要身份验证时使用的密码,当前只用做FTP登录时使用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">默认线程数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1 。任务启动时默认开启的线程数,默认为1。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载速度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 0 。本参数用来限制一个任务的下载速度，如果为0则不做限制。默认为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 20000 。连接服务器的超时时间，如果过了这个时间服务器还没有回应则返回，如果用户设置了重试次数，那么会进行指定次数的重试。本参数为毫秒，默认为20000。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 20000 。发送数据的超时时间，如果用户设置了重试次数，那么会进行指定次数的重试。单位为毫秒，默认为20000。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">接收超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 20000 。接收数据的超时时间，如果用户设置了重试次数，那么会进行指定次数的重试。单位为毫秒，默认为20000。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线程等待超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1000 。结束线程时等待的时间，单位为毫秒，默认为1000。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">接收大小</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 20480 。每次接收数据的块大小，通过调节大小可以加快下载速度，但过大会导致意外错误，请根据实际情况调节。本值不能大于初始化库命令中设置的写入文件长度。单位为字节。默认为20480字节。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送大小</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1024 。每次发送数据的块大小，通过调节大小可以加快上传速度，但过大会导致意外错误，请根据实际情况调节。单位为字节。默认为1024字节。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">日志回调函数</font></td>
+<td width="70%" valign="top">子程序指针；&nbsp;注册一个回调函数，系统产生日志时会调用此函数通知用户。如果为0则不能接收日志，默认为0。回调函数需要有5个参数：第一个参数，线程信息（整数型），可以通过“取线程信息”获得每个上传或下载对象的线程信息，与本参数比较从而确定发送本消息的对象；第二个参数，消息产生的时间（文本型）；第三个参数，消息的正文（文本型）；第四个参数，消息类型（整数型），参见“#传送常量.*”；第五个参数，对象信息（整数型），可以通过“取对象信息()”获得下载或上传对象的信息与本参数比较，从而确定本消息属于哪个对象。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">交互回调函数</font></td>
+<td width="70%" valign="top">子程序指针；&nbsp;注册一个回调函数，系统产生需要交互的消息时调用此函数，具体消息请参见传送常量中设置的消息常量。如果为0则不接收，默认为0。回调函数需要有5个参数，一个整数型的返回值。返回值根据消息类型的不同而不同，如果没有说明，则返回值没有意义。参见具体的消息。第一个参数，消息类型（整数型），参见“#传送常量.*”；第二个参数，线程信息（整数型），可以通过”取线程信息“获得每个上传或下载对象的线程信息，与本参数比较从而确定发送本消息的对象，此参数值可能为0，表示不与特定线程有关；第三个参数（整数型）根据消息类型的不同而不同，参见具体的消息；第四个参数（整数型）根据消息类型的不同而不同，参见具体的消息；第五个参数，对象信息（整数型），可以通过“取对象信息()”获得下载或上传对象的信息与本参数比较，从而确定本消息属于哪个对象。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">备用文件名</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。当类型为“改名“时，本参数为上传时使用的新文件名，默认为空。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">传送类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1 。FTP上传或下载时用来区分传送类型。1 为二进制，2 为文本 3 为根据“类型区分串”选择。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">类型区分串</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“.exe|.rar|.zip|.gif|.jpg|.mp3|.rm”。FTP上传或下载时用来区分传送类型的字符串。本字符串由多个通过“|”分割的扩展名组成，如果待下载或上传文件的扩展名被包含在本字符串那么上传的类型为二进制模式否则为ASCII码模式,最大长度为512个字节例如：“.exe|.rar|.zip”.遇到带有上述扩展名的文件则起用二进制模式传送注意：本参数只在“传送类型”为3时有效。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">代理服务器</font></td>
+<td width="70%" valign="top">文本型；&nbsp;目前只支持HTTP GET方式的代理服务器, 格式为 IP地址:端口号 如: 192.168.0.1:80。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">引用</font></td>
+<td width="70%" valign="top">文本型；&nbsp;用户可以根据实际情况填写，如果不填系统会自动填充。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

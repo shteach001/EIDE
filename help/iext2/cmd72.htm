@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>自动前进 (动画框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">自动前进</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">动画框</a></p>
+<p>以当前角度或指定路线自动向前移动动画框中指定物体。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>动画框</em>．自动前进 （<font color="#000000">物体标识值</font><font color="#000000">，&nbsp;</font><font color="#000000">每次前进距离</font><font color="#000000">，&nbsp;</font><font color="#000000">每次前进间隔时间</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">最大前进距离</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">最大前进时间</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">碰撞停止</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">边界停止</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">自动销毁</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">路线</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">路线重复次数</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">物体标识值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数提供欲操作物体的标识值，该标识值为创建或复制物体时所返回的数值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">每次前进距离</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数指定每次将物体向前移动的距离，单位为像素点。参数值必须大于0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">每次前进间隔时间</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数指定物体每前进一次后等待的间隔时间，单位为毫秒。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大前进距离</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定物体自动向前移动的最大距离，单位为像素点。如果值为0，表示不限制距离。如果设置了路线，则将在本参数设置值和路线的总长度之间取最小值作为最大移动距离。如果本参数被省略，默认值为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大前进时间</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定物体自动向前移动的最大时间，单位为毫秒。如果值为0，表示不限制时间。如果本参数被省略，默认值为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">碰撞停止</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。指定当物体碰撞到其它物体时是否停止向前移动。如果本参数被省略，默认值为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">边界停止</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定当物体到达或越过动画框边界时是否停止向前移动。参数值为1表示当物体碰撞到边界时停止移动，为2表示当物体完全越过边界后停止移动。如果本参数被省略，默认值为0，即不处理。注意无论本参数如何设置，一旦物体在没有限制最大前进距离和最大前进时间且没有设置路线的情况下越过动画框边框外，将自动停止移动。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">自动销毁</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。本参数指定物体自动向前移动停止后，是否自动销毁。如果本参数被省略，默认值为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">路线</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供数组数据。本参数描述物体具体的自动向前移动路线，路线可以是直线或曲线或两者的组合体。如果设置了路线，物体的当前角度将在前进过程中被自动调整。参数数组中的数据描述整个前进路线，其每一部分的数据格式如下： 1、第1个整数描述此部分路线的类型，0表示为直线，1表示为曲线(二次方贝塞尔曲线); 2、如果类型为直线，则后续2个整数记录该直线终点坐标位置(相对于路线起点); 3、如果类型为曲线，则后续4个整数分别记录该曲线的控制点和终点坐标位置(相对于路线起点)。 如果本参数被省略，默认值为空数组，此时将按当前角度直线向前移动。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">路线重复次数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果上一参数指定了路线，则本参数指定将此路线重复执行的次数，0表示无限次重复执行。如果本参数被省略，默认值为1。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>设置曲面等分网格</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">设置曲面等分网格</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">建模操作</a></p>
+<p>先使用“设置曲面控制点”命令生成曲面，然后设置曲面的等分网格，让曲面光滑的过度。
+	最终得到的每两个相邻U参数的间隔为：（U向等分下限 - U向等分上限）/ U向等分数。
+	最终得到的每两个相邻V参数的间隔为：（V向等分下限 - V向等分上限）/ V向等分数。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 设置曲面等分网格 （<font color="#000000">U向等分数</font><font color="#000000">，&nbsp;</font><font color="#000000">U向等分上限</font><font color="#000000">，&nbsp;</font><font color="#000000">U向等分下限</font><font color="#000000">，&nbsp;</font><font color="#000000">V向等分数</font><font color="#000000">，&nbsp;</font><font color="#000000">V向等分上限</font><font color="#000000">，&nbsp;</font><font color="#000000">V向等分下限</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">U向等分数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。等分数目越多，曲线越光滑，占用的系统资源也越大。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">U向等分上限</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。U参数的起始值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">U向等分下限</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。U参数的终止值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">V向等分数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。等分数目越多，曲线越光滑，占用的系统资源也越大。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">V向等分上限</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。V参数的起始值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">V向等分下限</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。V参数的终止值。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

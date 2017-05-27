@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>多重回归 (多重回归)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">多重回归</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt6.htm">多重回归</a></p>
+<p>对数据集建立一个最小二乘线性多重回归方程。它返回回归方程的系数、y的估值、残差、估计的标准误差、回归系数的标准误差、确定系数和相关系数。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>多重回归</em>．多重回归 （<font color="#000000">原始数据</font><font color="#000000">，&nbsp;</font><font color="#000000">x矩阵行列式</font><font color="#000000">，&nbsp;</font><font color="#000000">回归方程系数</font><font color="#000000">，&nbsp;</font><font color="#000000">y估值</font><font color="#000000">，&nbsp;</font><font color="#000000">残差值</font><font color="#000000">，&nbsp;</font><font color="#000000">标准误差</font><font color="#000000">，&nbsp;</font><font color="#000000">估计标准误差</font><font color="#000000">，&nbsp;</font><font color="#000000">r平方值</font><font color="#000000">，&nbsp;</font><font color="#000000">r值</font><font color="#000000">，&nbsp;</font><font color="#000000">是否回归矩阵奇异</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">原始数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是二维数组，保存被分析的原始数据。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">x矩阵行列式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。列数和第一个参数行数一样的一维数组。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">回归方程系数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为列数和第一个参数一样的一维数组，它返回计算出来的回归方程系数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">y估值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为列数与第一个参数行数一样的二维数组，它返回用回归系数计算的y的估值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">残差值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为列数与第一个参数行数一样的二维数组，它返回残差值(y的估值与y的观察值之差)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标准误差</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回估计的标准误差。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">估计标准误差</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是列数与第一个参数一样的一维数组，它返回系数估计的标准误差。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">r平方值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回r平方值 - 样本确定系数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">r值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回r值 - 样本相关系数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否回归矩阵奇异</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量。如果回归矩阵奇异，则返回一个非"0"值，否则返回"0"。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

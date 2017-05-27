@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>求矩阵特征 (矩阵运算)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">求矩阵特征</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">矩阵运算</a></p>
+<p>用循环Jacobi算法计算一个实对称矩阵的特征值。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>矩阵运算</em>．求矩阵特征 （<font color="#000000">实数矩阵</font><font color="#000000">，&nbsp;</font><font color="#000000">向量</font><font color="#000000">，&nbsp;</font><font color="#000000">返回实数矩阵</font><font color="#000000">，&nbsp;</font><font color="#000000">记数</font><font color="#000000">，&nbsp;</font><font color="#000000">收敛标志</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">实数矩阵</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为一个正方形实数矩阵。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">向量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是一维数组，列数和第一个参数一样，返回第一个参数矩阵的特征值向量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">返回实数矩阵</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数数组是维数和行列数和第一个参数一样的矩阵，它的列是原始矩阵的eigenvectors。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">记数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量。包含完成迭代的最大迭代次数，它返回完成迭代的实际迭代次数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">收敛标志</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，参数数据只能提供变量。通过该参数判断是否收敛成功。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

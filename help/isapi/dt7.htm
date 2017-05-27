@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>筛选器事件</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">筛选器事件</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">互联网服务支持库</a></p><p>用于指定本筛选器欲处理的事件类型，或正在处理的事件类型。参见：互联网筛选器.初始化版本信息(), 互联网筛选器.取事件()。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">读取数据</font></td>
+<td width="70%" valign="top">常量值为 32768 。此事件发生在从客户端读取数据时。每次请求(Request)可能多次读取数据。IIS5只能在全局筛选器中使用此事件，IIS6以兼容IIS5模式运行时才支持此事件，到IIS7之后就不再支持了。SF_NOTIFY_READ_RAW_DATA。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">预处理头</font></td>
+<td width="70%" valign="top">常量值为 16384 。此事件发生在预处理头之后、处理头内容之前。(Occurs immediately after IIS has pre-processed headers, but before IIS has begun to process header content.) SF_NOTIFY_PREPROC_HEADERS。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">映射URL</font></td>
+<td width="70%" valign="top">常量值为 4096 。此事件发生在服务器把URL映射到真实路径之后，可能会发生多次。SF_NOTIFY_URL_MAP。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">认证</font></td>
+<td width="70%" valign="top">常量值为 8192 。此事件发生在服务器认证(Authenticate)客户之前。SF_NOTIFY_AUTHENTICATION。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">认证完成</font></td>
+<td width="70%" valign="top">常量值为 67108864 。此事件发生在认证完成后。SF_NOTIFY_AUTH_COMPLETE。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">拒绝访问</font></td>
+<td width="70%" valign="top">常量值为 2048 。此事件发生在服务器“决定拒绝访问”之后、向客户端发送回复(Response)之前。SF_NOTIFY_ACCESS_DENIED。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送回复</font></td>
+<td width="70%" valign="top">常量值为 64 。此事件发生在服务器向客户端发送回复(Response)之前，此时已接收并解析完毕客户端的请求(Request)但还没有发送任何数据（包括HTTP/HTTPS头）。SF_NOTIFY_SEND_RESPONSE。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送数据</font></td>
+<td width="70%" valign="top">常量值为 1024 。此事件发生在向客户端发送数据时。每次请求(Request)可能多次发送数据。SF_NOTIFY_SEND_RAW_DATA。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结束请求</font></td>
+<td width="70%" valign="top">常量值为 128 。此事件发生在请求(Request)被处理完毕（回复完毕）之后。SF_NOTIFY_END_OF_REQUEST。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">记录日志</font></td>
+<td width="70%" valign="top">常量值为 512 。此事件发生在请求(Request)被处理完毕之后、服务器记录日志之前。SF_NOTIFY_LOG。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结束会话</font></td>
+<td width="70%" valign="top">常量值为 256 。此事件发生在会话(Session)结束之后。SF_NOTIFY_END_OF_NET_SESSION。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

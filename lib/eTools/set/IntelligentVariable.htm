@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="GB2312" />
+	<title>智能变量</title><!-- 设置的标题 -->
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="common.css" />
+	<link rel="stylesheet" href="bootstrap-theme.min.css" />
+</head>
+<body style="overflow-y : auto; padding: 20px;">
+<fieldset>
+	<legend>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="开启智能变量" checked="checked"> 开启智能变量
+			</label>
+		</div>
+	</legend>
+
+	<!-- 开始其它组件 -->
+	<div class="input-group">
+		<span class="input-group-addon w150">全局变量(前缀)：</span>
+		<input type="text" class="form-control" name="默认变量_全局" value="全_ g_">
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon w150">程序集变量(前缀)：</span>
+		<input type="text" class="form-control" name="默认变量_程序集" value="集_ 程序集_ m_ c_">
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon w150">局部变量(前缀)：</span>
+		<input type="text" class="form-control" name="默认变量_局部" value="局_ j_">
+	</div>
+
+	<div class="notes">
+		<h4>变量前缀说明</h4>
+		<p>默认变量类型前缀，多个前缀请用空格分隔，如：全_ g_ 集_ 局_</p>
+	</div>
+
+	<div class="notes">
+		<h4>数据类型说明</h4>
+		<p>
+			1、你可以在相应类型的文本框上设置你常用的变量名，多个前缀请用空格分隔。
+		</p>
+	</div>
+
+	<div class="notes">
+		<h4>用途</h4>
+		<p>智能变量将大大减少定义变量的时间，如：【全_目录 = 取运行目录() + “\”】将自动定义“全_目录”变量为全局，并且变量的数据类型为文本型的！</p>
+	</div>
+	<!-- 结束其它组件 -->
+</fieldset>
+</body>
+</html>

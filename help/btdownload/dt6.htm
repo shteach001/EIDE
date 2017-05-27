@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>下载设置信息</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">下载设置信息</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">BT下载支持库</a></p><p>设置下载参数的信息。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">每地址连接数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1 。本参数表示一个IP地址最多允许同时有几个连接。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">开始监听端口</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 9001 。本参数表示监听的端口开始值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结束监听端口</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 9100 。本参数表示监听的端口结束值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">阻塞值</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 2048 。本参数表示当上传比下载大多少时，就阻塞对方(不给对方上传)。单位为:千字节(KB)注：在下载完成后，本参数失效。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 60000 。本参数表示在一条连接上多长时间没有发生数据交换就断开此连接。单位为毫秒。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">代理服务器类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 0 。本参数表示代理服务器的类型0为不使用，1为HTTP1.1, 2为SOCKS5。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">代理服务器地址</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示代理服务器的IP地址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">代理服务器端口</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 0 。本参数表示代理服务器的端口。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户名</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示代理服务器需要验证的用户名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">口令</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示代理服务器需要验证的口令。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接服务器超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 30000 。本参数表示连接Tracker服务器时的超时。单位为毫秒。注：本超时不能低于10秒。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接下载者超时</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 30000 。本参数表示连接其它下载者时的超时。单位为毫秒。注：本超时不能低于20秒。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

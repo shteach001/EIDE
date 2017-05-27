@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>开始画</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">开始画</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">建模操作</a></p>
+<p>画一组相似图元的开始语句。画不同的图元需要执行不同条数的“设置点”的命令。以“停止画”命令结尾。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 开始画 （<font color="#000000">画出模式</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">画出模式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值可以为以下常量：
+	0、#点集，在“设置点”命令所定义的位置画出一个点；
+	1、#线段，在“设置点”命令所定义的位置上，每隔两个点画一条线段；
+	2、#闭合线段，将“设置点”的命令所定义的点连成一个首尾相连线段；
+	3、#连续线段，将“设置点”的命令所定义的点连成一串连续的线段；
+	4、#三角形，在“设置点”命令所定义的位置上，每隔三个点画一个填充颜色的三角形；
+	5、#连续三角形，在“设置点”命令所定义的位置上，每三个相邻的点画一个填充颜色的三角形；
+	6、#扇形三角形，在“设置点”命令所定义的位置上，始终以第一个点为顶点，沿着相邻两个点画填充颜色的三角形；
+	7、#四边形，在“设置点”命令所定义的位置上，每隔四个点画一个填充颜色的四边形；
+	8、#连续四边形，在“设置点”命令所定义的位置上，每四个相邻的点画一个填充颜色的四边形，并且每增加两个点就再增加一个四边形；
+	9、#凸多边形，在“设置点”命令所定义的位置上，沿着围绕所有的点组成一个首尾相连的填充颜色的凸多边形。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

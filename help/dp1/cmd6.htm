@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>签名验证</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">签名验证</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">数据完整性校验</a></p>
+<p>使用指定公钥和签署结果文本对被签署字节集数据进行验证，如验证通过则说明该字节集数据必定是此公钥拥有者（即签署者）所认可的，且签署后未经任何篡改。验证通过返回真，否则返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 签名验证 （<font color="#000000">待验证被签署字节集</font><font color="#000000">，&nbsp;</font><font color="#000000">签署结果文本</font><font color="#000000">，&nbsp;</font><font color="#000000">签署者公钥文本</font><font color="#000000">，&nbsp;</font><font color="#000000">签署者公共模数</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">待验证被签署字节集</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">签署结果文本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。必须为“数字签名”命令所返回的结果。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">签署者公钥文本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。为十六进制数值文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">签署者公共模数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。为十六进制数值文本。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

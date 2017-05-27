@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>设置光源参数</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">设置光源参数</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct5.htm">显示效果</a></p>
+<p>必须启用“#光照”后才有效。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 设置光源参数 （<font color="#000000">光源号</font><font color="#000000">，&nbsp;</font><font color="#000000">参数名称</font><font color="#000000">，&nbsp;</font><font color="#000000">参数值</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">光源号</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值可以为以下常量：
+	16384、#零号光源；
+	16385、#一号光源；
+	16386、#二号光源；
+	16387、#三号光源；
+	16388、#四号光源；
+	16389、#五号光源；
+	16390、#六号光源；
+	16391、#七号光源。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值可以为以下常量：
+	4608、#环境光，参数值为范围在[0，1]内的表示红绿蓝混合通道颜色的四维数组 ，默认值为（0，0，0，1），多余部分无效；
+	4609、#漫反射光，参数值为范围在[0，1]内的表示红绿蓝混合通道颜色的四维数组 ，#零号光源的默认值为（1，1，1，1），其他光源的默认值为（0，0，0，1），多余部分无效；
+	4610、#镜面光，参数值为范围在[0，1]内的表示红绿蓝混合通道颜色的四维数组，#零号光源的默认值为（1，1，1，1），其他光源的默认值为（0，0，0，1），多余部分无效；
+	4611、#光源位置，参数值为四维数组，默认值（0，0，1，0），前面三位表示坐标，最后一位为0时，表示平行光。否则，表示点光源。多余部分无效；
+	4612、#光源聚光方向，对聚光灯才有效。参数值为三维数组（0，0，-1），多余部分无效；
+	4613、#光源聚光指数，对聚光灯才有效。参数值范围在[0，128]内的非数组数值，默认值0；
+	4614、#点光源聚光截止角。参数值范围在[0，90]内和特殊值180的非数组数值，默认值180，表示不产生聚光效果，[0，90]内的数值表示使用聚光效果；
+	4615、#常量衰减，对聚光灯才有效。参数值为非数组数值，默认值1；
+	4616、#线形衰减，对聚光灯才有效。参数值为非数组数值，默认值0；
+	4617、#二次方衰减，对聚光灯才有效。参数值为非数组数值，默认值0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;小数型，参数数据可以同时提供数组或非数组数据。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

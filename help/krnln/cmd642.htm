@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置错误提示管理</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置错误提示管理</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct17.htm">其他</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>本命令用来设置当运行时如果产生了导致程序崩溃的严重错误时用来对该错误进行详细提示的子程序地址，如果未进行此项设置，发生严重错误时运行时环境将自动提示该错误的详细信息并直接退出。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 置错误提示管理 （<font color="#000000">［</font><font color="#000000">用作进行错误提示的子程序</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用作进行错误提示的子程序</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;子程序指针。注意该子程序必须接收两个参数，第一个参数为整数型，用作接收错误代码，第二个参数为文本型，用作接收详细错误文本。同时该子程序必须返回一个逻辑值，返回真表示已经自行处理完毕，系统将不再显示该错误信息，返回假表示由系统来继续显示该错误信息。以上设置必须完全正确，否则结果不能预测，另外，还请注意以下几点： 1、该错误提示子程序不要再引发新的错误； 2、在进入该错误提示子程序后，系统将自动关闭事件消息通知处理机制，也就是说任何事件将无法得到响应； 3、无论如何，当该子程序调用退出后，系统将自动将整个应用程序关闭。  如果省略本参数，系统将恢复错误提示的默认处理方式。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

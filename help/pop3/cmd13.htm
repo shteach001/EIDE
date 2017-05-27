@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>获取邮件大小</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">获取邮件大小</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">邮件接收</a></p>
+<p>获取每一封邮件的大小。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 获取邮件大小 （<font color="#000000">第几封</font><font color="#000000">，&nbsp;</font><font color="#000000">大小</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">总数</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">第几封</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“-1”。指定是第几封邮件,如果此值为-1就表示获取每一封的大小。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">大小</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量及变量数组。返回一封或多封邮件的大小。如果为此参数提供数组变量，而参数“第几封”不为-1，则指定邮件的大小将写入数组第一个成员中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">总数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数在“第几封”为-1时有效,为“获取邮件信息”方法返回的邮件总数。如果被省略，则自动获取邮件总数。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

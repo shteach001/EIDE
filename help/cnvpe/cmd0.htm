@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>转换可执行文件数据</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">转换可执行文件数据</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">PE数据转换</a></p>
+<p>转换所提供的使用易语言编译的可执行文件或易语言支持库内容数据，使其内容完全被改变，但不影响其正常使用。返回转换后的结果字节集。如果转换失败，将返回空字节集，同时如果参数中提供了转换结果获取变量，其中将返回具体的错误代码值。本命令主要用作应付一些使用落后的特征码查毒技术的杀毒软件，使其不再或很难对易语言编译出来的程序和易语言本身支持库误报，建议大家在发布自己的软件前使用本命令转换下编译后的可执行文件和所需要携带的支持库。注意：1、多次重复转换可能会导致转换后的可执行文件或易语言支持库无法使用，请确保只转换一次；2、对于非易语言编译的可执行文件或DLL，不保证转换后能够正常使用。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">字节集</font>&nbsp; 转换可执行文件数据 （<font color="#000000">可执行文件数据</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">转换码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">转换结果</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">可执行文件数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。提供需要转换的PE格式可执行文件数据，可以是EXE或DLL文件内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">转换码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。可以是非零的任何数值，使用不同的数值将得到完全不同的转换结果，使用相同的数值将得到完全相同的转换结果。如果提供数值0，将自动使用随机数值。如果本参数被省略，默认值为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">转换结果</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。通过为本参数提供一个变量即可获取命令运行后具体的转换是否成功状态，所返回值有以下几种：0:转换成功; -1:所提供数据无效; -2:数据中没有需要转换的部分; -3:无法找到转换代码插入空间。如果本参数被省略，将不返回转换结果。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

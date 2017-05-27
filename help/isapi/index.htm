@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>互联网服务支持库</title>
+</head>
+<body>
+<p><strong><big><big><font color="#000000">互联网服务支持库3.1版</font></big></big></strong>&nbsp;&nbsp;&nbsp;<a href="../index.htm">返回首页</a></p>
+<p>本支持库实现了对互联网服务 IIS ISAPI Extension/Filter 的支持。数据类型“互联网扩展”用于辅助开发ISAPI扩展程序(Extension)，数据类型“互联网筛选器”用于辅助开发IIS筛选器(Filter)。依据微软ISAPI规范，扩展程序和筛选器都是DLL，且需要公开导出满足特定要求的函数，这些导出函数是提供给IIS供它调用的。
+    对于扩展程序，必须导出 GetExtensionVersion, HttpExtensionProc 这两个函数，根据需要还可以导出 TerminateExtension 函数：GetExtensionVersion在扩展程序被加载时被调用，有一个整数型参数“版本信息”，返回值为逻辑型表示是否初始化成功，把它的参数传给“互联网扩展.初始化版本信息()”即可完成扩展扩展程序的初始化；HttpExtensionProc在每次处理HTTP请求(Request)时被调用，有一个整数型参数“扩展程序上下文”，返回值为整数型表示处理结果（要求返回 #互联网扩展返回值.* 常量之一），把它的参数传给“互联网扩展.初始化互联网扩展()”之后即可通过互联网扩展对象执行各种操作；TerminateExtension如果存在，在扩展程序被卸载时被调用，有一个整数型参数“标记”，返回值为逻辑型。
+    对于筛选器，必须导出 GetFilterVersion, HttpFilterProc 这两个函数，根据需要还可以导出 TerminateFilter 函数：GetFilterVersion在筛选器被载入时调用，它有一个整数型参数“版本信息”，返回值为逻辑型表示是否初始化成功，把它的参数传给“互联网筛选器.初始化版本信息()”即可完成筛选器的初始化；HttpFilterProc在每次筛选器事件发生时被调用，它有三个整数型参数“筛选器上下文”“通知类型”“通知数据”，返回值为整数型表示处理结果（要求返回 #筛选器返回值.* 常量之一），把它的三个参数传给“互联网筛选器.初始化互联网筛选器()”之后就可以通过互联网筛选器对象执行各种操作；TerminateFilter如果存在，在筛选器被卸载时被调用，它有一个整数型参数“标记”(无实际意义)，返回值为逻辑型。</p><p>操作系统支持： Windows</p><p><p><big><strong><a name="其它数据类型"></a>其它数据类型：</strong></big></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="dt0.htm">互联网扩展</a></td>
+<td width="20%"> <a href="dt1.htm">互联网扩展返回值</a></td>
+<td width="20%"> <a href="dt2.htm">服务器变量类型</a></td>
+<td width="20%"> <a href="dt3.htm">互联网扩展函数</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="dt6.htm">互联网筛选器</a></td>
+<td width="20%"> <a href="dt7.htm">筛选器事件</a></td>
+<td width="20%"> <a href="dt8.htm">筛选器端口</a></td>
+<td width="20%"> <a href="dt9.htm">筛选器优先级</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="dt10.htm">筛选器返回值</a></td>
+<td width="20%"> <a href="dt11.htm">筛选器扩展函数</a></td>
+<td width="20%"> <a href="dt12.htm">筛选器拒绝理由</a></td>
+<td width="20%"> </td></tr>
+</table>

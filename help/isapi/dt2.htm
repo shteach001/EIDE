@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>服务器变量类型</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">服务器变量类型</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">互联网服务支持库</a></p><p>本数据类型包括了服务器变量类型的常量。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">超文本传输协议头</font></td>
+<td width="70%" valign="top">常量值为 0 。包含有在表单(HTTP_NAME：value)下的非标准头标的完整列表 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">非超文本传输协议头</font></td>
+<td width="70%" valign="top">常量值为 1 。除了当它被接收的时候没有HTTP前缀和其他的格式，其他的和“所有超文本传输协议头”一样 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据库逻辑路径</font></td>
+<td width="70%" valign="top">常量值为 2 。包含有数据库的逻辑路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据库物理路径</font></td>
+<td width="70%" valign="top">常量值为 3 。包含有数据库的物理路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">身份验证口令</font></td>
+<td width="70%" valign="top">常量值为 4 。如果使用最基本的身份验证时所输入的口令。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">身份验证类型</font></td>
+<td width="70%" valign="top">常量值为 5 。使用的安全身份验证类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">身份验证用户名</font></td>
+<td width="70%" valign="top">常量值为 6 。已经过身份验证的用户名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户认证存根</font></td>
+<td width="70%" valign="top">常量值为 7 。包含客户认证的唯一标识符。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户认证标志</font></td>
+<td width="70%" valign="top">常量值为 8 。如果客户认证存在，则设置第一个标志位，如果证书可信，则设置第二个标志位 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户认证发放机构</font></td>
+<td width="70%" valign="top">常量值为 9 。客户认证发放机构。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">安全码位数</font></td>
+<td width="70%" valign="top">常量值为 10 。在安全套接字层(SSL)安全码中的位数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器安全码位数</font></td>
+<td width="70%" valign="top">常量值为 11 。在服务器中的安全套接字层(SSL)安全码中的位数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户认证序列号</font></td>
+<td width="70%" valign="top">常量值为 12 。客户认证的序列号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器证书</font></td>
+<td width="70%" valign="top">常量值为 13 。发放服务器认证的证书。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器认证主题</font></td>
+<td width="70%" valign="top">常量值为 14 。服务器认证的主题域。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户认证主题</font></td>
+<td width="70%" valign="top">常量值为 15 。客户认证的主题域。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">内容长度</font></td>
+<td width="70%" valign="top">常量值为 16 。访问者向服务器发出请求时报告的字节数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">内容类型</font></td>
+<td width="70%" valign="top">常量值为 17 。请求的类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">帐号</font></td>
+<td width="70%" valign="top">常量值为 29 。用户登陆到windows的帐号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否安全请求</font></td>
+<td width="70%" valign="top">常量值为 21 。如果是一个安全请求，则包含字符串真(on)，否则的话包含字符串假(off) 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求位数</font></td>
+<td width="70%" valign="top">常量值为 22 。在请求中使用的安全套接字层(SSL)的位数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求服务端位数</font></td>
+<td width="70%" valign="top">常量值为 23 。在服务器端使用的安全套接字层(SSL)位数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求服务器证书</font></td>
+<td width="70%" valign="top">常量值为 24 。请求中使用的服务器认证的证书。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求服务器主题</font></td>
+<td width="70%" valign="top">常量值为 25 。服务器认证的主题域。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标识号</font></td>
+<td width="70%" valign="top">常量值为 26 。互联网服务器的实例标识号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务元路径</font></td>
+<td width="70%" valign="top">常量值为 27 。互联网服务器实例的元数据库路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">路径信息</font></td>
+<td width="70%" valign="top">常量值为 30 。在域名根目录外的到被请求页面的路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求物理路径</font></td>
+<td width="70%" valign="top">常量值为 31 。请求的物理路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字符串</font></td>
+<td width="70%" valign="top">常量值为 32 。通过使用获取(GET)方法提交的任何数据，或是通过一个链接中的问号后面的数据 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户端IP</font></td>
+<td width="70%" valign="top">常量值为 33 。发出请求的机器的IP地址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户端域</font></td>
+<td width="70%" valign="top">常量值为 34 。如果存在，为请求者的转换名，否则的话，为包含这个IP地址的域。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">客户端用户名</font></td>
+<td width="70%" valign="top">常量值为 36 。客户端发送的用户名 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求方法</font></td>
+<td width="70%" valign="top">常量值为 37 。使用的请求方法，即投递(POST)还是获取(GET)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">脚本名</font></td>
+<td width="70%" valign="top">常量值为 38 。被请求的脚本的名字。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器名</font></td>
+<td width="70%" valign="top">常量值为 39 。服务器主机名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器端口</font></td>
+<td width="70%" valign="top">常量值为 40 。服务器使用的端口号 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">安全连接</font></td>
+<td width="70%" valign="top">常量值为 41 。如果请求是通过安全连接发送的，那么这个域中包含值1，否则的话包含0 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">协议版本</font></td>
+<td width="70%" valign="top">常量值为 42 。使用的协议的版本号，即HTTP/11 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器软件信息</font></td>
+<td width="70%" valign="top">常量值为 43 。在服务器上运行的Web服务器软件的名称和版本 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">地址</font></td>
+<td width="70%" valign="top">常量值为 44 。被请求的页面的地址(URL)。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

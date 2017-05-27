@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>数值到格式文本</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">数值到格式文本</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct10.htm">数值转换</a></p>
+<p>返回一个文本，代表指定数值被格式转换后的结果。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; 数值到格式文本 （<font color="#000000">欲转换为文本的数值</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">小数保留位数</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">是否进行千分位分隔</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲转换为文本的数值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">小数保留位数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果大于0，表示小数点右边应四舍五入保留的位数；如果等于0，表示舍入到整数；如果小于0，表示小数点左边舍入到的位置。例如：数值到格式文本 (1056.65, 1, 假) 返回 “1056.7”； 数值到格式文本 (1056.65, 0, 假) 返回 “1057”； 数值到格式文本 (1056.65, -1, 假) 返回 “1060”。如果省略本参数，则默认为保留所有实际存在的小数位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否进行千分位分隔</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“假”。如果参数值为真，数值文本的每个千分位上都将被自动插入一个逗号进行分隔。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

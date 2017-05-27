@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>替换 (正则表达式)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">替换</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux、Unix&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">正则表达式</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>使用指定的正则表达式搜索指定文本中与该表达式匹配的子文本，并按照指定的格式进行替换。返回替换后的文本。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; <em>正则表达式</em>．替换 （<font color="#000000">欲被替换的文本</font><font color="#000000">，&nbsp;</font><font color="#000000">替换格式</font><font color="#000000">，&nbsp;</font><font color="#000000">起始替换位置</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">替换长度</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">是否包含不匹配部分</font><font color="#000000">，&nbsp;</font><font color="#000000">是否全部替换</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲被替换的文本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">替换格式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数指定替换的具体方式。比如“<font color = gray>$1</font>”表示把第一个子表达式所匹配的文本显示为灰色（在HTML中）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">起始替换位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">替换长度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数和“起始替换位置”一起指定替换的范围。如果本参数被省略，默认值为从“起始替换位置”到文本结尾的长度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否包含不匹配部分</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。本参数指定替换结果中是否包含与正则表达式不匹配的部分。如果本参数为假，则不匹配部分将被抛弃。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否全部替换</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。如果本参数为真，则参数1中所有匹配的子文本均被替换，否则仅第一个匹配的子文本被替换。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

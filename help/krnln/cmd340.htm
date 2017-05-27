@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打开</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">打开</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct18.htm">数据库</a></p>
+<p>打开指定的数据库文件。成功返回真，并自动将当前数据库设置为此数据库，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 打开 （<font color="#000000">数据库文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">在程序中使用的别名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否只读</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">共享方式</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">保留参数1</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">数据库密码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">索引文件表</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据库文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">在程序中使用的别名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。别名为在后面的程序中引用本数据库时可使用的另一个名称。欲引用一个已经被打开的数据库可以使用该数据库本身的名称（数据库名称为数据库文件名的无路径和后缀部分。譬如 c:\my documents\gz.edb ，其数据库名称为 gz ），也可以使用在此处所指定的别名。别名主要用作避开重复的数据库名称或者简化对长数据库名的引用。数据库名称与别名皆不区分大小写，在查找数据库时，系统将优先查找别名。如果本参数被省略，默认为没有别名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否只读</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。参数值说明是否仅对数据库进行读操作，如果省略本参数，默认为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">共享方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值指定在多用户环境中限制其它用户操作此数据库的方式。如果省略本参数，默认为“#无限制”。方式值可以为以下常量之一：
+  1、#无限制：允许其它用户任意操作此数据库；
+  2、#禁止读：禁止其它用户读此数据库；
+  3、#禁止写：禁止其它用户写此数据库；
+  4、#禁止读写：独占使用此数据库，禁止其它用户的任何操作。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">保留参数1</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数仅用作保留参数位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据库密码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数提供访问数据库时所需要的密码，如果该数据库没有被加密，请提供空文本。注意“?”（即单个问号）是一个特殊的密码文本，它要求系统当发现所欲打开的数据库具有密码保护时，自动弹出一个密码输入框提示用户输入正确的密码。如果用户在该输入框中取消输入或连续三次输入了错误密码，打开命令将失败，且执行“取错误码”命令将返回-78。如果本参数被省略，默认为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引文件表</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；文本型，参数数据可以同时提供数组或非数组数据。本参数的各参数值顺序指定本数据库的所有索引文件，它们将被同步打开，以便得到及时更新。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

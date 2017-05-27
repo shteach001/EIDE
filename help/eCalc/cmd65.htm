@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>导入文本文件 (大数)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">导入文本文件</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt9.htm">大数</a></p>
+<p>导入存储数字的文本文件，该文本文件必须仅为存储数字的格式，否则本方法将失败，并返回假，本方法成功返回真，本对象以前存储的数据将被舍弃。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>大数</em>．导入文本文件 （<font color="#000000">文本文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">忽略非法字符</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文本文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。以数字为内容的文本文件名，例如："c:\1.txt"。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">忽略非法字符</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。如果本参数为真，那么无论文本文件中有多少个非法字符都将被忽略；如果本参数为假，只要文本文件中有非法字符，本方法将失败，并返回假。合法法字符包括'0' ~ '9'的数字和'.'号和'-'号，除此之外都为非法字符。注意，以下情况不论本参数是否为真都将视为非法字符，并导致本方法失败：'.'号和'-'号在文本中出现一次以上，并且出现在非法的字符位上，例如以下文本都是非法的：0.0.1；-3212.-33；421...00；000.3123；-00.33。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

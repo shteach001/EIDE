@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>线性方程组 (联立方程)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">线性方程组</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt5.htm">联立方程</a></p>
+<p>本函数采用Gauss - Jordan方法求解实型线性方程组。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>联立方程</em>．线性方程组 （<font color="#000000">x变量系数</font><font color="#000000">，&nbsp;</font><font color="#000000">y向量</font><font color="#000000">，&nbsp;</font><font color="#000000">x变量解</font><font color="#000000">，&nbsp;</font><font color="#000000">x变量系数逆阵</font><font color="#000000">，&nbsp;</font><font color="#000000">x矩阵行列式</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">x变量系数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是一个二维正方形数组，数组宽度和高度相等，宽度和高度必须小于等于50，它保存x变量系数的方阵，该参数数组的数据必须提供全部不为0的数值，否则本方法将失败。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">y向量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是列数和前一个参数一样的一维数组。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">x变量解</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。列数和第一个参数一样的一维数组。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">x变量系数逆阵</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。和第一个参数行列数一样的二维数组，它保存x变量系数矩阵的逆阵。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">x矩阵行列式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回x变量系数矩阵的行列式。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

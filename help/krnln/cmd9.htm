@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>变量循环首</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">变量循环首</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux、Unix&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">流程控制</a></p>
+<p>执行本命令将利用变量对循环体内的命令进行循环执行。第一次执行此命令时将使用“变量起始值”参数初始化“循环变量”参数所指定的变量。每次（包括第一次）执行到此命令处都将判断循环变量内的值是否已经超过“变量目标值”参数所指定的值，如已超过，则跳转到对应的“变量循环尾”命令的下一条命令处继续执行，否则顺序执行下一条语句继续进行循环。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 变量循环首 （<font color="#000000">变量起始值</font><font color="#000000">，&nbsp;</font><font color="#000000">变量目标值</font><font color="#000000">，&nbsp;</font><font color="#000000">变量递增值</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">循环变量</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变量起始值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。定义循环变量的起始数值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变量目标值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。定义循环变量的目标数值，在循环首部如果发现变量值已超出此目标值时将跳出循环。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变量递增值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。每次执行到循环尾部时都将把此值加入到循环变量中去，此值可为正数或负数，如为正数则递增，为负数则递减。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">循环变量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。本数值型变量将用作控制循环执行次数，在循环尾部将自动递增或递减该变量内的数值。如果被省略，命令将自动使用内部临时变量。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

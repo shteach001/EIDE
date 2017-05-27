@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>加入栏目 (状态条)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">加入栏目</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">状态条</a></p>
+<p>将指定栏目加入到状态条中，返回加入后该项目所处的位置。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>状态条</em>．加入栏目 （<font color="#000000">［</font><font color="#000000">栏目文本</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">宽度</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">动态提示文本</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图片索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">外观类型</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">栏目文本</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。栏目文本指定栏目中的文本内容。如果本参数被省略，默认值为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">宽度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。单位为像素，如果为 -1 ，表示一直到窗口的最右边。如果被省略，默认值为 50 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">动态提示文本</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。动态提示文本仅当栏目只有图片但没有内容文本或者内容文本不能被全部显示的情况下才有效。如果本参数被省略，默认值为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。图片索引用于指定图片组属性中的某张图片，该图片将被显示在栏目的首部。索引值从 0 开始，-1 表示无图片。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">外观类型</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。外观类型指定栏目的显示外观，可以为以下常量值之一： 0: #凹入； 1: #无边框； 2: #凸出。如果本参数被省略，默认值为“#凹入”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

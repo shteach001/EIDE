@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>载入</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">载入</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct17.htm">其他</a></p>
+<p>载入指定的窗口，根据窗口的“可视”属性决定是否显示它。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 载入 （<font color="#000000">欲载入的窗口</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">父窗口</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">是否采用对话框方式</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲载入的窗口</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;窗口。参数值指定欲载入的窗口。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">父窗口</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;窗口。参数值指定欲载入窗口的父窗口，此窗口必须已经被载入。如果本参数被省略，表示无父窗口。如果窗口具有父窗口，其位置将永远位于父窗口的上面；当父窗口被关闭时，窗口将自动被关闭；当父窗口被禁止时，窗口将自动被禁止。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否采用对话框方式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。参数值指定用户在对被载入窗口进行操作的同时是否允许同时对其他窗口进行操作，如果本参数值为真且被载入窗口的“可视”属性为真，则命令将一直等待到该窗口被销毁后才返回。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

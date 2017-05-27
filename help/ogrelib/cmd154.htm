@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>渲染索引图元 (设备)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">渲染索引图元</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt8.htm">设备</a></p>
+<p>渲染指定的索引顶点序列。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>设备</em>．渲染索引图元 （<font color="#000000">灵活的向量格式</font><font color="#000000">，&nbsp;</font><font color="#000000">索引缓冲偏移量</font><font color="#000000">，&nbsp;</font><font color="#000000">最小顶点索引值</font><font color="#000000">，&nbsp;</font><font color="#000000">顶点个数</font><font color="#000000">，&nbsp;</font><font color="#000000">索引起始位置</font><font color="#000000">，&nbsp;</font><font color="#000000">图元个数</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">灵活的向量格式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。绘制的图元（即图形的基本单位）类型。为以下常量值之一：1、#设备常量.点列；2、#设备常量.线列；3、#设备常量.线带；4、#设备常量.三角形列；5、#设备常量.三角形带；6、#设备常量.三角扇形。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引缓冲偏移量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。索引缓冲区的偏移量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最小顶点索引值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。要绘制的最小的顶点索引值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点个数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。要绘制的顶点个数。从（索引缓冲偏移量 + 最小顶点索引值）处开始计算。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引起始位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。在索引数组中读取索引的起始位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图元个数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。要绘制的图元的个数。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

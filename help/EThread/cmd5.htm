@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>等待线程</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">等待线程</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">多线程控制</a></p>
+<p>等待，直到指定线程结束或等待超时才返回。返回真表示等待成功。注意，在Linux下暂不支持超时等待。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 等待线程 （<font color="#000000">线程句柄</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">等待时间</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线程句柄</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。可通过“启动线程”的第三个参数获取线程句柄。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">等待时间</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定等待时间，单位为毫秒。如果为0或负数，或被省略，表示不限定等待时间。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>调用反馈事件 (标签)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">调用反馈事件</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt9.htm">标签</a></p>
+<p>产生标签的反馈事件，以调用此标签的“反馈事件”用户事件处理子程序，可以用作在多线程处理中将控制权转移到程序主线程上去执行。返回用户事件处理子程序所返回的值，如果没有相应的事件处理子程序或采用投递方式传递事件消息，将返回零。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>标签</em>．调用反馈事件 （<font color="#000000">［</font><font color="#000000">参数一</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">参数二</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">事件传递方式</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数一</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。为反馈事件所携带的第一个参数，如果被省略，默认值为零。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数二</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。为反馈事件所携带的第二个参数，如果被省略，默认值为零。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">事件传递方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。为真则采用发送方式传递事件消息，此时本命令将一直等待到“反馈事件”用户事件处理子程序处理完毕后才返回，为假则采用投递方式传递事件消息，此时本命令将直接返回且不等待用户事件处理子程序处理完毕（用户事件处理子程序将在空闲时被调用）。如果本参数被省略，默认采用发送方式传递事件。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

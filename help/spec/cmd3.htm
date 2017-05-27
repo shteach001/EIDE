@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>取变量数据地址</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">取变量数据地址</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">其他</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>取指定变量中数据的内存地址。返回值为0表示没有取到变量地址。对文本型或字节集型变量而言，如果其长度为0，将返回0；对数组变量而言，如果其成员数为0，也将返回0。对于文本型或字节集型变量，返回值为文本数据或字节集数据的地址。其它情况下，本命令与“取变量地址”具有相同的返回值。注意：一旦变量超出其作用域范围，或文本型/字节集型变量被重新赋值，或数组变量被重新赋值，先前取到的变量地址将变成无效地址，再对该地址进行读写操作很有可能导致程序崩溃。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 取变量数据地址 （<font color="#000000">变量</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型，参数数据只能提供变量及变量数组。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>安装 (网络服务安装)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">安装</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt3.htm">网络服务安装</a></p>
+<p>安装网络服务提供者(ESPINN.dll(NN为当前版本))到系统路径下，例如："C:\Windows\System32\ESPI11.dll"。注意：11表示当前的网络服务提供者版本是1.1。成功返回真，失败返回假，失败通常会由以下原因引起：1，要安装的文件不存在；2，要安装的文件是非法的(不是随支持库附带的网络服务提供者(ESPINN.dll(NN为当前版本)))；3，低一层的网络服务是非法的；4，Windows系统其他原因；5，先前安装的同版本的网络服务提供者没有先卸载。 [ 警告 ]如果网络服务提供者(ESPINN.dll(NN为当前版本))已经安装成功，并且"卸载"命令没有成功执行,(注意：只有"卸载"命令返回"真"才代表真正成功卸载了)，或根本没有使用"卸载"命令，系统路径下的网络服务提供者(ESPINN.dll(NN为当前版本))文件不可以改名、删除或移动路径，否则很有可能将导致整个系统的WinSock瘫痪。如果上述情况真的发生了也不要紧，您可以将随本支持库附带的网络服务提供者(ESPINN.dll(NN为当前版本))文件再次复制到系统路径中(推荐使用此方法，因为后面的方法在某些特定情况下可能不保险)，或者直接执行"卸载"命令，并确定该命令是执行成功了。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>网络服务安装</em>．安装 （<font color="#000000">文件全名</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件全名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。要安装的文件全名，警告：该文件必须是随本支持库一起提供的网络服务提供者(ESPINN.dll(NN为当前版本))，该文件将会复制到系统路径下并安装，该文件的版本必须和本支持库所需要的版本吻合。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

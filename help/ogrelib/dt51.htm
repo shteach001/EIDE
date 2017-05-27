@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理层坐标变换</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理层坐标变换</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>纹理层坐标变换。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">禁止</font></td>
+<td width="70%" valign="top">常量值为 0 。纹理坐标将直接送到光栅化器。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一个</font></td>
+<td width="70%" valign="top">常量值为 1 。把纹理坐标中的一个元素传送至光栅化器。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二个</font></td>
+<td width="70%" valign="top">常量值为 2 。把纹理坐标中的二个元素传送至光栅化器。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三个</font></td>
+<td width="70%" valign="top">常量值为 3 。把纹理坐标中的三个元素传送至光栅化器。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">四个</font></td>
+<td width="70%" valign="top">常量值为 4 。把纹理坐标中的四个元素传送至光栅化器。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">投影</font></td>
+<td width="70%" valign="top">常量值为 256 。把“投影”标志与本数据类型的其它成员一起使用可以告诉系统在光栅化操作前把所有元素除以最后一个元素。例如，当显式使用三元素纹理坐标，或纹理变换产生三元素纹理坐标时，应用程序可以同时使用“三个”和“投影”标志，这会使光栅化器把前两个元素除以最后一个元素，并得到寻址二维纹理所需的二维纹理坐标。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

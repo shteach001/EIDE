@@ -1,0 +1,421 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>设备常量</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">设备常量</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>设备相关的常量。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">硬件加速</font></td>
+<td width="70%" valign="top">常量值为 1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">软件加速</font></td>
+<td width="70%" valign="top">常量值为 2 。提供的一种软件光栅化方式，用于显卡不支持D3D的情况。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">第三方设备插件</font></td>
+<td width="70%" valign="top">常量值为 3 。注册过的第三方设备插件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">FPU保护</font></td>
+<td width="70%" valign="top">常量值为 2 。指出程序需要双精度浮点单位(FPU)和浮点运算异常校验。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">采用多线程</font></td>
+<td width="70%" valign="top">常量值为 4 。指出程序要求Direct3D采用多线程，会使Direct3D频繁读取公共部分，降低性能。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纯设备</font></td>
+<td width="70%" valign="top">常量值为 16 。指定Direct3D不支持Get*函数获取状态，禁止Direct3D提供虚拟设备模拟顶点运算。如果设备不支持顶点运算，程序只能使用转换后顶点。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">软件顶点处理</font></td>
+<td width="70%" valign="top">常量值为 32 。软件顶点处理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">硬件顶点处理</font></td>
+<td width="70%" valign="top">常量值为 64 。硬件顶点处理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">混合顶点处理</font></td>
+<td width="70%" valign="top">常量值为 128 。指定混合顶点处理（软硬件）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">代替显卡驱动程序管理</font></td>
+<td width="70%" valign="top">常量值为 256 。指定Direct3D代替显卡驱动程序管理资源。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">驱动所有主适配器</font></td>
+<td width="70%" valign="top">常量值为 512 。程序要求设备驱动所有主适配器。此标志在非主适配器上非法。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">渲染目标页面</font></td>
+<td width="70%" valign="top">常量值为 1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">深度缓冲区</font></td>
+<td width="70%" valign="top">常量值为 2 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">复制缓冲页面</font></td>
+<td width="70%" valign="top">常量值为 4 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">点列</font></td>
+<td width="70%" valign="top">常量值为 1 。由顶点组成的集合。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线列</font></td>
+<td width="70%" valign="top">常量值为 2 。由直线段组成的集合。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线带</font></td>
+<td width="70%" valign="top">常量值为 3 。由互相连接的直线段组成的集合。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三角形列</font></td>
+<td width="70%" valign="top">常量值为 4 。由三角形组成的集合，每三个顶点构成一个三角形。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三角形带</font></td>
+<td width="70%" valign="top">常量值为 5 。由相接的三角形组成的集合。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三角扇形</font></td>
+<td width="70%" valign="top">常量值为 6 。由相接且共点的三角形组成。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点和像素状态</font></td>
+<td width="70%" valign="top">常量值为 1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">像素状态</font></td>
+<td width="70%" valign="top">常量值为 2 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点状态</font></td>
+<td width="70%" valign="top">常量值为 3 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">返回扫描线</font></td>
+<td width="70%" valign="top">常量值为 131072 。显示硬件可以返回当前扫描线。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">伽马斜面调节</font></td>
+<td width="70%" valign="top">常量值为 131072 。支持全屏模式下动态伽马斜面调节。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">自动伽马校正</font></td>
+<td width="70%" valign="top">常量值为 1048576 。支持自动伽马校正。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">管理资源</font></td>
+<td width="70%" valign="top">常量值为 268435456 。支持资源的管理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">动态纹理</font></td>
+<td width="70%" valign="top">常量值为 536870912 。支持动态纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">自动生成渐进映射</font></td>
+<td width="70%" valign="top">常量值为 1073741824 。支持自动生成渐进映射。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">立即交换</font></td>
+<td width="70%" valign="top">常量值为 -2147483648 。立即进行前后台缓冲内容的交换。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一个屏幕刷新周期</font></td>
+<td width="70%" valign="top">常量值为 1 。每一个屏幕刷新周期进行一次前后台缓冲内容的交换。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二个屏幕刷新周期</font></td>
+<td width="70%" valign="top">常量值为 2 。每二个屏幕刷新周期进行一次前后台缓冲内容的交换。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三个屏幕刷新周期</font></td>
+<td width="70%" valign="top">常量值为 4 。每三个屏幕刷新周期进行一次前后台缓冲内容的交换。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">四个屏幕刷新周期</font></td>
+<td width="70%" valign="top">常量值为 8 。每四个屏幕刷新周期进行一次前后台缓冲内容的交换。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">抖动</font></td>
+<td width="70%" valign="top">常量值为 1 。设备能抖动以改善颜色分辨率。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">执行Z测试</font></td>
+<td width="70%" valign="top">常量值为 16 。设备能执行Z测试操作。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">计算雾值并插值</font></td>
+<td width="70%" valign="top">常量值为 128 。设备在光照操作的时候计算雾值并在光栅化的时候插值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">根据雾值表计算雾值</font></td>
+<td width="70%" valign="top">常量值为 256 。设备通过引用包含给定像素深度的雾值索引查找表计算雾值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">LOD偏移调节</font></td>
+<td width="70%" valign="top">常量值为 8192 。设备支持LOD偏移调节。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">执行面消隐</font></td>
+<td width="70%" valign="top">常量值为 32768 。设备支持面消隐（不需要应用程序排序多边形和分配深度缓存）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">基于范围的雾化</font></td>
+<td width="70%" valign="top">常量值为 65536 。设备支持基于范围的雾化。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">各向异性过滤</font></td>
+<td width="70%" valign="top">常量值为 131072 。设备支持各向异性过滤。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">使用W深度缓冲</font></td>
+<td width="70%" valign="top">常量值为 262144 。设备支持使用W深度缓冲。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">基于W的雾化</font></td>
+<td width="70%" valign="top">常量值为 1048576 。设备支持基于W的雾化。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">基于Z的雾化</font></td>
+<td width="70%" valign="top">常量值为 2097152 。设备支持基于Z的雾化。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">迭代恰当的颜色透视</font></td>
+<td width="70%" valign="top">常量值为 4194304 。设备恰当的颜色透视。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">剪切测试</font></td>
+<td width="70%" valign="top">常量值为 16777216 。设备支持剪切测试。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">深度斜率偏移补偿</font></td>
+<td width="70%" valign="top">常量值为 33554432 。设备执行正确的深度斜率偏移补偿。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">传统深度偏移</font></td>
+<td width="70%" valign="top">常量值为 67108864 。设备支持传统深度偏移。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">定位多重采样开关</font></td>
+<td width="70%" valign="top">常量值为 134217728 。设备支持在开始场景和结束场景之间的定位多重采样开关。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透视角修正纹理</font></td>
+<td width="70%" valign="top">常量值为 1 。设备支持透视角修正纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二的幂纹理</font></td>
+<td width="70%" valign="top">常量值为 2 。所有纹理的宽度和高度必须为2的幂。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">阿尔法纹理像素</font></td>
+<td width="70%" valign="top">常量值为 4 。支持阿尔法纹理像素。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">正方形纹理</font></td>
+<td width="70%" valign="top">常量值为 32 。所有的纹理必须为正方形。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理索引与尺寸不成比例</font></td>
+<td width="70%" valign="top">常量值为 64 。纹理索引与先前插入的纹理尺寸不成比例。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调色板阿尔法</font></td>
+<td width="70%" valign="top">常量值为 128 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">使用非二的幂的2D纹理</font></td>
+<td width="70%" valign="top">常量值为 256 。支持使用非2的幂的2D纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">投影</font></td>
+<td width="70%" valign="top">常量值为 1024 。告诉系统在光栅化操作前把所有元素除以最后一个元素。例如，当显式使用三元素纹理坐标，或纹理变换产生三元素纹理坐标时，应用程序可以同时使用“三个”和“投影”标志，这会使光栅化器把前两个元素除以最后一个元素，并得到寻址二维纹理所需的二维纹理坐标。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">立方体纹理</font></td>
+<td width="70%" valign="top">常量值为 2048 。支持立方体纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">体积纹理</font></td>
+<td width="70%" valign="top">常量值为 8192 。支持体积纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">渐进映射纹理</font></td>
+<td width="70%" valign="top">常量值为 16384 。支持渐进映射纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">渐进映射体积纹理</font></td>
+<td width="70%" valign="top">常量值为 32768 。支持渐进映射体积纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">渐进映射立方体纹理</font></td>
+<td width="70%" valign="top">常量值为 65536 。支持渐进映射立方体纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二的幂立体纹理</font></td>
+<td width="70%" valign="top">常量值为 131072 。立体纹理贴图的维数为2的幂。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二的幂体积纹理</font></td>
+<td width="70%" valign="top">常量值为 262144 。体积纹理贴图的维数为2的幂。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">不支持映射曲面环境</font></td>
+<td width="70%" valign="top">常量值为 2097152 。不支持可编程查找操作和固定功能着色器中的映射曲面环境。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">环绕纹理寻址</font></td>
+<td width="70%" valign="top">常量值为 1 。设备能进行环绕纹理寻址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">镜像纹理寻址</font></td>
+<td width="70%" valign="top">常量值为 2 。设备能进行镜像纹理寻址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">截取纹理寻址</font></td>
+<td width="70%" valign="top">常量值为 4 。设备能进行截取纹理寻址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">边框颜色模式</font></td>
+<td width="70%" valign="top">常量值为 8 。设备支持对于位于[0.0, 1.0]范围之外的纹理坐标使用一个被称为边框颜色的指定颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">UV坐标分别寻址</font></td>
+<td width="70%" valign="top">常量值为 16 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一次镜像模式</font></td>
+<td width="70%" valign="top">常量值为 32 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">流偏移</font></td>
+<td width="70%" valign="top">常量值为 1 。设备支持流偏移。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">曲面表面置换贴图</font></td>
+<td width="70%" valign="top">常量值为 2 。设备支持曲面表面置换贴图。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">适配镶嵌RT纹理碎片</font></td>
+<td width="70%" valign="top">常量值为 4 。设备支持适配镶嵌RT纹理碎片。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">适配镶嵌曲面表面</font></td>
+<td width="70%" valign="top">常量值为 8 。设备支持适配镶嵌曲面表面。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">拉伸块复制纹理源</font></td>
+<td width="70%" valign="top">常量值为 16 。设备支持在“拉伸块复制”命令中使用纹理作为源。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">预采样曲面表面置换贴图</font></td>
+<td width="70%" valign="top">常量值为 32 。设备支持预采样曲面表面置换贴图。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">多顶点共享相同偏移</font></td>
+<td width="70%" valign="top">常量值为 64 。设备支持多个顶点在流中共享相同的偏移。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">内存执行缓冲区</font></td>
+<td width="70%" valign="top">常量值为 16 。设备能使用系统内存执行缓冲区。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">显存执行缓冲区</font></td>
+<td width="70%" valign="top">常量值为 32 。设备能使用显存执行缓冲区。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变换过的内存缓冲区和发光顶点</font></td>
+<td width="70%" valign="top">常量值为 64 。设备能使用变换过的内存缓冲区和发光顶点。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变换过的显存缓冲区和发光顶点</font></td>
+<td width="70%" valign="top">常量值为 128 。设备能使用变换过的显存缓冲区和发光顶点。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">从内存中取纹理</font></td>
+<td width="70%" valign="top">常量值为 256 。设备能从内存中取纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">从显存中取纹理</font></td>
+<td width="70%" valign="top">常量值为 512 。设备能从显存中取纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">绘制变换过的和发光的顶点图元</font></td>
+<td width="70%" valign="top">常量值为 1024 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">页面翻转之后等待渲染命令</font></td>
+<td width="70%" valign="top">常量值为 2048 。设备能在页面翻转之后等待渲染命令。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">从非本地显存中取纹理</font></td>
+<td width="70%" valign="top">常量值为 4096 。设备能从非本地显存中取纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备支持DrawPrimitives2</font></td>
+<td width="70%" valign="top">常量值为 8192 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">从单独的内存池纹理化</font></td>
+<td width="70%" valign="top">常量值为 16384 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备支持扩展的DrawPrimitives2</font></td>
+<td width="70%" valign="top">常量值为 32768 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">硬件支持变换和光照</font></td>
+<td width="70%" valign="top">常量值为 65536 。设备硬件支持变换和光照。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理块复制</font></td>
+<td width="70%" valign="top">常量值为 131072 。设备能进行从内存到非本地显存的纹理块复制。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">场景光栅化的硬件加速</font></td>
+<td width="70%" valign="top">常量值为 524288 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纯设备</font></td>
+<td width="70%" valign="top">常量值为 1048576 。硬件支持光栅化、变换、光照、着色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">五次贝塞尔曲线和B样条</font></td>
+<td width="70%" valign="top">常量值为 2097152 。设备支持五次贝塞尔曲线和B样条。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">矩形和三角路径</font></td>
+<td width="70%" valign="top">常量值为 4194304 。设备支持矩形和三角路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">曲面表面</font></td>
+<td width="70%" valign="top">常量值为 16777216 。设备支持曲面表面。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">翻转缓冲区后清除后台</font></td>
+<td width="70%" valign="top">常量值为 1 。后台缓冲复制到前台后，清除后台缓冲内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">翻转缓冲区后保留后台</font></td>
+<td width="70%" valign="top">常量值为 2 。后台缓冲复制到前台后，保留后台缓冲内容，后台缓冲数 > 1。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">翻转缓冲区后保留后台1</font></td>
+<td width="70%" valign="top">常量值为 3 。后台缓冲复制到前台后，保留后台缓冲内容，后台缓冲数 = 1。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

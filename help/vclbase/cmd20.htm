@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置掩码 (键值编辑器)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置掩码</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt11.htm">键值编辑器</a></p>
+<p>成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>键值编辑器</em>．置掩码 （<font color="#000000">索引</font><font color="#000000">，&nbsp;</font><font color="#000000">掩码</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。从0开始。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">掩码</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。输入掩码格式,如:
+l(L):l表示该位置只可能是一个字母,可用光标键跳过,但不能是其他类型的字符;L表示该位置必须有一个字母.
+a(A):a表示该位置只可能是一个字母或数字;A表示该位置必须有一个字母或数字.
+c(C):c表示该位置只可能是一个字符;C表示该位置必须有一个字符.
+<(>):<表示随后的字母均以小写显示,直到遇到">"格式字符或者"<>"格式符;">"则与"<"正好相反.
+<>:表示不做大小写的转换,以输入时的形式为准.
+\:该格式符之后的那个掩码格式符将被作为数据中的普通字符对待,即作为数据中的一部分.
+#:该位置可能是一个数字或正负号.
+!:表示输入数据前的空格部分将不被保存在数据中,无"!"表示数据后的空格不被保存期,"!"只能放在掩码格式的第一个字符处.
+;(/):标准的分隔符,可以作为数据的一部分保存起来,其中"/"号在显示的时候是"-"形式.</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

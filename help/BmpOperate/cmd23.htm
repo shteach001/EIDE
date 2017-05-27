@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>取指针 (位图)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">取指针</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">位图</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>取得该位图数据中关键段的指针，成功返回真，否则返回假。如果失败，随后立即调用本对象的“取错误信息”命令将取得一个非空文本，该文本为失败的原因。
+    本命令适用于一些特殊的需要直接操作内存指针场合，一般用户不推荐使用！！如果需要修改这些指针所指向的数据，请务必谨慎，以免造成程序崩溃等意外结果。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>位图</em>．取指针 （<font color="#000000">位图信息头指针</font><font color="#000000">，&nbsp;</font><font color="#000000">像素点阵数据指针</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">位图信息头指针</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量。该参数接收一个指向“位图信息头(BITMAPINFOHEADER)”结构的指针，也是指向BITMAPINFO结构的指针。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">像素点阵数据指针</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量。该参数接收一个指向位图实际像素点阵数据的指针。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

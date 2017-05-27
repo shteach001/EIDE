@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>弹出提示框 (气球提示框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">弹出提示框</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">气球提示框</a></p>
+<p>在屏幕指定位置显示信息提示框。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>气球提示框</em>．弹出提示框 （<font color="#000000">横向坐标</font><font color="#000000">，&nbsp;</font><font color="#000000">纵向坐标</font><font color="#000000">，&nbsp;</font><font color="#000000">提示文本</font><font color="#000000">，&nbsp;</font><font color="#000000">图标索引</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">自动关闭</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横向坐标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。相对屏幕左上角而言，单位为象素。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纵向坐标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。相对屏幕左上角而言，单位为象素。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">提示文本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。可以使用经过简化后的HTML语言，如“简单HTML演示：<font color=red>红色</font><b>加粗</b><i>倾斜</i>，超链接：<a href=www.dywt.com.cn>易语言网站</a>。”更详细内容，请参考易语言“工具”菜单中的“扩展界面支持库五: 关于简单超文本(HTML)的说明文档。”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图标索引</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“-1”。指定图标在“图标图片组”属性中的索引，-1表示不使用图标。如果指定了图标，该图标将显示于提示文本的左边。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">自动关闭</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。如果为“真”，则提示框在一段时间（由“自动停留时间”属性决定）后自动关闭；如果为“假”，则只有用户点击鼠标或按下键盘任意键后才关闭。如果本参数被省略，默认为“假”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

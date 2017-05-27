@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置加锁重试时间</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置加锁重试时间</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct18.htm">数据库</a></p>
+<p>本命令设置对数据库进行加锁时，如果该位置已经被其他用户锁住或者正在被其他用户访问，系统反复重试加锁的时间。当你的数据库可能被多用户同时访问时，必须在程序首使用本命令设置一个合适的时间值。一般情况下，可以设置为 60 秒，或者根据所处网络的传输和通畅速度来具体设置。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 置加锁重试时间 （<font color="#000000">［</font><font color="#000000">加锁重试时间</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">加锁重试时间</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下值之一：
+1、 大于 0 的值。用于指定具体的重试间隔时间，单位为秒；
+2、 0 。不重试，第一次加锁失败后立即返回错误（系统初始值）；
+3、 -1。一直重试，直到加锁成功。
+如果本参数被省略，默认值为 0 。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

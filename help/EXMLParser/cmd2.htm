@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>导出到文件 (XML树)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">导出到文件</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">XML树</a></p>
+<p>保存当前XML树的全部数据到指定的文件。该方法执行成功返回真，执行失败返回假。注：可使用“取XML数据()”获取相同的字节集数据而不必保存到文件。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>XML树</em>．导出到文件 （<font color="#000000">XML文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">字符集</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">换行文本</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">缩进文本</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">XML文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。欲导出的XML文件名称。该文件名可以是绝对路径名，也可以是相对路径名。注意：如果指定的文件已经存在，原有文件内容将被覆盖。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字符集</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。指定欲使用的XML字符集属性，默认为“gb18030”。注意，本参数仅用于对“<?xml ... ?>”节点的“encoding”属性赋值，不据此进行编码转换。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">换行文本</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。用于格式化XML文本，默认为 #换行符。注意，如果此参数不为空文本，导出又导入后，会对有子节点的节点值产生影响。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缩进文本</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。用于格式化XML文本，默认为TAB键字符文本。注意，如果此参数不为空文本，导出又导入后，会对有子节点的节点值产生影响。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

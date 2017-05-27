@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建映射文件 (内存映射文件)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">创建映射文件</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt2.htm">内存映射文件</a></p>
+<p>创建内存映射文件。执行成功返回真，否则返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>内存映射文件</em>．创建映射文件 （<font color="#000000">文件名称</font><font color="#000000">，&nbsp;</font><font color="#000000">是否创建</font><font color="#000000">，&nbsp;</font><font color="#000000">文件大小</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">名称</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。欲创建内存映射文件的文件全路径名称。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否创建</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型。是打开一个已经存在的文件还是创建一个新文件。真代表创建一个新文件，假代表打开一个已经存在的文件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件大小</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;长整数型。欲创建内存映射文件的文件大小。如果是打开一个已经存在的文件，可以指定该值为0，表示创建的内存映射文件大小和文件本身大小是一致的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">名称</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。创建内存映射文件的名称，该参数可以为空，表示创建一个没有名称的内存映射文件。其他进程可以通过该名称打开内存映射文件。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

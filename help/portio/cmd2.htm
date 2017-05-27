@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>查询并口</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">查询并口</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">并口设置</a></p>
+<p>返回当前计算机上所有并口的配置情况。返回数据是一个整数数组，其中每三个成员描述一个并口的信息。第一个成员记录此并口的端口访问地址，第二个记录该并口的类型，为以下整数值之一： 0: 未定义;  1: SPP;  2: PS2;  3: EPP;  4: ECP 。如果并口类型为ECP，第三个成员记录具体的ECP模式，为以下整数值之一： 0: 未定义;  1: SPP;  2: PS2;  3: FastCentronics;  4: ECP;  5: EPP;  6: Test;  7: Configuration 。如果并口类型不为ECP，则第三个成员始终为0。注意如果没有安装port95nt.exe，本命令将失败并返回空整数数组。请在运行本命令的目的机器上下载安装第三方免费软件 http://www.dywt.com.cn/port95nt.exe 。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型数组</font>&nbsp; 查询并口 （<font color="#000000">）</font></p>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>字段信息类型</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">字段信息类型</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">MySQL支持库</a></p><p></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 1 。本结构的类型 #字段基本类型 或 #字段附加类型。为#字段基本类型时主键与索引将被忽略；为#字段附加类型时，除主键与索引外其它元素将被忽略。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字段名</font></td>
+<td width="70%" valign="top">文本型；&nbsp;如果为中文字段名请在字段名两边加“`”，如：`姓名`。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字段类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;详细类型说明，请参见本支持库定义的字段类型常量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">列内容为空</font></td>
+<td width="70%" valign="top">逻辑型；&nbsp;如果为真则允许列内容为空，如果为假则列内容不能为空。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">列数据默认值</font></td>
+<td width="70%" valign="top">文本型；&nbsp;列内容的默认值，如果没有默认值为空字符串。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">自增量标记</font></td>
+<td width="70%" valign="top">逻辑型；&nbsp;如果为真则当前字段具有自增量属性，即在插入新数据时该字段会在原有最大值的基础上自动增加1，设置次属性。详细介绍请参考MYSQL手册。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">附加类型信息</font></td>
+<td width="70%" valign="top">整数型；&nbsp;附加与字段的属性，其值为 #最大长度 #无符号 #以0填充 #二进制。可以把属性相加，如 #无符号 + #以0填充。属性具体含义请参见MYSQL手册。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">附加内容</font></td>
+<td width="70%" valign="top">文本型；&nbsp;如果附加类型信息具有 #最大长度 类型那么这个参数为最大长度，如果字段类型为 #枚举 或 #集合 那么这个参数为枚举或集合的取值范围，如果本结构类型为 #字段附加类型，并且为索引。那么本成员变量为索引名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">主键</font></td>
+<td width="70%" valign="top">文本型；&nbsp;设置为主键的字段名，如“fieldname”。为#附加类型时有效，每个表中只可以有一个主键，具体作用请参见MYSQL手册。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引</font></td>
+<td width="70%" valign="top">文本型；&nbsp;设置为索引的字段名可以有多个，通过“,”分割，如“fieldname1,fieldname2,fieldname3”。为#附加类型时有效，具体作用请参见MYSQL手册。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

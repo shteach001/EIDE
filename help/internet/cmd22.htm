@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>拨号</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">拨号</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">拨号上网</a></p>
+<p>开始拨号并试图建立网络连接。成功返回真，失败返回假。注意如果“是否等待连接完毕”参数为假，则即使本命令返回真，也并不意味着马上就可以使用该网络连接，必须等到“是否已在线”命令返回真时才可以。如果“是否等待连接完毕”参数为真，则本命令会一直等待到连接操作执行完毕后才会返回。另外，建议在执行本命令前调用“是否已在线”命令查看当前是否已经连接到网络上，如果已经连接，则不需要再执行本命令。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 拨号 （<font color="#000000">电话号码</font><font color="#000000">，&nbsp;</font><font color="#000000">用户帐号</font><font color="#000000">，&nbsp;</font><font color="#000000">帐号密码</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否等待连接完毕</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">状态标签</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">电话号码</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。指定欲拨出的电话号码，如果欲使用已经存在的用户拨号网络配置中的电话号码，请使用“@n”格式文本，其中n为指定拨号网络配置的索引数值，从0开始。如：拨号 (“@0”, ...) 即使用第一个拨号网络配置中的电话号码拨号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户帐号</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。指定用户帐号名称。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">帐号密码</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。指定用户帐号的密码。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否等待连接完毕</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。指定命令是否一直等到连接完毕（成功或失败）后才返回，如果本参数为真，则“状态标签”参数无效。如果本参数被省略，默认值为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">状态标签</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;标签。如果提供了一个已经存在的标签型窗口组件并且“是否等待连接完毕”参数为假，拨号过程中的状态文本将即时显示到该标签上。如果本参数被省略，默认值为空。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

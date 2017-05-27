@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置线程池大小 (远程服务)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置线程池大小</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">远程服务</a></p>
+<p>设置每一个线程池内的线程数量的最大值和最小值，该项设置必须在服务器启动之前设置。服务系统拥有四个线程池，一个接收线程池一个发送线程池还有两个处理线程池，该方法是设置每一个线程池内的允许线程数量。由于线程池内的线程数量是可以随环境的变化而增加或减少的，所以该方法也就是设置线程池内的线程数量的变化区间，系统会根据该设置取最优化的值。如果不进行该项设置，系统将采用默认的设置，即最小线程数量为5，最大线程数量为20。线程数量的最小值不能小于1。设置成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>远程服务</em>．置线程池大小 （<font color="#000000">最小线程数</font><font color="#000000">，&nbsp;</font><font color="#000000">最大线程数</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最小线程数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。线程池内的线程数量的最小值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大线程数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。线程池内的线程数量的最大值。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

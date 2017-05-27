@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理寻址模式</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理寻址模式</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>纹理寻址模式值。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">环绕模式</font></td>
+<td width="70%" valign="top">常量值为 1 。本模式会使D3D在纹理坐标的整数边界重复使用该纹理。例如U值从0到3，那么纹理将重复贴3次。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">镜像模式</font></td>
+<td width="70%" valign="top">常量值为 2 。本模式会使D3D在纹理坐标的整数边界先对纹理进行镜像然后再重复使用。例如U值从0到3，那么纹理将重复贴3次，第一个纹理是正常的，第二个是第一个的镜像，第三个又是正常的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">截取模式</font></td>
+<td width="70%" valign="top">常量值为 3 。本模式会使D3D在纹理坐标截取到[0.0, 1.0]范围内，也就是说，这种模式只应用纹理一次，然后就重复使用纹理边缘处像素的颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">边框颜色模式</font></td>
+<td width="70%" valign="top">常量值为 4 。本模式会使D3D对于位于[0.0, 1.0]范围之外的纹理坐标使用一个被称为边框颜色的指定颜色。注：颜色值须再次调用“设置取样器状态”方法第二个参数传“置边框颜色”设置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一次镜像模式</font></td>
+<td width="70%" valign="top">常量值为 5 。本模式表示仅在位置为[-1,1]作一次镜像,其它的像素重复使用纹理边缘处像素的颜色。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

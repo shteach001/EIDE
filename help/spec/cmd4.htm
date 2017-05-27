@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>调试输出</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">调试输出</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">程序调试</a></p>
+<p>仅在易程序的调试版本中被执行，在发布版本中将被直接跳过；<br>类似于易语言核心库中的“输出调试文本()”命令，向输出面板输出一行调试文本。本命令可接受任意多个通用型(任意基本类型)参数及数组。与“输出调试文本()”不同，本命令的所有参数数据仅输出为一行文本（各参数之间以“ | ”间隔）——既保持了数据相关性，又有效利用了输出面板的横向宽度。另外，本命令对各种数据的输出格式都颇为友好：如字节集被输出为形如“字节集:n{101,121,117,121,97,110,...}”，其中n为字节集长度，{}之间为字节集数据；如数组被输出为形如“数组:m,n{...}”，其中“m,n”表示该数组为m行n列，{}之间为数组数据。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 调试输出 （<font color="#000000">［</font><font color="#000000">欲输出值</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲输出值</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；通用型，参数数据可以同时提供数组或非数组数据。对于非“文本型”参数，将自动转换为文本。本参数可接受任意基本类型，但不接受数组以及自定义数据类型。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

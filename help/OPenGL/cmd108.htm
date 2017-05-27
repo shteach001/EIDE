@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>设置曲线控制点</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">设置曲线控制点</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">建模操作</a></p>
+<p>为Bezier曲线定义控制点。定义了控制点后，才可以画曲线。成功返回有效的控制点数，失败返回0。始终保持这样的曲线，直到再次使用本命令改变控制点。
+	本命令使用参数方程来定义曲线上的每个顶点。
+		X = f （U ）
+		Y = f （U ）
+		Z = f （U ）
+	其中X、Y、Z分别代表曲线上的点的横向位置、竖向位置和纵向位置，U代表参数方程f（）的参数
+当参数 U 发生变化的时候，X、Y、Z也相应的改变。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 设置曲线控制点 （<font color="#000000">U参数上限</font><font color="#000000">，&nbsp;</font><font color="#000000">U参数下限</font><font color="#000000">，&nbsp;</font><font color="#000000">控制点</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">U参数上限</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。U参数的起始值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">U参数下限</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型。U参数的终止值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">控制点</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。用来描述控制点的数组，按照U1（X、Y、Z），U2（X、Y、Z），U3（X、Y、Z）...的顺序排列。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建对象 (Java本地接口)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">创建对象</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">Java本地接口</a></p>
+<p>创建Java对象。返回创建后的对象标志符，失败返回0。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>Java本地接口</em>．创建对象 （<font color="#000000">类标志符</font><font color="#000000">，&nbsp;</font><font color="#000000">构造函数的方法标志符</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">参数值</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">类标志符</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定欲创建其对象的Java类。该标志符可通过调用“加载类()”等方法获得。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">构造函数的方法标志符</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定应调用的构造函数方法。该标志符必须通过调用“取方法标志符()”方法获得，且调用时的方法名必须为<init>，而返回类型必须为void (V)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数值</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；整数型。对应于被调用的Java类构造函数的参数值，注意传入的类型要与实际需要的类型一致。本参数可重复添加。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>插入按钮 (工具条)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">插入按钮</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt2.htm">工具条</a></p>
+<p>将指定按钮插入到工具条中，返回插入后该按钮所处的位置。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>工具条</em>．插入按钮 （<font color="#000000">［</font><font color="#000000">插入位置</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">类型</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图片索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">标题</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">动态提示文本</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">按钮状态</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">插入位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定新按钮插入的位置索引，0 为栏目一，1 为栏目二，如此类推。如果提供 -1 ，则插入到工具条的尾部。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">类型</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。按钮的类型可以为以下常量值之一： 0: #普通按钮； 1: #多选按钮； 2: #单选按钮； 3: #下拉按钮； 4: #分隔条。 如果本参数被省略，默认值为“#普通按钮”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。图片索引用于指定图片组属性中的某张图片，该图片将被显示在按钮表面。索引值从 0 开始，-1 表示无图片。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标题</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数指定显示在按钮下的标题文本。如果被省略，默认值为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">动态提示文本</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数指定当鼠标移动到按钮上并停留一段时间后所动态显示的提示文本。如果被省略，默认值为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">按钮状态</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定按钮的存在状态。状态值为 0 或者以下常量值任意组合(相加)： 1: #选中； 2: #按下； 4: #禁止； 8: #隐藏； 16: #变灰。 其中“选中”状态在类型为多选按钮或单选按钮时有效，“按下”状态在类型为普通按钮时有效。如果本参数被省略，默认值为 0 。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

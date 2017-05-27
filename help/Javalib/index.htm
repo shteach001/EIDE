@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Java支持库</title>
+</head>
+<body>
+<p><strong><big><big><font color="#000000">Java支持库2.0版</font></big></big></strong>&nbsp;&nbsp;&nbsp;<a href="../index.htm">返回首页</a></p>
+<p>本支持库使易语言具备了访问Java类库的能力。“Java虚拟机”和“Java本地接口”是本支持库中最重要的两个数据类型。由“Java虚拟机”负责真实Java虚拟机的生命周期管理，而“Java本地接口”则提供Java类库的访问接口。使用时，可直接通过“Java本地接口”的各类方法访问Java类库（即与“Java虚拟机”通信），由支持库本身自动完成“Java虚拟机”的创建和销毁。如果需要特别指定“用户类路径”或“本地库路径”，则必需在使用“Java本地接口”之前显式调用“Java虚拟机.创建()”方法创建Java虚拟机，以传入相关路径参数。
+    本支持库要求目标机器中已安装“Java运行时环境”（JRE）。如果在没有配置好Java环境的情况下使用本支持库，所有对象方法都将返回空值（假，0，“”）。
+    本支持库安装后，将自动在易语言主菜单中添加一项工具菜单，[工具]-[JavaLib：Java类型签名查询]。这是一个查询“Java 类型签名（Type Signature）”的实用工具。</p><p>操作系统支持： Windows</p><p><p><big><strong><a name="其它数据类型"></a>其它数据类型：</strong></big></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="dt0.htm">Java虚拟机</a></td>
+<td width="20%"> <a href="dt1.htm">Java本地接口</a></td>
+<td width="20%"> <a href="dt2.htm">数组类型</a></td>
+<td width="20%"> </td></tr>
+</table>
+<p><big><a href="const.htm"><strong>常量表...</strong></a></big></p><p><big><strong><br />为易语言系统提供的工具功能：</strong></big></p><div align="left">
+<table border="1" width="100%" cellpadding="0" cellspacing="0" bordercolorlight="#000000" bordercolordark="#FFFFFF">
+<tr>
+<td width="22%" align="center" bgcolor="#C0C0C0">名称</td>
+<td width="78%" align="center" bgcolor="#C0C0C0">说明</td>
+</tr>
+<tr><td width="22%">JavaLib: Java类型签名查询</td><td width="78%">查询指定Java类的类型签名(Type Signature)。&nbsp</td></tr>
+</table></div>

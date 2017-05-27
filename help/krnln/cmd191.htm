@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>输入框</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">输入框</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct14.htm">系统处理</a></p>
+<p>在一对话框中显示提示，等待用户输入正文并按下按钮。如果用户在确认输入后（按下“确认输入”按钮或回车键）退出，返回真，否则返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 输入框 （<font color="#000000">［</font><font color="#000000">提示信息</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">窗口标题</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">初始文本</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">存放输入内容的变量</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">输入方式</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">父窗口</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">提示信息</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。如果提示信息包含多行，可在各行之间用回车符 (即“字符 (13)”)、换行符 (即“字符 (10)”) 或回车换行符的组合 (即：“字符 (13) + 字符 (10)”) 来分隔。如果提示信息太长或行数过多，超过部分将不会被显示出来。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">窗口标题</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。参数值指定显示在对话框标题栏中的文本。如果省略，默认为文本“请输入：”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">初始文本</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。参数值指定初始设置到对话框输入文本框中的内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放输入内容的变量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型，参数数据只能提供变量。参数值所指定的变量可以为数值或文本型，用于以不同的数据类型取回输入内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">输入方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下常量值： 1、#输入文本； 2、#输入整数； 3、#输入小数； 4、#输入密码。如果省略本参数，默认为“#输入文本”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">父窗口</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;通用型。指定输入框的父窗口,可以是一个"窗口"类型数据或者一个整数型窗口句柄.如果被省略,默认为无.</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

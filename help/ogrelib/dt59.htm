@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>灵活顶点格式</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">灵活顶点格式</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>灵活顶点格式常量。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">漫射颜色</font></td>
+<td width="70%" valign="top">常量值为 64 。顶点格式中包含了漫射颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">法线</font></td>
+<td width="70%" valign="top">常量值为 16 。顶点格式中包含了顶点法线向量。注：此标志不能与“变换后位置”连用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">点大小</font></td>
+<td width="70%" valign="top">常量值为 32 。点大小的格式，对非TL顶点而言，这个大小表示的是摄像机空间中的单位，对TL顶点而言，则是设备空间中的单位。关于TL，如果指定了“变换后位置”标志，那么就是TL顶点，反之则不是。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">镜面颜色</font></td>
+<td width="70%" valign="top">常量值为 128 。顶点格式包含了镜面颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">位置</font></td>
+<td width="70%" valign="top">常量值为 2 。顶点格式包含了未变换的顶点位置。注：此标志不能与“变换后位置”连用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">变换后位置</font></td>
+<td width="70%" valign="top">常量值为 4 。顶点格式包含了变换后位置。注：此标志不能与“位置”和“法线”连用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">零个纹理</font></td>
+<td width="70%" valign="top">常量值为 0 。顶点包含0个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一个纹理</font></td>
+<td width="70%" valign="top">常量值为 256 。顶点包含1个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二个纹理</font></td>
+<td width="70%" valign="top">常量值为 512 。顶点包含2个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三个纹理</font></td>
+<td width="70%" valign="top">常量值为 768 。顶点包含3个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">四个纹理</font></td>
+<td width="70%" valign="top">常量值为 1024 。顶点包含4个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">五个纹理</font></td>
+<td width="70%" valign="top">常量值为 1280 。顶点包含5个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">六个纹理</font></td>
+<td width="70%" valign="top">常量值为 1536 。顶点包含6个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">七个纹理</font></td>
+<td width="70%" valign="top">常量值为 1792 。顶点包含7个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">八个纹理</font></td>
+<td width="70%" valign="top">常量值为 2048 。顶点包含7个纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一维纹理</font></td>
+<td width="70%" valign="top">常量值为 3 。一维纹理。注：此标志不能与本数据类型其它标志一起用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">二维纹理</font></td>
+<td width="70%" valign="top">常量值为 0 。二维纹理。注：此标志不能与本数据类型其它标志一起用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三维纹理</font></td>
+<td width="70%" valign="top">常量值为 1 。三维纹理。注：此标志不能与本数据类型其它标志一起用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">四维纹理</font></td>
+<td width="70%" valign="top">常量值为 2 。四维纹理。注：此标志不能与本数据类型其它标志一起用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">坐标掩码</font></td>
+<td width="70%" valign="top">常量值为 16398 。坐标位掩码。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理标志掩码</font></td>
+<td width="70%" valign="top">常量值为 3840 。纹理标志掩码。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

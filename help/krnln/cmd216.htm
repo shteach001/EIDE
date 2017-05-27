@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>销毁 (窗口)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">销毁</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">窗口</a></p>
+<p>销毁本窗口或窗口组件。窗口被销毁后，所有在载入本窗口之后对本窗口及其内窗口组件所进行的修改或设置都将被抛弃，窗口被销毁后如想再次使用必须重新装载。注意：当窗口调用本方法进行销毁时，窗口并不会被立即销毁，而会被推迟到其它所有现存窗口事件处理完毕后才会被真正销毁。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>窗口组件</em>．销毁 （<font color="#000000">［</font><font color="#000000">立即销毁</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">立即销毁</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。通常情况下，调用销毁方法后为了考虑到事件处理子程序的后续安全操作，窗口真正的销毁工作会被延迟到所处事件处理子程序执行完毕后再进行，但有时由于某种特殊需要，可能希望窗口能够立即被销毁，设置本参数为真即可。注：1.核心库4.6版本以前(不包括4.6)由于不支持本参数，执行本方法始终会立即销毁；2.本参数仅在销毁窗口时有效，销毁窗口组件时始终都采取立即销毁方式。如果被省略，则参数默认值为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

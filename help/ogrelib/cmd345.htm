@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>是否相交</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">是否相交</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">模型</a></p>
+<p>检测空间中的一条射线是否与指定的模型相交。如相交则返回相交信息数组，不相交返回空数组。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 是否相交 （<font color="#000000">模型</font><font color="#000000">，&nbsp;</font><font color="#000000">射线发出点</font><font color="#000000">，&nbsp;</font><font color="#000000">射线方向</font><font color="#000000">，&nbsp;</font><font color="#000000">三角形索引</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">重心坐标U分量</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">重心坐标V分量</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">距离</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">所有相交信息</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">模型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;模型。要检测是否相交的模型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">射线发出点</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;三维向量。指定射线的原点坐标。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">射线方向</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;三维向量。指定射线的发射方向。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三角形索引</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量。如果相交，则为与射线发出点距离最近的三角形的索引。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">重心坐标U分量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;小数型，参数数据只能提供变量。如果相交，则为与射线相交的三角形中的重心坐标U分量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">重心坐标V分量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;小数型，参数数据只能提供变量。如果相交，则为与射线相交的三角形中的重心坐标V分量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">距离</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;小数型，参数数据只能提供变量。如果相交，则为从射线发出点到相交点的距离。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">所有相交信息</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;相交信息，参数数据只能提供变量数组。如果相交，则为所有相交信息数组。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

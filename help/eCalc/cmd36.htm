@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>二乘曲线拟合 (曲线拟合)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">二乘曲线拟合</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">曲线拟合</a></p>
+<p>本函数是一个广义最小二乘曲线拟合函数，它对一个相关或不相关变量数据集用线性系数拟合一个多项式。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>曲线拟合</em>．二乘曲线拟合 （<font color="#000000">独立变量观察值</font><font color="#000000">，&nbsp;</font><font color="#000000">相关变量观察值</font><font color="#000000">，&nbsp;</font><font color="#000000">多项式系数</font><font color="#000000">，&nbsp;</font><font color="#000000">y估值</font><font color="#000000">，&nbsp;</font><font color="#000000">残差值</font><font color="#000000">，&nbsp;</font><font color="#000000">标准误差</font><font color="#000000">，&nbsp;</font><font color="#000000">估计标准误差</font><font color="#000000">，&nbsp;</font><font color="#000000">r平方值</font><font color="#000000">，&nbsp;</font><font color="#000000">r值</font><font color="#000000">，&nbsp;</font><font color="#000000">是否奇异</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">独立变量观察值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是一个一维数组，保存独立变量的观察值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">相关变量观察值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为列数和第一个参数一样的一维数组，它保存相关变量的观察值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">多项式系数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是列数小于第一个参数的一维数组，它保存拟合多项式的系数，数组第1个成员保存常数，数组第2个成员保存x ^ 1的系数，数组第3个成员保存x ^ 2的系数，依此类推。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">y估值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为列数和第一个参数一样的一维数组，它返回用多项式系数计算的y的估值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">残差值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。返回残差值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标准误差</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回估计的标准误差。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">估计标准误差</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数为列数和"多项式系数"一样的一维数组，它返回系数估计的标准误差。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">r平方值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回r平方值 - 样本确定系数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">r值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供变量。返回r值 - 样本相关系数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否奇异</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量。如果曲线拟合矩阵奇异则返回1。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

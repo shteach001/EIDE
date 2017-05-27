@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置格式 (录音)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置格式</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">录音</a></p>
+<p>设置录音的格式，注意参数的正确性，成功返回真，失败返回假。注意：本方法必须在使用"录音"方法前使用。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>录音</em>．置格式 （<font color="#000000">线路数</font><font color="#000000">，&nbsp;</font><font color="#000000">采样率</font><font color="#000000">，&nbsp;</font><font color="#000000">采样大小</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线路数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。本参数为录音的线路数，为以下常量值之一：1、#单声道；2、立体声双声道。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">采样率</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“8000”。本参数为每秒采样率(hertz)，为以下常量值之一：8000、#8000HZ；11025、#11025HZ；22050、#22050HZ；44100、#44100HZ。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">采样大小</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“16”。本参数为采样大小，以位为单位，为以下常量值之一：8、#8位；16、#16位。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>设备技术特性</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">设备技术特性</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>描述设备的技术特性。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;标识用于顶点处理的设备类型。为以下值之一：1、#设备常量.硬件加速；2、#设备常量.软件加速；3、#设备常量.第三方设备插件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">适配器序号</font></td>
+<td width="70%" valign="top">整数型；&nbsp;用于“创建设备”命令的适配器序号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">驱动特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;有以下值：131072、#设备常量.返回扫描线。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">驱动特性2</font></td>
+<td width="70%" valign="top">整数型；&nbsp;有以下值：131072、#设备常量.伽马斜面调节；1048576、#设备常量.自动伽马校正；268435456、#设备常量.管理资源；536870912、#设备常量.动态纹理；1073741824、#设备常量.自动生成MIP映射。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">交换间隔</font></td>
+<td width="70%" valign="top">整数型；&nbsp;前后台缓冲的交换间隔。为以下值之一：2147483648、#设备常量.立即交换；1、#设备常量.一个屏幕刷新周期；2、#设备常量.二个屏幕刷新周期；4、#设备常量.三个屏幕刷新周期；8、#设备常量.四个屏幕刷新周期。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;为以下值之一：16、#设备常量.内存执行缓冲区；32、#设备常量.显存执行缓冲区；64、#设备常量.变换过的内存缓冲区和发光顶点；128、#设备常量.变换过的显存缓冲区和发光顶点；256、#设备常量.从内存中取纹理；512、#设备常量.从显存中取纹理；1024、#设备常量.绘制变换过的和发光的顶点图元；2048、#设备常量.页面翻转之后等待渲染命令；4096、#设备常量.从非本地显存中取纹理；8192、#设备常量.设备支持DrawPrimitives2；16384、#设备常量.从单独的内存池纹理化；32768、#设备常量.设备支持扩展的DrawPrimitives2；65536、#设备常量.硬件支持变换和光照；131072、#设备常量.纹理块复制；524288、#设备常量.场景光栅化的硬件加速；1048576、#设备常量.纯设备；2097152、#设备常量.五次贝塞尔曲线和B样条；4194304、#设备常量.矩形和三角路径；16777216、#设备常量.曲面表面。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">混杂驱动图元特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;256、未渲染的设备引用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">光栅绘制特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;为以下值之一：1、#设备常量.抖动；16、#设备常量.执行Z测试；128、#设备常量.计算雾值并插值；256、#设备常量.根据雾值表计算雾值；8192、#设备常量.LOD偏移调节；32768、#设备常量.执行面消隐；65536、#设备常量.基于范围的雾化；131072、#设备常量.各向异性过滤；262144、#设备常量.使用W深度缓冲；1048576、#设备常量.基于W的雾化；2097152、#设备常量.基于Z的雾化；4194304、#设备常量.迭代恰当的颜色透视；16777216、#设备常量.剪切测试；33554432、#设备常量.深度斜率偏移补偿；67108864、#设备常量.传统深度偏移；134217728、#设备常量.定位多重采样开关。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">源混合特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;混合因子为以下值之一或之和：1、(0, 0, 0, 0)；2、(1, 1, 1, 1)；4、(Rs, Gs, Bs, As)；8、(1-Rs, 1-Gs, 1-Bs, 1-As)；16、(As, As, As, As)；32、(1-As, 1-As, 1-As, 1-As)；64、(Ad, Ad, Ad, Ad)；128、(1-Ad, 1-Ad, 1-Ad, 1-Ad)；256、(Rd, Gd, Bd, Ad)；512、(1-Rd, 1-Gd, 1-Bd, 1-Ad)；1024、(f, f, f, 1); f = min(As, 1-Ad)；4096、(1-As,1-As,1-As,1-As)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">目标混合特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;混合因子为以下值之一或之和：1、(0, 0, 0, 0)；2、(1, 1, 1, 1)；4、(Rs, Gs, Bs, As)；8、(1-Rs, 1-Gs, 1-Bs, 1-As)；16、(As, As, As, As)；32、(1-As, 1-As, 1-As, 1-As)；64、(Ad, Ad, Ad, Ad)；128、(1-Ad, 1-Ad, 1-Ad, 1-Ad)；256、(Rd, Gd, Bd, Ad)；512、(1-Rd, 1-Gd, 1-Bd, 1-Ad)；1024、(f, f, f, 1); f = min(As, 1-Ad)；4096、(As,As,As,As)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">阿尔法测试比较特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;值为1或128则表示设备不支持阿尔法测试。其它值表示支持阿尔法测试。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">混杂纹理映射特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;为以下值之一或之和：1、#设备常量.透视角修正纹理；2、#设备常量.二的幂纹理；4、#设备常量.阿尔法纹理像素；32、#设备常量.正方形纹理；64、#设备常量.纹理索引与尺寸不成比例；128、#设备常量.调色板阿尔法；256、#设备常量.使用非二的幂的2D纹理；1024、#设备常量.投影；2048、#设备常量.立方体纹理；8192、#设备常量.体积纹理；16384、#设备常量.Mipmap纹理；32768、#设备常量.Mipmap体积纹理；65536、#设备常量.Mipmap立方体纹理；131072、#设备常量.二的幂立体纹理；262144、#设备常量.二的幂体积纹理；2097152、#设备常量.不支持映射曲面环境。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理对象的寻址特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;为以下值之一或之和：1、#设备常量.环绕纹理寻址；2、#设备常量.镜像纹理寻址；4、#设备常量.截取纹理寻址；8、#设备常量.边框颜色模式；16、#设备常量.UV坐标分别寻址；32、#设备常量.一次镜像模式。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大纹理宽度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;设备的最大纹理宽度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大纹理高度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;设备的最大纹理高度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">体积纹理三维的最大值</font></td>
+<td width="70%" valign="top">整数型；&nbsp;体积纹理三维（宽度、高度、深度）的任意一个最大值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">模板缓冲特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;支持模板缓冲操作。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理操作特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;值为“纹理层操作”常量值之一或之和。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大纹理混合层数量</font></td>
+<td width="70%" valign="top">整数型；&nbsp;固定功能流水线支持的最大纹理混合层数量。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点处理特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大顶点混合矩阵个数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;执行多矩阵顶点混合时设备应用的最大矩阵个数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大顶点混合矩阵索引</font></td>
+<td width="70%" valign="top">整数型；&nbsp;</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大图元数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点着色器版本</font></td>
+<td width="70%" valign="top">整数型；&nbsp;表现顶点着色器的主版本和次版本号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">像素着色器版本</font></td>
+<td width="70%" valign="top">整数型；&nbsp;表现像素着色器的主版本和次版本号。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备适配镶嵌特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;设备驱动的适配镶嵌特性。可以为以下值之一：1、#设备常量.流偏移；2、#设备常量.曲面表面置换贴图；4、#设备常量.适配镶嵌RT纹理碎片；8、#设备常量.适配镶嵌曲面表面；16、#设备常量.拉伸块复制纹理源；32、#设备常量.预采样曲面表面置换贴图；64、#设备常量.多顶点共享相同偏移。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

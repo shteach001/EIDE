@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打印 (Word文档集)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">打印</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">Word文档集</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>可用此方法打印全部或部分指定文档。此方法的参数与“文件”菜单中“打印”对话框中的选项相对应。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>Word文档集</em>．打印 （<font color="#000000">运行宏</font><font color="#000000">，&nbsp;</font><font color="#000000">文件追加</font><font color="#000000">，&nbsp;</font><font color="#000000">页面范围</font><font color="#000000">，&nbsp;</font><font color="#000000">输出文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">起始页</font><font color="#000000">，&nbsp;</font><font color="#000000">结束页</font><font color="#000000">，&nbsp;</font><font color="#000000">打印项目</font><font color="#000000">，&nbsp;</font><font color="#000000">打印份数</font><font color="#000000">，&nbsp;</font><font color="#000000">打印页码</font><font color="#000000">，&nbsp;</font><font color="#000000">页面类型</font><font color="#000000">，&nbsp;</font><font color="#000000">打印到文件</font><font color="#000000">，&nbsp;</font><font color="#000000">副本</font><font color="#000000">，&nbsp;</font><font color="#000000">水平页数</font><font color="#000000">，&nbsp;</font><font color="#000000">垂直页数</font><font color="#000000">，&nbsp;</font><font color="#000000">缩放宽度</font><font color="#000000">，&nbsp;</font><font color="#000000">缩放高度</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">运行宏</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。如果此参数为真，则 Microsoft Word 在打印文档的同时继续运行宏。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件追加</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“假”。如果该参数为真，则将指定文档添至由输出文件参数所指定的文件中。如果为假，则覆盖输出文件所指定文件的内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">页面范围</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。页面范围。可为下列WdPrintOutRange常量之一：0、#打印全部文档；1、#打印选择区域；2、#打印当前页；3、#指定范围打印；4、#打印多页行列；。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">输出文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型，初始值为“”。如果打印到文件的值为真，则用此参数指定输出文件的路径及文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">起始页</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型，初始值为“1”。当页面范围参数被设置为3、#指定范围打印时，用此参数指定起始页码。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结束页</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型，初始值为“1”。当页面范围参数被设置为3、#指定范围打印时，用此参数指定结束页码。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">打印项目</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。指定要打印的项目。可为下列WdPrintOutItem常量之一：0、#文档内容；1、#文档属性；2、#批注；3、#样式；4、#自动图文集词条；5、#按键指定方案；6、#包裹；。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">打印份数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。要打印的份数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">打印页码</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。要打印的页码和页码范围，以逗号分隔各项。例如，“2, 6-10”表示打印第 2 页和第 6 至 10 页。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">页面类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。要打印的页面类型。可为下列WdPrintOutPages常量之一：0、#所有页；1、#只有奇数页；2、#只有偶数页；。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">打印到文件</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“假”。如该参数值为真，则将打印指令发送到文件。请确保由输出文件参数指定了文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">副本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“假”。在打印文档的多份副本时，若此参数为真，则打印完一份副本之后再打印下一份副本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">水平页数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。在一页纸中水平放置的页数。可以是 1、2、3 或 4。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">垂直页数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。Word 在一页纸中垂直放置的页数。可以是 1、2、3 或 4。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缩放宽度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定 Word 将待打印页面缩放到的宽度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缩放高度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指定 Word 将待打印页面缩放到的高度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

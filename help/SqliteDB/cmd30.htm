@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打开 (Sqlite数据库)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">打开</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">Sqlite数据库</a></p>
+<p>打开或新建数据库。要打开或新建的数据库由第一个参数“数据库文件”指定（一个Sqlite数据库就是一个文件）；如果指定的数据库文件不存在，则由第二个参数“是否允许创建”决定是否以该文件名创建新数据库。如果参数“数据库文件”被省略或为空文本，且参数“是否允许创建”为“真”，则在“内存中”创建并打开数据库。执行成功返回“真”，失败返回“假”。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>Sqlite数据库</em>．打开 （<font color="#000000">［</font><font color="#000000">数据库文件</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否允许创建</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据库文件</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。欲打开的数据库文件，请使用完整的路径和文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否允许创建</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。在指定的数据库文件不存在的情况下，如果本属性为“真”，则创建该数据库，否则直接返回“假”。本参数如果被省略，默认为“假”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

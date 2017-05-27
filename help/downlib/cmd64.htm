@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>执行FTP命令 (FTP辅助对象)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">执行FTP命令</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt2.htm">FTP辅助对象</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>执行一条FTP命令, 返回服务器返回的信息代码。如果执行失败返回0。 本命令只有通过“连接FTP服务器”命令连接到FTP服务器以后才能使用。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>FTP辅助对象</em>．执行FTP命令 （<font color="#000000">FTP命令</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">返回命令数据</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">FTP命令</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。欲执行的FTP命令。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">返回命令数据</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。执行FTP命令后服务器返回的命令文本，最大支持返回51200字节。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

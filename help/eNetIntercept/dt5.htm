@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>拦截操作</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">拦截操作</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">网络拦截支持库</a></p><p>本类型枚举"网截"中对每个WinSock函数拦截的处理。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">默认调用</font></td>
+<td width="70%" valign="top">常量值为 0 。调用默认的处理，不更改本次调用的任何参数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">无效调用</font></td>
+<td width="70%" valign="top">常量值为 1 。将本次调用处理为无效。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">更改调用</font></td>
+<td width="70%" valign="top">常量值为 2 。如更改了本次调用的参数，必须在事件或其他处理的场合返回或使用本值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">关闭连接</font></td>
+<td width="70%" valign="top">常量值为 3 。关闭当前WinSock连接(SOCKET s)。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>多文件对话框</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">多文件对话框</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct14.htm">系统处理</a></p>
+<p>显示一个文件打开对话框，允许用户选择或输入多个所需要打开的已存在文件，返回用户所选择或输入后的结果文本数组。如果用户未输入或按“取消”按钮退出，则返回一个成员数为0的空文本数组。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型数组</font>&nbsp; 多文件对话框 （<font color="#000000">［</font><font color="#000000">标题</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">过滤器</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">初始过滤器</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">初始目录</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">不改变目录</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">父窗口</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标题</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。指定文件打开对话框的标题，如果被省略，则默认为“请输入欲打开的文件：”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">过滤器</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。过滤器文本由单个或多个成对的文本串组成，每对文本串的第一个描述显示形式，如：“文本文件（*.txt）”；第二个指定实际的过滤匹配符，如：“*.txt”，所有各文本串之间用“|”号隔开。如果被省略，则默认没有过滤器。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">初始过滤器</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果上一参数提供了有效的过滤器文本，则本参数用作指定初始的过滤器，0为第一个过滤器。如果被省略，则默认值为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">初始目录</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。指定当打开对话框时所自动跳转到的目录，如果被省略，则默认为当前目录。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">不改变目录</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。指定在对话框关闭后是否自动返回到进入对话框前的文件目录，如果被省略，则默认值为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">父窗口</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;通用型。指定对话框的父窗口,可以是一个"窗口"类型数据或者一个整数型窗口句柄.如果被省略,默认为无.</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

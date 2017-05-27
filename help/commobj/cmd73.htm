@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置内存增量 (快速文本对象)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置内存增量</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">快速文本对象</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>设置本对象内部使用的内存增量值。所谓“内存增量”，即每次需要申请内存时在所需内存的基础上增加的内存数量（多申请出来的内存可供后续操作使用，从而减少了申请内存的次数，提高了执行效率）。正确使用本方法可以优化内存使用并提高执行效率，但因为内部已经有适当的初始值，普通用户不必调用本方法。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>快速文本对象</em>．置内存增量 （<font color="#000000">内存增量</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">内存增量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。单位为字节。如果此值过小，可能导致数据操作效率降低；如果此值过大，可能导致消耗较多内存。内部初始值为10240字节，约10K。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

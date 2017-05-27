@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>复制到 (位图)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">复制到</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">位图</a></p>
+<p>将本位图的某一矩形区域复制到目的位图，成功返回真，失败返回假。如果失败，随后立即调用本对象的“取错误信息”命令将取得一个非空文本，该文本为失败的原因。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>位图</em>．复制到 （<font color="#000000">欲复制区域的左边</font><font color="#000000">，&nbsp;</font><font color="#000000">欲复制区域的顶边</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制区域的宽度</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制区域的高度</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">复制到的目的位图</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">欲复制到位置左边</font><font color="#000000">，&nbsp;</font><font color="#000000">欲复制到位置顶边</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">透明色</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的左边</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的顶边</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的宽度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数省略，默认值为源位图宽度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的高度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数省略，默认值为源位图高度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">复制到的目的位图</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;位图。如果本参数省略，则复制到源位图对象。注意：如果是复制到自身，且欲复制区域和复制到的区域有重叠部分，可能出现重叠复制。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制到位置左边</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。注意：复制到的矩形不能超出目的位图的区域，否则本命令调用失败。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制到位置顶边</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。注意：复制到的矩形不能超出目的位图的区域，否则本命令调用失败。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透明色</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。透明色为源位图在复制过程中将被忽略的颜色。如果本参数省略，不使用透明色。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

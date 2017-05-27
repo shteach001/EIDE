@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>内存池类型</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">内存池类型</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>保存资源缓冲区的内存池类型。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最合适地方</font></td>
+<td width="70%" valign="top">常量值为 0 。表示设备将根据资源的类型和用途把它们放在最合适的地方。这有可能是显存、AGP内存或者系统内存中。值得注意的是，这种内存池中的资源必须要在“重置”命令被调用之前消毁掉，然后必须重新初始化。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">系统管理资源</font></td>
+<td width="70%" valign="top">常量值为 1 。资源将由设备管理并且按设备的需要来指定放在显存还是放在AGP内存中，同时备份这些资源到系统内存中。当应用程序访问和改变资源，也会对系统内存造成影响。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">系统内存</font></td>
+<td width="70%" valign="top">常量值为 2 。指定资源放在系统内存中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">系统内存1</font></td>
+<td width="70%" valign="top">常量值为 3 。规定资源放在系统内存中，它与“系统内存”常量值不同之处在于使用这个参数使图形设备不能访问本内存池的资源，但资源可以被复制出去。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

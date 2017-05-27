@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>执行 (外部数据库)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">执行</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt45.htm">外部数据库</a></p>
+<p>执行指定的非查询类SQL语句，SQL语句中的列名（尤其是中文列名）可用中括号括住。如果SQL语句中涉及到备注或者字节集型字段，请在相应位置加上问号，然后再加上对应的文本型或字节集型数据参数，参数数目必须与问号的数目一致。例如，修改数据表student中编号为100的学生像片的语句为：  外部数据库1.执行 (“update student set picture = ? where no = 100”, 像片数据)。 成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>外部数据库</em>．执行 （<font color="#000000">非查询类SQL语句</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">文本或字节集</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">非查询类SQL语句</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供非查询类SQL语句（无结果集返回），如修改、删除、添加等等。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文本或字节集</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；通用型。本参数仅用作为SQL语句中的备注或字节集型SQL参数（用问号标识其位置）提供相应数据，必须为文本或者字节集型（与SQL参数类型对应）。如果SQL语句中没有包含SQL参数，则应该省略本参数。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

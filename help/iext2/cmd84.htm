@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>合并物体 (动画框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">合并物体</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">动画框</a></p>
+<p>将一个物体的外形合并到另一个物体里面去，如果欲合并物体为动画外形，将仅使用其第一帧。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>动画框</em>．合并物体 （<font color="#000000">被合并到物体标识值</font><font color="#000000">，&nbsp;</font><font color="#000000">合并物体标识值</font><font color="#000000">，&nbsp;</font><font color="#000000">横向偏移位置</font><font color="#000000">，&nbsp;</font><font color="#000000">纵向偏移位置</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">被合并到物体标识值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">合并物体标识值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数提供合并物体的标识值，此物体的当前外形(包括角度、缩放比等等)将被合并到前一参数所指定的被合并物体中去。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横向偏移位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数指定合并物体欲合并到被合并物体中的横向偏移位置，此位置相对于被合并物体的左边。如果参数值为负值，此时被合并物体的左边将被自动扩展，如果参数值超出被合并物体的宽度，被合并物体的右边将被自动扩展。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纵向偏移位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数指定合并物体欲合并到被合并物体中的纵向偏移位置，此位置相对于被合并物体的顶边。如果参数值为负值，此时被合并物体的顶边将被自动扩展，如果参数值超出被合并物体的高度，被合并物体的底边将被自动扩展。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

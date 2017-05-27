@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>上传下载日志</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">上传下载日志</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">BT下载支持库</a></p><p>本数据类型包括了上传下载过程中写入日志的类型。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选择地址失败</font></td>
+<td width="70%" valign="top">常量值为 1 。主动连接选择IP地址失败，准备重试。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选择地址成功</font></td>
+<td width="70%" valign="top">常量值为 2 。主动连接选择IP地址成功。参数四表示端口号，参数五表示IP地址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">拒绝连接</font></td>
+<td width="70%" valign="top">常量值为 3 。超过最大连接数，拒绝连接。参数四表示端口号，参数五表示IP地址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选择序号成功</font></td>
+<td width="70%" valign="top">常量值为 4 。选择序号成功。此操作之后序号就唯一的表示了本次连接。参数四表示端口号，参数五表示IP地址。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接失败</font></td>
+<td width="70%" valign="top">常量值为 5 。连接失败。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">握手成功</font></td>
+<td width="70%" valign="top">常量值为 6 。握手成功。BT通信前必须要经过握手。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">完成百分比</font></td>
+<td width="70%" valign="top">常量值为 7 。对方已经下载完成的百分比。参数四表示下载了百分之几。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">准备上传</font></td>
+<td width="70%" valign="top">常量值为 8 。已经可以上传。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">准备下载</font></td>
+<td width="70%" valign="top">常量值为 9 。已经可以下载。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载</font></td>
+<td width="70%" valign="top">常量值为 10 。本次下载的字节数。参数四表示本次下载的字节数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">上传</font></td>
+<td width="70%" valign="top">常量值为 11 。本次上传的字节数。参数四表示本次上传的字节数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">连接完成</font></td>
+<td width="70%" valign="top">常量值为 12 。本次连接完成。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">写入磁盘</font></td>
+<td width="70%" valign="top">常量值为 13 。写入磁盘的实际字节数。参数四表示本次写入磁盘的字节数。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

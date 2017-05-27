@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>模板测试</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">模板测试</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct3.htm">测试运算</a></p>
+<p>为模板运算设定影响范围。必须启用“#模板测试”，才能执行测试。不使用的时候需要关闭。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 模板测试 （<font color="#000000">测试方式</font><font color="#000000">，&nbsp;</font><font color="#000000">测试位</font><font color="#000000">，&nbsp;</font><font color="#000000">测试值</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">测试方式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值可以为以下常量：
+	512、#失效，始终为假；
+	513、#小于，如果测试值的测试位小于输入值的测试位时为真；
+	514、#等于，如果测试值的测试位等于输入值的测试位时为真；
+	515、#小于等于，如果测试值的测试位小于等于输入值的测试位时为真；
+	516、#大于，如果测试值的测试位大于输入值的测试位时为真；
+	517、#不等于，如果测试值的测试位不等于输入值的测试位时为真；
+	518、#大于等于，如果测试值的测试位大于等于输入值的测试位时为真；
+	519、#有效，始终为真。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">测试位</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。需要测试模板的位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">测试值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

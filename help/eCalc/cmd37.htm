@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>三次多项式方程 (曲线拟合)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">三次多项式方程</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">曲线拟合</a></p>
+<p>本函数对离散数据集拟合一系列三次多项式方程。通过把原始数据点区间上的三次方程应用于插值中要使用的x值，在那个区间上的y值可能被插值。在每个子区间上(sv[i],sv[i+1])，三次样条形如：y的估值 = a[i] + b[i] * (x - xv[i]) + c[i] * (x - sv[i]) ^ 2 + d[i] * (s - sv[i]) ^ 3。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>曲线拟合</em>．三次多项式方程 （<font color="#000000">x值</font><font color="#000000">，&nbsp;</font><font color="#000000">y值</font><font color="#000000">，&nbsp;</font><font color="#000000">三次样条方程系数</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">x值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是一个一维数组，它保存离散数据的x值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">y值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是列数和第一个参数一样的一维数组，它保存离散数据集的y值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">三次样条方程系数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;双精度小数型，参数数据只能提供数组数据。该参数是行数和第一个参数列数一样，列数为4的二维数组，它返回每个子区间上三次样条方程的系数。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>灯光</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">灯光</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>管理灯光。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">灯光类型</font></td>
+<td width="70%" valign="top">灯光类型；&nbsp;此成员值可以是“灯光类型”数据类型中的常量值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">漫射光颜色</font></td>
+<td width="70%" valign="top">颜色；&nbsp;光的漫反射颜色,漫射光是分散的，但仍然具有方向。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">镜面光颜色</font></td>
+<td width="70%" valign="top">颜色；&nbsp;光的镜面光颜色,它不会分散,可以用它在对象上创建高亮。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">环境光颜色</font></td>
+<td width="70%" valign="top">颜色；&nbsp;光的环境光颜色,它是通用的背景光，它是分散的且没有方向和位置，它充满整个场景。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">位置</font></td>
+<td width="70%" valign="top">三维向量；&nbsp;光在世界坐标系的位置。本成员对直射光无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">方向</font></td>
+<td width="70%" valign="top">三维向量；&nbsp;光在世界坐标系的方向。本成员只对直射光和聚光灯有意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">距离</font></td>
+<td width="70%" valign="top">小数型；&nbsp;光照射的距离，在多远它就没有效果了。本成员对直射光无意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">衰减因子</font></td>
+<td width="70%" valign="top">小数型；&nbsp;初始值为 1 。聚光灯内圈到外圈的衰减值，一般设定为1，否则会得到意料之外的效果，但是绝不会是好事。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">衰减值0</font></td>
+<td width="70%" valign="top">小数型；&nbsp;初始值为 0 。灯光的衰减值0，范围从0到无穷大。本成员通常设为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">衰减值1</font></td>
+<td width="70%" valign="top">小数型；&nbsp;初始值为 1 。灯光的衰减值1，范围从0到无穷大。本成员通常设为一个常量值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">衰减值2</font></td>
+<td width="70%" valign="top">小数型；&nbsp;初始值为 0 。灯光的衰减值2，范围从0到无穷大。本成员通常设为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">内径</font></td>
+<td width="70%" valign="top">小数型；&nbsp;聚光灯的内径，范围从0到外径的值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">外径</font></td>
+<td width="70%" valign="top">小数型；&nbsp;聚光灯的外径, 范围从0到pi(3.1415926...)。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

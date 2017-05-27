@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>取字节集数据</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">取字节集数据</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct9.htm">字节集操作</a></p>
+<p>取出字节集中指定位置指定数据类型的数据。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">通用型</font>&nbsp; 取字节集数据 （<font color="#000000">欲取出其中数据的字节集</font><font color="#000000">，&nbsp;</font><font color="#000000">欲取出数据的类型</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">起始索引位置</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲取出其中数据的字节集</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲取出数据的类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值可以为以下常量： 1、#字节型； 2、#短整数型； 3、#整数型； 4、#长整数型； 5、#小数型； 6、#双精度小数型； 7、#逻辑型； 8、#日期时间型； 9、#子程序指针型； 10、#文本型。转换后的数据将自动进行有效性校验及转换处理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">起始索引位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定从字节集的什么地方开始取数据，索引值从1开始。如果被省略，默认为数值1。如果为本参数提供一个整数型变量，则命令执行后将自动修改该变量内容，将其索引值移动到下一个读入位置。如果移动后到达字节集的末尾，将修改该变量的内容为-1。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

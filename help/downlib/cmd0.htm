@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>网络通讯设置</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">网络通讯设置</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">全局命令</a></p>
+<p>初始化下载支持库，进行基本设置.</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 网络通讯设置 （<font color="#000000">写入文件大小</font><font color="#000000">，&nbsp;</font><font color="#000000">重连时间</font><font color="#000000">，&nbsp;</font><font color="#000000">重连次数</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">写入文件大小</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“20480”。本参数指定每次写入文件的指定大小，默认为20480, 注意:如果待下载文件的总长度小于此值，那么将不能使用多个线程下载。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">重连时间</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。出错时连接服务器间隔时间，默认为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">重连次数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。出错时重复连接服务器次数，默认为0。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

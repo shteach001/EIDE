@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>设备参数</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">设备参数</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>设备描述参数。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">后台缓冲页面宽度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;后台缓冲页面的宽度（以像素为单位）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">后台缓冲页面高度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;后台缓冲页面的高度（以像素为单位）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">后台缓冲页面像素格式</font></td>
+<td width="70%" valign="top">整数型；&nbsp;后台缓冲页面的像素格式。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">后台缓冲页面数量</font></td>
+<td width="70%" valign="top">整数型；&nbsp;后台缓冲页面的数量，通常设为“1”，即只有一个后台表面。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">多重采样类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">多重采样质量等级</font></td>
+<td width="70%" valign="top">整数型；&nbsp;</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">交换效果</font></td>
+<td width="70%" valign="top">整数型；&nbsp;指定页面在交换链中是如何被交换的。可以为以下常量值之一：1、#设备常量.翻转缓冲区后清除缓存；2、#设备常量.翻转缓冲区后保留后台；3、#设备常量.翻转缓冲区后保留后台1。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设备窗口句柄</font></td>
+<td width="70%" valign="top">整数型；&nbsp;与设备相关的窗口句柄，你想在哪个窗口绘制就写那个窗口的句柄。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">窗口模式</font></td>
+<td width="70%" valign="top">逻辑型；&nbsp;真为窗口模式，假为全屏模式。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">自动创建深度缓冲</font></td>
+<td width="70%" valign="top">逻辑型；&nbsp;为真，设备将自动创建深度缓冲。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">深度缓冲的格式</font></td>
+<td width="70%" valign="top">整数型；&nbsp;当“自动创建深度缓冲”成员值为假时将被忽略。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">附加特性</font></td>
+<td width="70%" valign="top">整数型；&nbsp;为以下值之一：0、无特性；1、设定后台页面能被锁定，这会降低应用程序的性能；2、深度缓冲在调用交换页面方法后将被删除，这有利于提升程序性能。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">屏幕刷新率</font></td>
+<td width="70%" valign="top">整数型；&nbsp;以全屏方式显示时的屏幕刷新率，窗口模式下为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">交换间隔</font></td>
+<td width="70%" valign="top">整数型；&nbsp;指定后台缓冲与前台缓冲的交换频率。为以下常量值之一：2147483648、#设备常量.立即交换；1、#设备常量.一个屏幕刷新周期；2、#设备常量.二个屏幕刷新周期；4、#设备常量.三个屏幕刷新周期；8、#设备常量.四个屏幕刷新周期。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

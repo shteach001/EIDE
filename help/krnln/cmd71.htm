@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>取拼音</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">取拼音</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct7.htm">拼音处理</a></p>
+<p>返回包含指定汉字的指定拼音编码的文本。如果该指定拼音编码不存在，将返回空文本。目前仅支持国标汉字。多音字的第一个发音为常用音。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; 取拼音 （<font color="#000000">欲取其拼音编码的汉字</font><font color="#000000">，&nbsp;</font><font color="#000000">欲取拼音编码的索引</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲取其拼音编码的汉字</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。只取用文本首部的第一个汉字，如果该文本首部不为国标汉字，命令将返回一个空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲取拼音编码的索引</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1”。应该在 1 到该汉字的发音数目之间。汉字的发音数目可以使用“取发音数目”命令取得。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

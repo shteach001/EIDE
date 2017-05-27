@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>进入物体 (动画框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">进入物体</font></big>&nbsp;事件</strong>&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">动画框</a>
+&nbsp;&nbsp;&nbsp;操作系统支持：Windows</p>
+<p>&nbsp;&nbsp;&nbsp; 当鼠标位置移动进入到某物体内时产生此事件。如果该事件的“已被按下物体”参数值大于0且不等于“物体标识值”参数值，则可以确认有另外物体被鼠标拖曳进了当前物体。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; _<em>动画框</em>_进入物体 （<font color="#000000">物体标识值</font><font color="#000000">，&nbsp;</font><font color="#000000">已被按下物体</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">物体标识值</font></td>
+<td width="70%" valign="top">整数型；&nbsp;本参数提供鼠标事件发生位置所在相关物体的标识值，小于等于0表示无相关物体。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已被按下物体</font></td>
+<td width="70%" valign="top">整数型；&nbsp;如果当前鼠标左键已经被按下，且鼠标左键按下时位置处于某物体上，则本参数提供该物体的标识值; 如果当前鼠标左键已经被按下，且鼠标左键按下时位置不处于任何物体上，则本参数值为-1; 如果当前鼠标左键未被按下，则本参数值为0。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

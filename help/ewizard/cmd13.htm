@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>写出程序</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">写出程序</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">易向导</a></p>
+<p>根据已有的模板程序修改记录对模板程序进行实际修改。如果修改成功返回空文本，否则返回具体的错误信息。修改成功后的结果在向导程序退出后将被易系统自动载入编辑。无论写出成功或者失败，本命令退出时都会自动清除所有模板程序修改信息。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; 写出程序 （<font color="#000000">模板程序数据</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否关闭源程序</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">模板程序数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。此数据为用作模板程序的完整易源程序。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否关闭源程序</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。如果本参数为真，则当执行写出程序时，先将现行易语言编辑环境中的源程序关闭，然后将所写出程序作为新的完整程序载入。如果本参数为假，当执行写出程序时，会将所生成程序与现行易语言编辑环境中的源程序合并（合并前“_启动窗口”及其窗口程序集、“启动子程序”代码将被抛弃）。如果本参数被省略，默认值为真。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

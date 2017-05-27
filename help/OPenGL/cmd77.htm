@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>画出位图</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">画出位图</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct8.htm">光栅操作</a></p>
+<p>必须先使用“设置像素存储字节数”。坐标的原点只与“设置光栅位置”有关与坐标变换命令无关。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 画出位图 （<font color="#000000">宽度</font><font color="#000000">，&nbsp;</font><font color="#000000">高度</font><font color="#000000">，&nbsp;</font><font color="#000000">原点横坐标</font><font color="#000000">，&nbsp;</font><font color="#000000">原点竖坐标</font><font color="#000000">，&nbsp;</font><font color="#000000">横向平移</font><font color="#000000">，&nbsp;</font><font color="#000000">纵向平移</font><font color="#000000">，&nbsp;</font><font color="#000000">位图数据</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">宽度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。“位图数据”中将要显示的宽度，必须大于0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">高度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。“位图数据”中将要显示的高度，必须大于0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">原点横坐标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;小数型。坐标原点与位图左下角的横向素数距离，正数时在原点左边，反之在右边。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">原点竖坐标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;小数型。坐标原点与位图左下角的竖向素数距离，正数时在原点下边，反之在上边。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横向平移</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;小数型。本次画出结束后，坐标原点向右移动的像素距离，负数为反方向。只会影响下一次“画出位图”时的画出位置，与本次画出无关。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纵向平移</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;小数型。本次画出结束后，坐标原点向上移动的像素距离，负数为反方向。只会影响下一次“画出位图”时的画出位置，与本次画出无关。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">位图数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>模型创建标志</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">模型创建标志</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>模型创建标志。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">32位</font></td>
+<td width="70%" valign="top">常量值为 1 。使用32位的顶点索引，默认为16位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">不会被裁减</font></td>
+<td width="70%" valign="top">常量值为 2 。设置顶点缓冲和索引缓冲内容不会被裁减。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">绘制点</font></td>
+<td width="70%" valign="top">常量值为 4 。使用顶点缓冲和索引缓冲绘制点。。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">绘制高顺序图元</font></td>
+<td width="70%" valign="top">常量值为 8 。设置顶点缓冲和索引缓冲绘制高顺序图元（high-order primitives）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">绘制曲面表面</font></td>
+<td width="70%" valign="top">常量值为 16384 。使用顶点缓冲和索引缓冲绘制曲面表面（N-patches）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点系统内存</font></td>
+<td width="70%" valign="top">常量值为 16 。指顶点缓冲放在系统内存中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点系统管理资源</font></td>
+<td width="70%" valign="top">常量值为 32 。顶点缓冲将由设备管理并且按设备的需要来指定放在显存还是放在AGP内存中，同时备份这些资源到系统内存中。当应用程序访问和改变资源，也会对系统内存造成影响。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点只写</font></td>
+<td width="70%" valign="top">常量值为 64 。表示对顶点缓冲只写不读。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点动态内存</font></td>
+<td width="70%" valign="top">常量值为 128 。设置顶点缓冲区需要分配动态内存。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点软件处理</font></td>
+<td width="70%" valign="top">常量值为 32768 。设置此值，顶点缓冲的顶点运算将由软件来完成。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引系统内存</font></td>
+<td width="70%" valign="top">常量值为 256 。指索引缓冲放在系统内存中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引系统管理资源</font></td>
+<td width="70%" valign="top">常量值为 512 。索引缓冲将由设备管理并且按设备的需要来指定放在显存还是放在AGP内存中，同时备份这些资源到系统内存中。当应用程序访问和改变资源，也会对系统内存造成影响。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引只写</font></td>
+<td width="70%" valign="top">常量值为 1024 。表示对索引缓冲只写不读。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引动态内存</font></td>
+<td width="70%" valign="top">常量值为 2048 。设置索引缓冲区需要分配动态内存。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">索引软件处理</font></td>
+<td width="70%" valign="top">常量值为 65536 。设置此值，索引缓冲的顶点运算将由软件来完成。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">顶点共享</font></td>
+<td width="70%" valign="top">常量值为 4096 。表示克隆模型到共享顶点缓冲中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">硬件处理</font></td>
+<td width="70%" valign="top">常量值为 8192 。只用硬件处理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缓冲系统内存</font></td>
+<td width="70%" valign="top">常量值为 272 。指索引和顶点缓冲放在系统内存中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缓冲系统管理资源</font></td>
+<td width="70%" valign="top">常量值为 544 。索引和顶点缓冲将由设备管理并且按设备的需要来指定放在显存还是放在AGP内存中，同时备份这些资源到系统内存中。当应用程序访问和改变资源，也会对系统内存造成影响。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缓冲只写</font></td>
+<td width="70%" valign="top">常量值为 1088 。表示对索引和顶点缓冲只写不读。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缓冲动态内存</font></td>
+<td width="70%" valign="top">常量值为 2176 。设置索引和顶点缓冲区需要分配动态内存。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缓冲软件处理</font></td>
+<td width="70%" valign="top">常量值为 98304 。设置此值，索引和顶点缓冲的顶点运算将由软件来完成。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

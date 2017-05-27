@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>任务信息</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">任务信息</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">BT下载支持库</a></p><p>下载时要提供的信息。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发布文件名</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。本参数指定发布文件(torrent)的路径和文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">本地文件路径</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。本参数指定被下载文件的本地保存路径。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">本地文件名</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。本参数指定被下载文件的本地文件名，如本参数为空则用Torrent文件中默认的文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器日志</font></td>
+<td width="70%" valign="top">子程序指针；&nbsp;本参数指定与Tracker服务器通讯时的回调函数。本函数有六个参数，第一个类型为“整数型”，是调用此回调函数对象的下载号;第二个类型为“整数型”，是“服务器日志”数据类型中的常量;第三个类型为“文本型”根据第二个参数的不同意义不同，详细看“服务器日志”数据类型中的说明;第四个类型为“整数型”根据第二个参数的不同意义不同，详细看“服务器日志”数据类型中的说明;第五个类型为“整数型”根据第二个参数的不同意义不同，详细看“服务器日志”数据类型中的说明;第六个类型为“日期时间型”表示记录日志的时间。返回值为“逻辑型”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">上传下载日志</font></td>
+<td width="70%" valign="top">子程序指针；&nbsp;本参数指定用于上传下载日志的回调函数。本函数有五个参数，第一个类型为“整数型”，是调用此回调函数对象的下载号;第二个类型为“整数型”，是“上传下载日志”数据类型中的常量;第三个类型为“整数型”本参数表示连接序号，每一个连接都有唯一的序号。-1表示还没有选择序号;第四个类型为“整数型”根据第二个参数的不同意义不同，详细看“上传下载日志”数据类型中的说明;第五个类型为“文本型”根据第二个参数的不同意义不同，详细看“上传下载日志”数据类型中的说明;返回值为“逻辑型”。注：在使用本参数时，在易语言中对应的函数中如果要对本函数中作用域之外的变量改变,在函数入口和出口处分别加上“进入许可区”“退出许可区”命令，以确保不会发生多线程的竟争冲突。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">其它日志</font></td>
+<td width="70%" valign="top">子程序指针；&nbsp;本参数指定用于其它日志的回调函数。本函数有六个参数，第一个类型为“整数型”，是调用此回调函数对象的下载号;第二个类型为“整数型”，是“其它日志”数据类型中的常量;第三个类型为“整数型”根据第二个参数的不同意义不同，详细看“其它日志”数据类型中的说明;第四个类型为“整数型”根据第二个参数的不同意义不同，详细看“其它日志”数据类型中的说明;第五个类型为“文本型”根据第二个参数的不同意义不同，详细看“其它日志”数据类型中的说明;第六个类型为“文本型”根据第二个参数的不同意义不同，详细看“其它日志”数据类型中的说明;返回值为“逻辑型”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">主动连接数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 5 。本参数指定默认的主动连接数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大连接数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 10 。本参数指定的最大的连接数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">任务内容</font></td>
+<td width="70%" valign="top">字节集；&nbsp;本参数指定“取任务内容”方法返回的字节集,可以避免重新效验文件。如果为空字节集或传入字节集错误就会效验文件。</td>
+</tr>
+</table>
+<p><big><strong><a name="方法"></a>方法：</big></strong></p>
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

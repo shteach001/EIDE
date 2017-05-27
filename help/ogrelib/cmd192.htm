@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建新状态块 (设备)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">创建新状态块</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt8.htm">设备</a></p>
+<p>创建一个新的状态块，它包含全部的设备状态或是仅与顶点或像素处理相关的设备状态。如果该方法失败，很可能是显示模式改变了。为了从此类失败中恢复，应用程序应该重新创建表面，然后重新创建状态块。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>设备</em>．创建新状态块 （<font color="#000000">状态信息类型</font><font color="#000000">，&nbsp;</font><font color="#000000">状态块句柄</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">状态信息类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。要在新的状态块中记录的状态信息的类型。为以下常量值之一：1、#设备常量.顶点和像素状态；2、#设备常量.像素状态；3、#设备常量.顶点状态。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">状态块句柄</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;状态块。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

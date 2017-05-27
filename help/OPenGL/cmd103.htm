@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>载入3DS文件</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">载入3DS文件</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct11.htm">其他</a></p>
+<p>载入以3DS为后缀的三维模型文件，并编译为一个显示列表。如果3DS文件中包含有纹理图片，那么只有BMP位图格式的纹理才可以被使用。否则无法显示纹理。使用“调用列表”命令可以显示模型。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 载入3DS文件 （<font color="#000000">3DS文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">列表号</font><font color="#000000">，&nbsp;</font><font color="#000000">存放被取回纹理号的数组变量</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">3DS文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。需要载入的3DS文件名称。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">列表号</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。可以直接指定列表号或者使用由“生成列表号”取得的返回值，必须是大于0的整数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放被取回纹理号的数组变量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量数组。在命令执行完毕后，本变量数组内被顺序填入在载入3DS文件时候创建的纹理号。变量数组内原有数据被全部销毁，变量数组的维数被自动调整为一维数组。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

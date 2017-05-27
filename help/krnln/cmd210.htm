@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>事件转移</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">事件转移</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct17.htm">其他</a></p>
+<p>设置将第一个组件上产生的所有事件转交由第二个同窗口同类型组件的事件处理子程序去处理，就好象此事件是在第二个组件上实际发生的一样。本命令可用来设置用同一事件处理子程序处理来自多个同类型组件的事件。使用时可与“取事件组件”命令、对象的“标记”属性等相配合。设置成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 事件转移 （<font color="#000000">组件一</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">组件二</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">组件一</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型。参数值指定欲将其事件转移的组件。如果该参数值指定的不是窗口内的组件，而是窗口本身，则不考虑“组件二”参数的设置情况，直接取消被指定窗口上所有组件事件转移设置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">组件二</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;通用型。参数值指定组件一事件转移到的目的组件，必须与组件一的类型相同且在同一窗口内，否则命令会失败。如果本参数被省略，将取消组件一的原有事件转移设置。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

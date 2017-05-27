@@ -1,0 +1,134 @@
+<table border=1 cols=3 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="25%"><strong>常量</strong></td>
+<td width="25%"><strong>常量值</strong></td>
+<td width="50%"><strong>描 述</strong></td>
+</tr>
+<tr><td width="25%"><font color="#000000">#未知权限</font></td><td width="25%"><font color="#000000">0</font></td>
+<td width="50%">表明权限尚未设置或无法确定。</td></tr>
+<tr><td width="25%"><font color="#000000">#只读权限</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%">表明访问权限为只读。</td></tr>
+<tr><td width="25%"><font color="#000000">#只写权限</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%">表明访问权限为只写。</td></tr>
+<tr><td width="25%"><font color="#000000">#读写权限</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%">表明访问权限为读或写。</td></tr>
+<tr><td width="25%"><font color="#000000">#独占读权限</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%">防止其他用户使用读权限打开连接。</td></tr>
+<tr><td width="25%"><font color="#000000">#独占写权限</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%">防止其他用户使用写权限打开连接。</td></tr>
+<tr><td width="25%"><font color="#000000">#独占权限</font></td><td width="25%"><font color="#000000">12</font></td>
+<td width="50%">防止其他用户使用任何权限打开连接。</td></tr>
+<tr><td width="25%"><font color="#000000">#共享权限</font></td><td width="25%"><font color="#000000">16</font></td>
+<td width="50%">不拒绝其他任何用户使用任何权限打开连接。</td></tr>
+<tr><td width="25%"><font color="#000000">#SQL语句</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%">指示命令文本为SQL语句。参见“记录集.打开()”。</td></tr>
+<tr><td width="25%"><font color="#000000">#数据表名</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%">指示命令文本为数据表名，系统将自动生成SQL语句查询返回该表中的所有行。参见“记录集.打开()”。</td></tr>
+<tr><td width="25%"><font color="#000000">#删除当前记录</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#删除全部记录</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#字段被延迟</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%">指示字段被延迟, 即不从拥有整个记录的数据源检索字段值, 仅在显式访问这些字段时才进行检索。</td></tr>
+<tr><td width="25%"><font color="#000000">#字段可写入</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%">指示可以写入该字段。</td></tr>
+<tr><td width="25%"><font color="#000000">#写入无法确定</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%">指示提供者无法确定是否可以写入该字段。</td></tr>
+<tr><td width="25%"><font color="#000000">#定长数据</font></td><td width="25%"><font color="#000000">16</font></td>
+<td width="50%">指示该字段包含定长数据。</td></tr>
+<tr><td width="25%"><font color="#000000">#允许空值</font></td><td width="25%"><font color="#000000">32</font></td>
+<td width="50%">指示该字段接受 Null 值。</td></tr>
+<tr><td width="25%"><font color="#000000">#可以读空值</font></td><td width="25%"><font color="#000000">64</font></td>
+<td width="50%">指示可以从该字段读取 Null 值。</td></tr>
+<tr><td width="25%"><font color="#000000">#二进制类型</font></td><td width="25%"><font color="#000000">128</font></td>
+<td width="50%">指示该字段为长二进制字段。例如: 可以保存图像文件。</td></tr>
+<tr><td width="25%"><font color="#000000">#持久标识符</font></td><td width="25%"><font color="#000000">256</font></td>
+<td width="50%">指示字段包含持久的行标识符, 该标识符无法被写入,并且除了对行进行标识(如记录号、唯一标识符等)外不存在有意义的值。</td></tr>
+<tr><td width="25%"><font color="#000000">#包含标记</font></td><td width="25%"><font color="#000000">512</font></td>
+<td width="50%">指示该字段包含用来跟踪更新的某种时间或日期标记。</td></tr>
+<tr><td width="25%"><font color="#000000">#字段被缓存</font></td><td width="25%"><font color="#000000">4096</font></td>
+<td width="50%">指示提供者缓存了字段值, 并已完成随后对缓存的读取。</td></tr>
+<tr><td width="25%"><font color="#000000">#超长整数字段</font></td><td width="25%"><font color="#000000">20</font></td>
+<td width="50%">8字节带符号的整数。</td></tr>
+<tr><td width="25%"><font color="#000000">#二进制字段</font></td><td width="25%"><font color="#000000">128</font></td>
+<td width="50%">二进制值。</td></tr>
+<tr><td width="25%"><font color="#000000">#逻辑型字段</font></td><td width="25%"><font color="#000000">11</font></td>
+<td width="50%">布尔型值。</td></tr>
+<tr><td width="25%"><font color="#000000">#宽文本字段1</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%">以零字符结尾的 Unicode 字符串。</td></tr>
+<tr><td width="25%"><font color="#000000">#字符型字段</font></td><td width="25%"><font color="#000000">129</font></td>
+<td width="50%">字符串值 (ASCII)。</td></tr>
+<tr><td width="25%"><font color="#000000">#货币型字段</font></td><td width="25%"><font color="#000000">6</font></td>
+<td width="50%">货币值.货币数字的小数点位置固定、小数点右侧有四位数字。该值保存为 8 字节范围为10,000 的带符号整型值。</td></tr>
+<tr><td width="25%"><font color="#000000">#日期型字段</font></td><td width="25%"><font color="#000000">7</font></td>
+<td width="50%">日期值。日期按双精度型数值来保存，数字全部表示从 1899 年 12 月 30 开始的日期数。小数部分是一天当中的片段时间。</td></tr>
+<tr><td width="25%"><font color="#000000">#数据库日期型字段</font></td><td width="25%"><font color="#000000">133</font></td>
+<td width="50%">日期值。日期按 yyyymmdd 的方式保存。</td></tr>
+<tr><td width="25%"><font color="#000000">#时间型字段</font></td><td width="25%"><font color="#000000">134</font></td>
+<td width="50%">时间值 (hhmmss)。</td></tr>
+<tr><td width="25%"><font color="#000000">#时间戳字段</font></td><td width="25%"><font color="#000000">135</font></td>
+<td width="50%">时间戳 (yyyymmddhhmmss 加 10 亿分之一的小数)。</td></tr>
+<tr><td width="25%"><font color="#000000">#数值型字段</font></td><td width="25%"><font color="#000000">14</font></td>
+<td width="50%">具有固定精度和范围的精确数值。</td></tr>
+<tr><td width="25%"><font color="#000000">#双精度字段</font></td><td width="25%"><font color="#000000">5</font></td>
+<td width="50%">双精度浮点值。</td></tr>
+<tr><td width="25%"><font color="#000000">#空白型字段</font></td><td width="25%"><font color="#000000">0</font></td>
+<td width="50%">未指定值。</td></tr>
+<tr><td width="25%"><font color="#000000">#错误码字段</font></td><td width="25%"><font color="#000000">10</font></td>
+<td width="50%">32位错误代码。</td></tr>
+<tr><td width="25%"><font color="#000000">#标识型字段</font></td><td width="25%"><font color="#000000">72</font></td>
+<td width="50%">全局唯一的标识符 (GUID)。</td></tr>
+<tr><td width="25%"><font color="#000000">#IDispatch字段</font></td><td width="25%"><font color="#000000">9</font></td>
+<td width="50%">OLE 对象上 Idispatch 接口的指针。</td></tr>
+<tr><td width="25%"><font color="#000000">#整数型字段</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%">4 字节的带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#IUnknown字段</font></td><td width="25%"><font color="#000000">13</font></td>
+<td width="50%">OLE 对象上 IUnknown 接口的指针。</td></tr>
+<tr><td width="25%"><font color="#000000">#超变长二进制字段</font></td><td width="25%"><font color="#000000">205</font></td>
+<td width="50%">超长的可变长度二进制值。</td></tr>
+<tr><td width="25%"><font color="#000000">#超变长文本字段</font></td><td width="25%"><font color="#000000">201</font></td>
+<td width="50%">超长的可变长度字符串值。</td></tr>
+<tr><td width="25%"><font color="#000000">#超变长宽文本字段</font></td><td width="25%"><font color="#000000">203</font></td>
+<td width="50%">宽字符的长字符串值。</td></tr>
+<tr><td width="25%"><font color="#000000">#数字型字段</font></td><td width="25%"><font color="#000000">131</font></td>
+<td width="50%">具有固定精度和范围的精确数字值。</td></tr>
+<tr><td width="25%"><font color="#000000">#单精度字段</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%">单精度浮点值。</td></tr>
+<tr><td width="25%"><font color="#000000">#短整数字段</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%">2 字节带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#有符号字节字段</font></td><td width="25%"><font color="#000000">16</font></td>
+<td width="50%">1 字节带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#无符号超长整数字段</font></td><td width="25%"><font color="#000000">21</font></td>
+<td width="50%">8 字节不带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#无符号整数字段</font></td><td width="25%"><font color="#000000">19</font></td>
+<td width="50%">4 字节不带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#无符号短整数字段</font></td><td width="25%"><font color="#000000">18</font></td>
+<td width="50%">2 字节不带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#字节型字段</font></td><td width="25%"><font color="#000000">17</font></td>
+<td width="50%">1字节不带符号整型。</td></tr>
+<tr><td width="25%"><font color="#000000">#自定义型字段</font></td><td width="25%"><font color="#000000">132</font></td>
+<td width="50%">用户自定义数据类型字段。</td></tr>
+<tr><td width="25%"><font color="#000000">#变长二进制字段</font></td><td width="25%"><font color="#000000">204</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#变长文本字段</font></td><td width="25%"><font color="#000000">200</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#变体型字段</font></td><td width="25%"><font color="#000000">12</font></td>
+<td width="50%">自动变体型。</td></tr>
+<tr><td width="25%"><font color="#000000">#变长宽文本字段</font></td><td width="25%"><font color="#000000">202</font></td>
+<td width="50%">以零字符结尾的可变长 Unicode 字符串。</td></tr>
+<tr><td width="25%"><font color="#000000">#宽文本字段2</font></td><td width="25%"><font color="#000000">130</font></td>
+<td width="50%">以零字符结尾的 Unicode 字符串。</td></tr>
+<tr><td width="25%"><font color="#000000">#正向搜索</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%">向前搜索。</td></tr>
+<tr><td width="25%"><font color="#000000">#反向搜索</font></td><td width="25%"><font color="#000000">-1</font></td>
+<td width="50%">向后搜索。</td></tr>
+<tr><td width="25%"><font color="#000000">#无游标</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%">向前搜索。</td></tr>
+<tr><td width="25%"><font color="#000000">#服务器端游标</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%">向后搜索。</td></tr>
+<tr><td width="25%"><font color="#000000">#客户端游标</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%">向后搜索。</td></tr>
+<tr><td width="25%"><font color="#000000">#存储过程</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%">指示命令文本为存储过程调用语句。参见“记录集.打开()”。</td></tr>
+<tr><td width="25%"><font color="#000000">#持久文件名</font></td><td width="25%"><font color="#000000">256</font></td>
+<td width="50%">指示命令文本为持久文件完整路径文件名，如：用“记录集.保存到XML()”生成的XML文件，或用“记录集.保存到ADTG()”生成的ADTG文件。参见“记录集.打开()”。</td></tr>
+</table>

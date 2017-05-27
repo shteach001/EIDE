@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>自动方向键移动 (动画框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">自动方向键移动</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">动画框</a></p>
+<p>设置指定物体将获得方向键控制移动的自动支持，同一时间只有一个物体能够获得此支持。注意：1、方向键控制下的移动动作属于前进动作，将进行碰撞检测；2、任何情况下，物体将不会被移出动画框边界外。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>动画框</em>．自动方向键移动 （<font color="#000000">［</font><font color="#000000">物体标识值</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">一次移动距离</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">每次移动间隔时间</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">避免碰撞</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">移动时外形变换</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">上移键</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">下移键</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">左移键</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">右移键</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">左转键</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">右转键</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">物体标识值</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供欲操作物体的标识值，该标识值为创建或复制物体时所返回的数值，为0表示取消对当前已被自动方向键控制移动物体的支持。如果参数被省略，默认值为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">一次移动距离</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定当方向键被按下一次后物体移动的距离，单位为像素点。如果参数被省略，默认值为10。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">每次移动间隔时间</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定每将物体移动一次等待的间隔时间，单位为毫秒，如果被省略，默认值为10。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">避免碰撞</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。本参数指定是否避免被控制物体与其它允许碰撞状态为真的同层不同类型值物体之间产生碰撞事件。如果本参数被省略，默认值为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">移动时外形变换</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数可以为以下值之一：0.不作任何变换; 1.如果物体的当前图片为动画图片，则每移动一下将其播放1次; 2.如果物体的当前图片为动画图片，则每移动一下播放其下1帧，如果已经在动画最后一帧上，将自动回到首帧。 如果本参数被省略，默认值为0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">上移键</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供上移键的键代码，如果被省略或者为0，则不支持上移。可用键代码值请查阅核心库中的键代码定义常量，下同。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下移键</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供下移键的键代码，如果被省略或者为0，则不支持下移。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">左移键</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供左移键的键代码，如果被省略或者为0，则不支持左移。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">右移键</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供右移键的键代码，如果被省略或者为0，则不支持右移。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">左转键</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供向左转向键的键代码，如果被省略或者为0，则不支持向左转向。注意如果本参数设置了有效键值，那么物体的旋转跟随状态将被自动设置为真。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">右转键</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供向右转向键的键代码，如果被省略或者为0，则不支持向右转向。注意如果本参数设置了有效键值，那么物体的旋转跟随状态将被自动设置为真。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

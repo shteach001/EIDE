@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>置SQL语句 (Sqlite记录集)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">置SQL语句</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt2.htm">Sqlite记录集</a></p>
+<p>设置本对象所使用的SQL语句。本方法等效于“Sqlite数据库.取记录集()”。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>Sqlite记录集</em>．置SQL语句 （<font color="#000000">SQL语句</font><font color="#000000">，&nbsp;</font><font color="#000000">Sqlite数据库</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">SQL语句</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。SQL语句中可包含零到多个“SQL参数”，形如“?”“:n”“$v”等，其中n代表一个数值，v代表一个文本。所有“SQL参数”均需经过“绑定参数()”进行值绑定，未经绑定的“SQL参数”其值将视为null。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">Sqlite数据库</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;Sqlite数据库。指定对哪个Sqlite数据库进行查询，该数据库必须已经打开。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

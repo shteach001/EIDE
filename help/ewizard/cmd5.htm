@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>修改程序</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">修改程序</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">易向导</a></p>
+<p></p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 修改程序 （<font color="#000000">欲修改项类型</font><font color="#000000">，&nbsp;</font><font color="#000000">欲修改项名称</font><font color="#000000">，&nbsp;</font><font color="#000000">欲修改属性</font><font color="#000000">，&nbsp;</font><font color="#000000">修改值</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲修改项类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;程序项类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲修改项名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲修改属性</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;程序项属性。合法的修改属性与与修改项类型相关，具体如下：
+程序集： 名称、备注、公开
+子程序： 名称、备注、数据类型、公开、收缩
+全局变量、程序集变量、局部变量、子程序参数、数据类型成员、DLL命令参数： 名称、备注、数据类型、数组类型、静态、参考、可空、公开
+数据类型： 名称、备注、公开
+DLL命令： 名称、备注、公开、DLL库文件名、DLL库命令名、数据类型
+窗口： 名称、备注
+窗口组件： 名称、备注
+常量或资源： 名称、备注、公开、常量或资源值
+</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">修改值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型。修改值的数据类型必须与指定欲修改属性的数据类型一致，修改值具体所需要的数据类型请见“程序项属性”中各成员常量的解释。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

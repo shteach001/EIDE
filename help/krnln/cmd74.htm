@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>发音比较</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">发音比较</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct7.htm">拼音处理</a></p>
+<p>比较两段文本的发音，如果发音相同返回真，否则返回假。对于文本中的非国标汉字部分，将仅进行简单的值比较。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 发音比较 （<font color="#000000">待比较文本一</font><font color="#000000">，&nbsp;</font><font color="#000000">待比较文本二</font><font color="#000000">，&nbsp;</font><font color="#000000">是否支持南方音</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否为模糊比较</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">待比较文本一</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">待比较文本二</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否支持南方音</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。为真则支持南方音。如果支持南方音，比较时将认为所有相近的发音都相同。如： n 和 l、 z 和 zh、 ie 和 ue 等等。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否为模糊比较</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。本参数为真时，当待比较文本一的发音在待比较文本二的首部被包容时即认为比较通过。如果被省略，默认值为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

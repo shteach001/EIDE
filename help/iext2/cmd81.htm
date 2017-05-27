@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>边界检查 (动画框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">边界检查</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">动画框</a></p>
+<p>如果指定物体所有非透明部分都完全位于动画框边框外，返回-1; 如果指定物体非透明部分碰撞到动画框的边框，返回碰撞到边界的类型：1:左边界; 2:上边界; 4:右边界; 8:下边界。注意有可能同时碰撞到几个边界，所以应该通过检测相应位来查看具体碰撞到了哪些边界; 如果物体既没有越出也没有碰撞到边界，返回0。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>动画框</em>．边界检查 （<font color="#000000">物体标识值</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">假想横坐标位置</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">假想纵坐标位置</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">物体标识值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数提供欲操作物体的标识值，该标识值为创建或复制物体时所返回的数值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">假想横坐标位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。物体将被假想已经移动到本参数所指定的横坐标位置，将依据此位置进行检查而忽略物体的当前实际位置。如果本参数被省略，默认等同于物体的当前横坐标位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">假想纵坐标位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。物体将被假想已经移动到本参数所指定的纵坐标位置，将依据此位置进行检查而忽略物体的当前实际位置。如果本参数被省略，默认等同于物体的当前纵坐标位置。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

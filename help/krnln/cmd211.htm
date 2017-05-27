@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>复制窗口组件</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">复制窗口组件</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct17.htm">其他</a></p>
+<p>复制创建与指定窗口组件设计状态完全一致的新组件。该被复制组件将放在原组件的下面，其事件被自动转移到原组件上。如果复制时被复制窗口组件所在的窗口尚未被载入，那么复制出来的窗口组件也不会被立即创建，而会等到其所在窗口将来被载入时一并创建。并且此时复制出来的窗口组件将永久存在，就好象是用户在设计窗口时所加入的一样，不会因为其所在窗口被销毁而被抛弃；如果复制时被复制窗口组件所在的窗口已经被载入，该组件会被立即创建，但此时无论该组件的“可视”属性是真还是假，创建后的单元都将不会被显示，以便于用户进行属性调整。此时复制出来的窗口组件为临时存在，在其所在窗口被销毁后，此窗口组件将被抛弃，下次再载入原窗口时此窗口组件将不复存在。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 复制窗口组件 （<font color="#000000">欲被复制的窗口组件</font><font color="#000000">，&nbsp;</font><font color="#000000">存放新创建组件的变量</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲被复制的窗口组件</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型。参数值不能为窗口本身、窗口菜单项组件、选择夹窗口组件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放新创建组件的变量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型，参数数据只能提供变量。该变量数据类型必须与被复制窗口组件数据类型完全一致，否则命令会失败。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

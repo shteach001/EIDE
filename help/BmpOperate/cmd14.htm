@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>取某点颜色索引 (位图)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">取某点颜色索引</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">位图</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>取得该位图中某点的颜色在颜色表中的索引，以位图的左上角为坐标原点。失败返回-1。对使用颜色表的位图调用本命令比调用“取某点颜色”执行速度更快。对不使用颜色表的位图调用该方法将导致调用失败。如果失败，随后立即调用本对象的“取错误信息”命令将取得一个非空文本，该文本为失败的原因。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>位图</em>．取某点颜色索引 （<font color="#000000">横坐标</font><font color="#000000">，&nbsp;</font><font color="#000000">纵坐标</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横坐标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。以像素为单位。如果该参数指定的坐标超出了位图的实际范围，本命令将失败。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纵坐标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。以像素为单位。如果该参数指定的坐标超出了位图的实际范围，本命令将失败。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

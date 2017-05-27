@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>其它日志</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">其它日志</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">BT下载支持库</a></p><p>本数据类型包括了其它日志的类型。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">检查完整性后</font></td>
+<td width="70%" valign="top">常量值为 1 。检查后传回已下载了多少。参数三表示下载了百分之几，参数四表示已写入硬盘的千字节数(KB)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">远程客户端</font></td>
+<td width="70%" valign="top">常量值为 2 。主动连接获得一个远程客户端。参数三表示端口，参数四无意义，参数五表示IP地址，参数六表示本客户端的唯一标识符（可能为空）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">监听端口</font></td>
+<td width="70%" valign="top">常量值为 3 。监听端口成功。参数三表示监听的端口。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">检查完整性中</font></td>
+<td width="70%" valign="top">常量值为 4 。检查完整性中,每检查完一片，就发送一次本日志。参数三表示检查完第几片，参数四表示一共有几片。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载已全部停止</font></td>
+<td width="70%" valign="top">常量值为 5 。表示下载已全部停止。参数三表示退出原因。0:正常退出。-1:解码发布文件失败。-2:建立或打开本地文件失败。-3:对本地文件进行分片失败。-4:准备上传失败。-5:与Tracker服务器通讯失败。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

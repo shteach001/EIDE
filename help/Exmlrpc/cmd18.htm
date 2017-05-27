@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>同步发送字节集 (请求客户端)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">同步发送字节集</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">请求客户端</a></p>
+<p>在客户端发送同步请求字节集到服务器，当收到服务器返回的结果后，该方法才返回，否则为阻塞状态直到超时。如果该方法正确执行并接收到服务器返回的结果，该方法返回1。如果在超时时间内没能接收到服务器的返回结果，该方法返回0。如果出现其他错误没能接收到服务器的返回结果，该方法返回-1。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>请求客户端</em>．同步发送字节集 （<font color="#000000">请求字节集</font><font color="#000000">，&nbsp;</font><font color="#000000">结果字节集</font><font color="#000000">，&nbsp;</font><font color="#000000">超时</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">请求字节集</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。客户端发送的请求字节集的内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结果字节集</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集，参数数据只能提供变量。服务器返回的结果内容。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">超时</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。同步机制下“发送请求”方法的最大允许等待时间。单位为毫秒。该值必须大于等于0。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

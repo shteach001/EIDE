@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>编码转换_转换</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">编码转换_转换</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">编码转换</a></p>
+<p>对指定数据进行编码转换，返回转换后的数据。对同一个“转换句柄”，可多次执行本命令，直到该句柄被关闭。如果执行失败，将返回空字节集，同时设置参数“执行结果”为“假”。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">字节集</font>&nbsp; 编码转换_转换 （<font color="#000000">转换句柄</font><font color="#000000">，&nbsp;</font><font color="#000000">被转换数据</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">执行结果</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">转换句柄</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。必须是“编码转换_打开()”命令所返回的句柄。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">被转换数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">执行结果</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型，参数数据只能提供变量。如果提供本参数，其中将被写入本命令的执行结果——执行成功时为真，执行失败时为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

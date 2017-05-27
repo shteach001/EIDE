@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>传送常量</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">传送常量</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">网络传送支持库</a></p><p>本数据类型包括了下载及FTP上传对象用到的常量。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载</font></td>
+<td width="70%" valign="top">常量值为 4096 。下载文件与上传互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">上传</font></td>
+<td width="70%" valign="top">常量值为 8192 。上传文件与下载互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">覆盖</font></td>
+<td width="70%" valign="top">常量值为 1 。覆盖已存在的同名文件。如果选择本模式上传过程中如果遇到同名文件不向用户询问，直接按此模式所指示的方式处理，与，被动选择，续传，改名，跳过互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">续传</font></td>
+<td width="70%" valign="top">常量值为 2 。如果已存在的同名文件小于待上传文件则根据断点位置继续上传。如果选择本模式上传过程中如果遇到同名文件不向用户询问，直接按此模式所指示的方式处理，与被动选择，覆盖，改名，跳过互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">改名</font></td>
+<td width="70%" valign="top">常量值为 4 。发现已存在的同名文件时使用FTP备用文件名保存，如果选择本模式上传过程中如果遇到同名文件不向用户询问，直接按此模式所指示的方式处理，与被动选择，续传，覆盖，跳过互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">跳过</font></td>
+<td width="70%" valign="top">常量值为 8 。发现已存在的同名文件则跳过，不做任何操作.如果选择本模式上传过程中如果遇到同名文件不向用户询问，直接按此模式所指示的方式处理，与被动选择，续传，改名，覆盖互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">被动选择</font></td>
+<td width="70%" valign="top">常量值为 16 。当发现已存在的同名文件时系统将调用“交互回调函数”并发送“发现已存在文件消息”通知用户，用户可根据实际情况返回#跳过，#改名，#覆盖，#续传，与跳过，续传，改名，覆盖互斥。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发现存在文件</font></td>
+<td width="70%" valign="top">常量值为 2 。只有FTP上传对象有效，当发现已存在的同名文件时系统发送本消息通知用户。回调函数的参数3为已存在文件的大小，回调函数的参数4未使用。注意:只有设置为“被动选择”时才会收到本消息。本消息有返回值,可以为以下常量 #跳过，#改名，#覆盖，#续传。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载上传开始</font></td>
+<td width="70%" valign="top">常量值为 3 。开始下载或上传时发送本消息通知用户。回调函数的参数3为待下载或待上传的文件大小，回调函数的参数4未使用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载上传结束</font></td>
+<td width="70%" valign="top">常量值为 4 。下载、上传完毕，或用户结束下载、上传，系统发送本消息。回调函数的参数3为任务传送的总长度，回调函数的参数4未使用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">新下载线程启动</font></td>
+<td width="70%" valign="top">常量值为 5 。执行“增加线程”系统进行相关处理后发送本消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载线程继续下载</font></td>
+<td width="70%" valign="top">常量值为 7 。回调函数的参数3为本线程开始下载位置，回调函数的参数4为本线程结束下载位置。当下载线程完成指定下载任务后会查找是否有其它任务需要下载。比如，被中断的线程没有下载完毕的任务。如果发现存在这样的任务则发送本消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线程正常结束</font></td>
+<td width="70%" valign="top">常量值为 8 。回调函数的参数3为结束位置，回调函数的参数4未使用。线程正常结束后系统进行结束处理后发送本消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线程异常结束</font></td>
+<td width="70%" valign="top">常量值为 9 。回调函数的参数3为结束位置，回调函数的参数4未使用。线程异常结束后系统进行结束处理后发送本消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">收到数据</font></td>
+<td width="70%" valign="top">常量值为 16 。回调函数的参数3为接收到数据的大小，此值正常情况下等于接收大小；回调函数的参数4未使用。线程接收到指定大小的数据后发送本消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送数据</font></td>
+<td width="70%" valign="top">常量值为 17 。回调函数的参数3为发送数据的大小，此值正常情况下等于发送大小；回调函数的参数4未使用。线程发送指定大小的数据后发送本消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">系统日志</font></td>
+<td width="70%" valign="top">常量值为 0 。系统所产生日志。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">错误日志</font></td>
+<td width="70%" valign="top">常量值为 3 。错误时所产生的日志。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">接收日志</font></td>
+<td width="70%" valign="top">常量值为 2 。从服务器接收到数据时发送本类型的日志消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送日志</font></td>
+<td width="70%" valign="top">常量值为 1 。向服务器发送数据时发送本类型的日志消息通知用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">下载数据范围</font></td>
+<td width="70%" valign="top">常量值为 6 。回调函数的参数3为本线程开始下载位置，回调函数的参数4为本线程结束下载位置。收到“新下载线程启动”消息后会收到本消息，本消息说明了新下载线程的下载范围。注意：本消息是在与服务器交互完毕后，准备下载数据前产生的，本消息可以用来确定正式开始接收数据。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">系统处理</font></td>
+<td width="70%" valign="top">常量值为 0 。系统自动改名，如已经存在同名文件“file.exe”，将自动更名为“file(1).exe”，如果发现“file(1).exe”也存在则括号中的数字加1，即“file(2).exe”，直到“file(99).exe”为止。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结束下载</font></td>
+<td width="70%" valign="top">常量值为 1 。当收到“存在同名文件”时使用。用来结束下载线程。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">设置新名</font></td>
+<td width="70%" valign="top">常量值为 2 。当收到“存在同名文件”时使用。如果返回本值，那么需要在回调函数返回前调用下载对象中的“设新文件名”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存在同名文件</font></td>
+<td width="70%" valign="top">常量值为 18 。当下载对象创建本地文件时，发现已存在的同名文件时系统发送本消息通知用户。回调函数的参数3为已存在文件的大小，回调函数的参数4为待下载文件的大小。本消息有返回值，可以为以下常量 #系统处理，#结束下载，#设置新名。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

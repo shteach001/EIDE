@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>顶点成员方法</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">顶点成员方法</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>顶点成员方法。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">默认</font></td>
+<td width="70%" valign="top">常量值为 0 。当使用tessellator时，这个元素被插值或复制到顶点处理器的输入寄存器中。这个操作的输入可以是任何类型。这个操作的输出类型与输入相同。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横向正切</font></td>
+<td width="70%" valign="top">常量值为 1 。计算方形或三角形上某一点在横(U)向上的正切值。这个操作的输入类型可以是三维浮点型、四维浮点型、颜色，四维字节型或四维短整型。这个操作的输出类型总是三维浮点型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纵向正切</font></td>
+<td width="70%" valign="top">常量值为 2 。计算方形或三角形上某一点在纵(U)向上的正切值。这个操作的输入类型可以是三维浮点型、四维浮点型、颜色，四维字节型或四维短整型。这个操作的输出类型总是三维浮点型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">叉积正切</font></td>
+<td width="70%" valign="top">常量值为 3 。通过求两个正切值的叉积计算方形或三角形上某一点的法向。这个操作的输入类型可以是三维浮点型、四维浮点型、颜色，四维字节型或四维短整型。这个操作的输出类型总是三维浮点型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横向纵向</font></td>
+<td width="70%" valign="top">常量值为 4 。复制方形或三角形上某一点的横向,纵向(U,V)值，产生一个二维浮点数。这个操作的输入类型必须被设为未使用。这个操作的输出类型总是二维浮点型。输入数据流和偏移量也没有用到（但必须被设为0）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">查找</font></td>
+<td width="70%" valign="top">常量值为 5 。查找一个位移贴图。输入类型可以是二维、三维、四维类型。只有.x和.y成员被用于纹理贴图查找。这个操作的输出类型总是四维浮点型。只有设备支持位移贴图时才能使用这个方法。这个方法只能和采样(D3DDECLUSAGE_SAMPLE)一起使用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">查找采样</font></td>
+<td width="70%" valign="top">常量值为 6 。查找一个预取样的位移贴图。输入类型、流索引值和流偏移量都没有用到（类型必须被设为未使用(D3DDECLTYPE_UNUSED)，数据流和偏移量必须被设为 0）。这个操作的输出类型总是四维浮点型。只有设备支持位移贴图时才能使用这个方法。这个方法只能和采样(D3DDECLUSAGE_SAMPLE)一起使用。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

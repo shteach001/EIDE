@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>删除节点 (二叉树)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">删除节点</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt4.htm">二叉树</a></p>
+<p>删除二叉树中指定键值的节点。如果参数“删除标志”为假，仅删除一个节点的情况下分为以下几种不同的情形和执行结果：一，欲删除节点没有子节点，直接删除节点。二，欲删除节点仅有左子节点，删除节点后，把删除节点的左子节点连接到删除节点的双亲上。三，欲删除节点仅有右子节点，删除节点后，把删除节点的右子节点连接到删除节点的双亲上。四，欲删除节点有左子节点和右子节点，删除节点后，把删除节点的左子树上键值最大的节点（也是最右边的节点）连接到删除节点的双亲上，也就是提升到删除节点的位置，然后把它的左子树连接到它以前位置的双亲上。成功删除后，二叉树的当前节点值恢复为根节点值。该方法成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>二叉树</em>．删除节点 （<font color="#000000">键值</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">删除标记</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">键值</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。“删除节点”方法中欲删除节点的键值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">删除标记</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。该标记为真时表示删除节点及其所有的子节点，为假时表示仅删除单个节点。该参数可以省略，默认为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

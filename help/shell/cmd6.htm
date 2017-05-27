@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>执行</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">执行</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">杂类</a></p>
+<p>使用Windows的用户界面系统执行指定命令。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 执行 （<font color="#000000">［</font><font color="#000000">命令类型</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">欲操作文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">命令行</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">默认当前目录</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">窗口显示方式</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">命令类型</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供欲执行命令的类型，可以为以下常量值之一： 
+    1: #编辑文档;  启动编辑软件打开“欲操作文件名”参数所指定的文档文件进行编辑。
+    2: #浏览文件夹;  打开“欲操作文件名”参数所指定的文件夹进行浏览。
+    3: #寻找文件;  打开“欲操作文件名”参数所指定的文件夹进行文件寻找操作。
+    4: #打开文件;  打开“欲操作文件名”参数所指定的文件，该文件可以是可执行文件、文档文件或文件夹。
+    5: #打印文档;  打印“欲操作文件名”参数所指定的文档文件，注意该文档的编辑软件可能不支持本命令，故使用前需要先测试是否可用。
+    如果本参数被省略或者为0，系统将首先搜寻注册表以获取对应于欲操作文件的一个合适命令类型，如果未找到，将使用“#打开文件”命令。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲操作文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供欲操作文件或文件夹的名称。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">命令行</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。如果欲进行操作的类型为“打开文件”且被打开文件为可执行文件，本参数提供启动该可执行文件时欲附加的命令行文本，其它情况下本参数将被忽略。如果本参数被省略，默认为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">默认当前目录</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数提供命令执行时的默认当前目录，如果被省略，默认为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">窗口显示方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下常量之一：1、#隐藏窗口； 2、#普通激活； 3、#最小化激活； 4、#最大化激活； 5、#普通不激活； 6、#最小化不激活。如果省略本参数，默认为“普通激活”方式。如果参数“欲操作文件名”不是可执行文件，窗口显示方式将转交给与其相关联的可执行程序处理，至于是否能正确处理此显示方式，取决于该程序自身。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

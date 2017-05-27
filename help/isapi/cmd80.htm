@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>取日志信息 (互联网筛选器)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">取日志信息</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt6.htm">互联网筛选器</a></p>
+<p>获取日志信息，通过变量参数返回。仅当“取事件类型()”返回值为 #筛选器事件.记录日志 的情况下才能调用本方法。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>互联网筛选器</em>．取日志信息 （<font color="#000000">［</font><font color="#000000">主机名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">用户名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">服务器名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">操作类型</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">目标</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">参数</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">HTTP状态码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">Win32错误码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">发送字节数</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">接收字节数</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">处理时间(ms)</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">主机名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。The client's host name。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。The client's user name。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。The name of the server to which the client is connected。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">操作类型</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。The HTTP operation type。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">目标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。The target of the HTTP command。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量。The parameters passed to the HTTP command。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">HTTP状态码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。The HTTP return status。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">Win32错误码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。The Win32 error code。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发送字节数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。The number of bytes sent from the server to the client。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">接收字节数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。The number of bytes received by the server from the client。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">处理时间(ms)</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。单位毫秒。The time in milliseconds required to process the client request。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>邮槽客户机</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">邮槽客户机</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">进程通讯支持库</a></p><p>邮槽是一种简单的单向“进程间通信”机制，在两个进程之间建立一种不可靠的单向数据通信。在同一台计算机的不同进程之间，或在跨越整个网络的不同计算机的进程之间，协助进行消息的传输。邮槽的数据通讯方式是单向的，只能从客户机以数据报的形式广播给一个或者多个服务器。在Win9x下使用要注意一个问题:假如在一个读请求尚未完成的前提下，服务器应用突然中止运行，应用程序便会被永远地“挂起”，或者“凝结”。要想取消，唯一的办法就是重新启动Windows。为解决这个问题，可让服务器在单独一个线程中读取数据。</p>
+<p><big><strong><a name="方法"></a>方法：</big></strong></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="cmd14.htm">创建</a></td>
+<td width="20%"> <a href="cmd15.htm">写数据</a></td>
+<td width="20%"> <a href="cmd16.htm">关闭</a></td>
+<td width="20%"> </td></tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

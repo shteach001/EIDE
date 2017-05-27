@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>寻找文件</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">寻找文件</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct12.htm">磁盘操作</a></p>
+<p>返回一个文本，用以表示所找到的文件名或目录名，它必须与所要求的名称格式或文件属性相匹配。支持使用多字符 (*) 和单字符 (?) 通配符来指定多重文件。在某子程序中第一次调用本命令时，必须指定“欲寻找文件”参数，否则将返回空文本 (“”)。在第一次调用以后如果想得到其它匹配的文件名，再一次调用本命令，且不要提供欲寻找文件名参数。如果已没有合乎条件的文件，本命令会返回一个空文本。一旦返回值为空文本，要再次调用本命令时，就必须指定“欲寻找文件”参数。不必访问完所有当前匹配的文件名，就可以使用一个新的“欲寻找文件”进行新的寻找。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; 寻找文件 （<font color="#000000">［</font><font color="#000000">欲寻找的文件或目录名称</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲寻找文件的属性</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲寻找的文件或目录名称</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。可以使用多字符 (*) 和单字符 (?) 通配符来指定多重文件。在非首次寻找文件时，参数值必须为空或被省略。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲寻找文件的属性</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下常量值或其和： 1、#只读文件； 2、#隐藏文件； 4、#系统文件； 16、#子目录； 32、#存档文件 。通过将这些常量值加起来可以一次设置多个文件属性。如果省略本参数，默认为搜寻除子目录外的所有文件。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

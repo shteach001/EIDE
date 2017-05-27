@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="GB2312" />
+	<title>基本设置</title><!-- 设置的标题 -->
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="common.css" />
+</head>
+<body style="overflow-y : auto; padding: 20px;">
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="自动检测更新" checked="checked"> 自动检测更新</label>
+		</div>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">呼出模块窗口（快捷键）：</span>
+		<select name="呼出热键_模块" class="form-control">
+			<option value="0">无</option>
+			<option value="1" selected="selected">Ctrl + ~</option>
+			<option value="2">Ctrl + 1</option>
+			<option value="3">Ctrl + F1</option>
+			<option value="4">Alt + ~</option>
+			<option value="5">Alt + F1</option>
+			<option value="6">Alt + F2</option>
+		</select>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">呼出便签窗口（快捷键）：</span>
+		<select name="呼出热键_便签" class="form-control">
+			<option value="0">无</option>
+			<option value="11">Ctrl + ~</option>
+			<option value="22">Ctrl + 1</option>
+			<option value="33">Ctrl + F1</option>
+			<option value="44">Alt + ~</option>
+			<option value="55" selected="selected">Alt + F1</option>
+			<option value="66">Alt + F2</option>
+		</select>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">变更链接器 的菜单位置：</span>
+		<select name="菜单_链接器" class="form-control">
+			<option value="0" selected="selected">放到编译菜单</option>
+			<option value="1">放到代码编辑区的右键菜单</option>
+			<option value="2">不启用</option>
+		</select>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">导入常用类 的菜单位置：</span>
+		<select name="菜单_导入常用类" class="form-control">
+			<option value="0" selected="selected">放到程序集→程序数据的右键菜单</option>
+			<option value="1">放到代码编辑区的右键菜单</option>
+			<option value="2">不启用</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="下划线替换键"> 按快捷键F11代替输入“_”</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="不自动加载模块" checked="checked"> 在 [编译模块] 环境下不自动加载模块</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="关联模块"> 关联模块（关联后双击模块文件时，可直接查看此模块的信息）</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="替换模块查看器" checked="checked"/> 在易语言里采用易语言助手模块信息查看器查看模块信息 <code>*</code>
+				<a href="http://e.125.la/?demo=d3" target="_blank">查看效果</a>
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="替换命令图标" checked="checked"/> 替换命令显示图标 <code>*</code>
+				<a href="http://e.125.la/?demo=d1" target="_blank">查看效果</a>
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="编译大小"> 编译时解决对象操作文本大于512KB时，程序直接挂掉的问题 (易语言5.1以上请无视)
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="30秒Bug"> 修复易语言刚打开30秒内无法编译程序 <code>*</code>
+				<a href="http://e.125.la/?demo=d5" target="_blank">查看效果</a>
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="Win7Bug" value="" placeholder=""> 修复易语言在WIN7下调试进程不会自动销毁(易语言5.1以上请无视) <code>*</code> [慎用]
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="修复向程序发送命令失败" checked="checked"> 修复双击打开源码时，提示[向程序发送命令失败]的问题 <code>*</code>
+			</label>
+		</div>
+	</div>
+
+	<div class="notes">
+		<h4>注意</h4>
+		<p>尾部带有[慎用]的表示在有一些电脑会导致易语言出现未知情况，如：关闭易语言时会导致崩溃等等</p>
+	</div>
+</body>
+</html>

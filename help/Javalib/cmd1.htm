@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建 (Java虚拟机)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">创建</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">Java虚拟机</a></p>
+<p>创建JAVA虚拟机，并同时设置“用户类路径(classpath)”和“本地库路径(librarypath)”。如果不需要特别指定“用户类路径”或“本地库路径”，不必显式调用本方法，“Java虚拟机”会在必要的时机（进入对象作用域时）自动创建。成功返回“真”，失败返回“假”。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>Java虚拟机</em>．创建 （<font color="#000000">［</font><font color="#000000">用户类路径</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">本地库路径</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户类路径</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。指定java.class.path属性，各路径间以半角分号;分隔，如“c:\myclasses;d:\xx.jar”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">本地库路径</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。指定java.library.path属性，各路径间以半角分号;分隔，如“c:\myclasses”。此类目录下一般存放实现了JNI接口的dll或so文件。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>连接MySql</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">连接MySql</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">MySql操作</a></p>
+<p>连接到MySql服务器，返回一个MySql句柄。返回0表示连接失败，请检查该MYSQL服务器是否允许连接。有效的Mysql句柄使用完毕后需通过“断开Mysql”命令释放相关资源。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 连接MySql （<font color="#000000">［</font><font color="#000000">MySql服务器地址</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">用户名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">密码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">数据库名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">端口</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">MySql服务器地址</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数的作用是设置MYSQL服务器的地址。请输入您想要连接的MySql服务器的地址，如果为空或字符串"localhost"，则是到本地主机的一个连接。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数的作用是设置您的用户名，如果为空，为当前用户。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">密码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数的作用是设置您的密码，如果为空，且USER表中设置了“空字段可用”属性则可以匿名登陆。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据库名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数的作用是设置您想要访问的数据库，如果为空则为默认数据库。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">端口</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数的作用是设置您想要连接的MySql服务器的端口，如果为空则为默认端口。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

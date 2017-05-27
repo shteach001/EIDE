@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>FTP目录列表</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">FTP目录列表</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">HTTP及FTP操作</a></p>
+<p>返回FTP服务器上指定目录内的所有匹配文件和子目录信息。成功返回被找到的文件和子目录的数目，失败返回 0 。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; FTP目录列表 （<font color="#000000">欲列出的文件</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲列出文件的属性</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">存放文件名的数组变量</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">存放文件属性的数组变量</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">存放文件尺寸的数组变量</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">存放文件时间的数组变量</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲列出的文件</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。可以包含路径，可以使用多字符 (*) 和单字符 (?) 通配符来指定多重文件及目录。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲列出文件的属性</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值可以为以下常量值或其和： 1、#只读文件； 2、#隐藏文件； 4、#系统文件； 16、#子目录； 32、#存档文件 。通过将这些常量值加起来可以一次设置多个文件属性。如果省略本参数，默认为搜寻所有子目录和文件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放文件名的数组变量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型，参数数据只能提供变量数组。在命令执行完毕后，本变量数组内被顺序填入所找到的匹配文件和子目录名称。变量数组内原有数据被全部销毁，变量数组的维数被自动调整为所找到的文件数目。如果本参数被省略，默认值为空。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放文件属性的数组变量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量数组。在命令执行完毕后，本变量数组内被顺序填入所找到的匹配文件的属性，并与文件名数组成员一一对应。此属性值由以下常量或其和构成： 1、#只读文件； 2、#隐藏文件；  4、#系统文件； 16、#子目录；32、#存档文件 。要判断是否设置了某个属性，在返回值与想要得知的属性值之间使用“位与”命令进行比较。如果所得的结果不为零，则表示设置了这个属性值。变量数组内原有数据被全部销毁，变量数组的维数被自动调整为所找到的文件数目。如果本参数被省略，默认值为空。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放文件尺寸的数组变量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量数组。在命令执行完毕后，本变量数组内被顺序填入所找到的匹配文件的尺寸，并与文件名数组成员一一对应。变量数组内原有数据被全部销毁，变量数组的维数被自动调整为所找到的文件数目。如果本参数被省略，默认值为空。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放文件时间的数组变量</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;日期时间型，参数数据只能提供变量数组。在命令执行完毕后，本变量数组内被顺序填入所找到的匹配文件的最后修改时间，并与文件名数组成员一一对应。此文件时间即FTP服务器返回的文件时间，不做任何时区转换。变量数组内原有数据被全部销毁，变量数组的维数被自动调整为所找到的文件数目。如果本参数被省略，默认值为空。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

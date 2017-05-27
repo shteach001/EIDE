@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Java本地接口</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">Java本地接口</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">Java支持库</a></p><p>本类型是对JNI Environment的封装。JNI即Java Native Interface：JAVA本地接口。程序中主要使用本类型完成与Java虚拟机的交互，通过调用本类型的一系列方法，达到访问Java类库的目的。本类型的方法大致分为以下几类：类/对象操作；全局/局部引用；访问对象成员；调用对象方法；字符串操作；数组操作；异常处理；其它。这些方法基本上涵盖了访问Java类库所需的一切。对于Java领域中的“类”“对象”“成员”“方法”“字符串”“数组”“异常”等类或对象，在易语言中分别用一个“整数型”标志符来表示，相应的称为“类标志符”“对象标志符”“成员标志符”“方法标志符”“字符串对象标志符”“数组标志符”“异常对象标志符”等。此类标志符在本支持库中被广泛使用。调用相关的方法可以获得所需标志符。</p>
+<p><big><strong><a name="方法"></a>方法：</big></strong></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="cmd5.htm">取版本</a></td>
+<td width="20%"> <a href="cmd7.htm">加载类</a></td>
+<td width="20%"> <a href="cmd8.htm">字节集加载类</a></td>
+<td width="20%"> <a href="cmd9.htm">取父类</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd10.htm">分配对象</a></td>
+<td width="20%"> <a href="cmd11.htm">创建对象</a></td>
+<td width="20%"> <a href="cmd12.htm">取对象类</a></td>
+<td width="20%"> <a href="cmd13.htm">是否为类实例</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd14.htm">是否相同</a></td>
+<td width="20%"> <a href="cmd15.htm">可否强制转换</a></td>
+<td width="20%"> <a href="cmd16.htm">创建全局引用</a></td>
+<td width="20%"> <a href="cmd17.htm">销毁全局引用</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd18.htm">销毁局部引用</a></td>
+<td width="20%"> <a href="cmd19.htm">取成员标志符</a></td>
+<td width="20%"> <a href="cmd20.htm">取成员</a></td>
+<td width="20%"> <a href="cmd21.htm">置成员</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd22.htm">取对象成员</a></td>
+<td width="20%"> <a href="cmd23.htm">置对象成员</a></td>
+<td width="20%"> <a href="cmd24.htm">取静态成员标志符</a></td>
+<td width="20%"> <a href="cmd25.htm">取静态成员</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd26.htm">置静态成员</a></td>
+<td width="20%"> <a href="cmd27.htm">取静态对象成员</a></td>
+<td width="20%"> <a href="cmd28.htm">置静态对象成员</a></td>
+<td width="20%"> <a href="cmd29.htm">取方法标志符</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd30.htm">方法</a></td>
+<td width="20%"> <a href="cmd31.htm">对象方法</a></td>
+<td width="20%"> <a href="cmd32.htm">空方法</a></td>
+<td width="20%"> <a href="cmd33.htm">非虚拟方法</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd34.htm">非虚拟对象方法</a></td>
+<td width="20%"> <a href="cmd35.htm">非虚拟空方法</a></td>
+<td width="20%"> <a href="cmd36.htm">取静态方法标志符</a></td>
+<td width="20%"> <a href="cmd37.htm">静态方法</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd38.htm">静态对象方法</a></td>
+<td width="20%"> <a href="cmd39.htm">静态空方法</a></td>
+<td width="20%"> <a href="cmd40.htm">创建字符串</a></td>
+<td width="20%"> <a href="cmd41.htm">取字符串长度</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd42.htm">取字符串文本</a></td>
+<td width="20%"> <a href="cmd48.htm">取数组长度</a></td>
+<td width="20%"> <a href="cmd49.htm">创建数组</a></td>
+<td width="20%"> <a href="cmd50.htm">取数组成员</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd51.htm">置数组成员</a></td>
+<td width="20%"> <a href="cmd52.htm">创建对象数组</a></td>
+<td width="20%"> <a href="cmd53.htm">取对象数组成员</a></td>
+<td width="20%"> <a href="cmd54.htm">置对象数组成员</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd55.htm">抛出异常</a></td>
+<td width="20%"> <a href="cmd56.htm">抛出新异常</a></td>
+<td width="20%"> <a href="cmd57.htm">是否有异常</a></td>
+<td width="20%"> <a href="cmd58.htm">取异常对象</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd59.htm">输出异常</a></td>
+<td width="20%"> <a href="cmd60.htm">取异常文本</a></td>
+<td width="20%"> <a href="cmd61.htm">清除异常</a></td>
+<td width="20%"> <a href="cmd62.htm">致命错误</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="cmd63.htm">进入监视</a></td>
+<td width="20%"> <a href="cmd64.htm">退出监视</a></td>
+<td width="20%"> </td><td width="20%"> </td></tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

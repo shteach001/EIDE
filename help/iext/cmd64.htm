@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>插入表项 (超级列表框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">插入表项</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt3.htm">超级列表框</a></p>
+<p>在指定的位置插入新表项，成功返回新表项的位置索引，失败返回 -1 。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>超级列表框</em>．插入表项 （<font color="#000000">［</font><font color="#000000">插入位置</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">标题</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图片索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">状态图片索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">缩进数目</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">表项数值</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">插入位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定新表项插入时的位置索引，索引值从 0 开始。如果提供 -1 ，则插入到列表框的尾部。如果本参数被省略，默认值为 -1。注意，“类型”属性为“大图标列表框”或“小图标列表框”的情况下，将始终在所有表项的最后插入新的表项。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标题</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数指定表项的标题文本。如果被省略，默认值为空文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。图片索引用于指定“图片组”属性中的某张图片。索引值从 0 开始，-1 表示无图片。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">状态图片索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。状态图片索引用于指定“状态图片组”属性中的某张图片。索引值从 0 开始，最大为 14 ， -1 表示无图片。如果本参数被省略，默认值为 -1 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">缩进数目</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。“缩进数目”仅在报表型列表框才有效，用作指定显示时在表项首部增加的空白数。如果本参数被省略，默认值为 0 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">表项数值</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。该数值与指定表项相关联。如果本参数被省略，默认值为 0 。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

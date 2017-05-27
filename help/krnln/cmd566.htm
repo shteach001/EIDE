@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打开加密文件</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">打开加密文件</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct13.htm">文件读写</a></p>
+<p>打开一个以指定密码加密的文件，以对此文件进行快速安全访问，支持大尺寸文件。成功返回被打开文件的文件号，失败返回 0。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 打开加密文件 （<font color="#000000">欲打开的文件名称</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">打开方式</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">共享方式</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">文件密码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">明文区长度</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲打开的文件名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">打开方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值说明对文件的操作方式，如果省略本参数，默认为“#读写”。方式值可以为以下常量之一：
+  1、#读入：从指定文件读入数据，如果该文件不存在则失败；
+  2、#写出：写出数据到指定文件，如果该文件不存在则失败；
+  3、#读写：从文件中读入数据或者写出数据到文件，如果该文件不存在则失败；
+  4、#重写：写出数据到指定文件。如果该文件不存在则先创建一个新文件，如果已经存在就先清除其中的所有数据；
+  5、#改写：写出数据到指定文件。如果该文件不存在则创建一个新文件，如果已经存在就直接打开；
+  6、#改读：从文件中读入数据或者写出数据到文件。如果该文件不存在则创建一个新文件，如果已经存在就直接打开。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">共享方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。参数值指定限制其它进程操作此文件的方式。如果省略本参数，默认为“#无限制”。方式值可以为以下常量之一：
+  1、#无限制：允许其它进程任意读写此文件；
+  2、#禁止读：禁止其它进程读此文件；
+  3、#禁止写：禁止其它进程写此文件；
+  4、#禁止读写：禁止其它进程读写此文件。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件密码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。如果即将打开的文件中不存在任何数据（即为空文件或将创建的新文件），本参数指定保护该文件时所将使用的密码，以后所有写入该文件中的数据都将使用此密码加密后写入。建议密码长度最少为6个字符以上，并且最好混合使用汉字、字母、数字、符号，以保证密码本身的安全性。如果即将打开的文件中已经存在数据，本参数提供访问此已有数据时所需要的正确密码，如果此数据没有加密，请提供空文本以表示不需要密码。注意系统不会去校验密码的正确性，如果提供错误的密码，读写已有文件数据将得到错误的结果，请千万注意。因此如果需要校验密码是否正确，请在加密后的文件中保存正确的密码文本或密码文本的数据摘要信息（见数据操作支持库一中的“取数据摘要”命令），然后在打开加密文件后读出该信息对密码进行验证。系统所使用的加密算法是国际标准的RC4算法，可以保证数据的安全性。如果本参数被省略，则默认为空文本，即无密码。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">明文区长度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定从文件首部开始不希望被加密部分的长度，系统在读写此区域内的数据时，不会使用密码对其进行加解密操作。此参数用作将加密文件分为明文区和密文区两部分，以方便某些应用程序同时保存一些明文数据。注意当打开已有加密数据的文件时，此参数值必须与新建此加密文件时所提供的参数值一致，否则会造成数据访问错误。如果本参数被省略，则默认值为0，即没有明文区。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

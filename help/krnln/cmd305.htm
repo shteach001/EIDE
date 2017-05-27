@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>复制 (画板)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">复制</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt7.htm">画板</a></p>
+<p>将源画板（本命令的调用画板对象）中指定区域的内容快速复制到目的画板中的指定位置，使用源和目的画板各自的当前绘画单位。如果源画板当前不可视，其“自动重画”属性必须为真。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>画板</em>．复制 （<font color="#000000">［</font><font color="#000000">欲复制区域的左边</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制区域的顶边</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制区域的宽度</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制区域的高度</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">复制到的目的画板</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制到位置左边</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲复制到位置顶边</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">复制方法</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的左边</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数被省略，默认值为 0 。使用源画板的当前绘画单位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的顶边</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数被省略，默认值为 0 。使用源画板的当前绘画单位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的宽度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数被省略，默认等同于源画板的宽度。使用源画板的当前绘画单位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制区域的高度</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数被省略，默认等同于源画板的高度。使用源画板的当前绘画单位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">复制到的目的画板</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;画板。如果本参数被省略，默认为复制到源画板对象。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制到位置左边</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数被省略，默认值为 0 。使用目的画板的当前绘画单位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲复制到位置顶边</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果本参数被省略，默认值为 0 。使用目的画板的当前绘画单位。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">复制方法</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数定义在将画板内容复制到目的画板上时对图像执行的位操作。可以为以下常量值之一或者其它自定义操作码：
+   1、#拷贝； 2、#翻转拷贝； 3、#位异或； 4、#位或； 5、#位与。 
+如果省略本参数，默认为“#拷贝”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

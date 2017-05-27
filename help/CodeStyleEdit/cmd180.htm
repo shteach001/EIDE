@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>UTF8位置到字节位置 (代码编辑框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">UTF8位置到字节位置</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">代码编辑框</a></p>
+<p>Scintilla内部对数据的存储采用了UTF8编码格式英文字母数字占用1个字节，中文占用3个字节。并且它本身提供的涉及位置的API所使用的位置单位都是字节，所以这就对处理中文（以及其它亚洲国家的语言，比如日文，韩文等）造成了很多不便。本命令的功能就是处理UTF8位置转换到字节位置。当需要对多语言混合的数据进行定位时，可以把它们的位置单位看成UFT8，然后使用本命令转换为字节单位，接下来就可以使用其它命令进行处理了。位置从0开始，如果位置超出数据长度返回0。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>代码编辑框</em>．UTF8位置到字节位置 （<font color="#000000">UTF8位置</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">UTF8位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。以UTF8作为单位长度的位置。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

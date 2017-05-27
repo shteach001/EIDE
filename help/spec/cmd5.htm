@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>验证</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">验证</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">程序调试</a></p>
+<p>类似于易语言核心库中的“检查()”命令，本命令在调试版中验证参数值（或其计算结果）是否为“零值”，如果是“零值”则易程序的执行将被暂停且警示（相当于设置了条件断点）。与“检查()”命令不同的是，本命令在运行版中仅仅忽略“检查”这个步骤，但不会放弃执行参数语句（这在参数为命令/方法调用或子语句的情况下尤为重要）；此外，本命令可以检查任意基本类型的参数，且可以同时检查多个参数。如果提供了多个参数，所有的参数都会被验证，但只要出现一个“零值”，程序就会被暂停且警示。“零值”定义：字节型/短整数型/整数型/长整数型值等于0，小数型/双精度小数型绝对值小于0.00001，逻辑型值为“假”，文本型/字节集型数据长度等于0，数组成员数等于0，日期时间值为“1899/12/30 00:00:00”，子程序指针的执行地址为0。注：目前暂不支持“子语句类型”的参数。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 验证 （<font color="#000000">［</font><font color="#000000">欲检查值</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲检查值</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；通用型，参数数据可以同时提供数组或非数组数据。可以为普通数值、变量、命令/方法调用、子语句等。如果本参数为命令/方法调用或子语句，总是会被执行，即使在非调试版本中。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

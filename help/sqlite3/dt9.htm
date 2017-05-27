@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Sqlite字段信息</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">Sqlite字段信息</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">Sqlite3数据库支持库</a></p><p>描述Sqlite字段定义信息，供“Sqlite数据库.创建表()”时使用。因为Sqlite数据库本质上是无类型的数据库，因而您完全可以忽略“类型”“最大文本长度”两个成员，而仅使用“名称”成员。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">名称</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。字段名称长度不限。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">类型</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 0 。可以为以下值或常量值之一：-1、(主键，整数型自增字段)； 0、(无类型)； 1、#字节型； 2、#短整数型； 3、#整数型； 4、#长整数型； 5、#小数型； 6、#双精度小数型； 7、#逻辑型； 8、#日期时间型； 10、#文本型； 11、#字节集型； 12、#备注型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大文本长度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;初始值为 0 。本成员仅当字段类型为“文本型”时才有效，用作指定文本的“最大可能长度”（数据库不对此长度不作任何限制）；如果本成员值为0，表示该字段可存储任意长度的文本。如果字段类型不为“文本型”，本成员将被忽略。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

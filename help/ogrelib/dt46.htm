@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理过滤类型</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理过滤类型</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>纹理过滤类型。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">禁止</font></td>
+<td width="70%" valign="top">常量值为 0 。此类型可以用来禁用多纹理渐进(Mipmap)过滤类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最近点取样</font></td>
+<td width="70%" valign="top">常量值为 1 。此类型表示D3D将先计算纹理地址（通常都不是整数），然后使用离该值最近的整数地址处的颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线性纹理过滤</font></td>
+<td width="70%" valign="top">常量值为 2 。此类型表示D3D将用双线性过滤算法来取颜色，此方法比“最近点取样”要好，不过也要消耗更多的资源。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">各向异性纹理过滤</font></td>
+<td width="70%" valign="top">常量值为 3 。此类型表示D3D将用根据像素被反向映射到纹理空间中的伸长率（也就是长度除以宽度）来取颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">锥体四次过滤</font></td>
+<td width="70%" valign="top">常量值为 6 。此类型表示D3D将用锥体四次过滤(4-sample tent)算法来取颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">高斯四次过滤</font></td>
+<td width="70%" valign="top">常量值为 7 。此类型表示D3D将用高斯四次过滤(4-sample Gaussian)算法来取颜色。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

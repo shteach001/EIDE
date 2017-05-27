@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>推迟调用子程序_高精度计时</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">推迟调用子程序_高精度计时</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct3.htm">附加</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>本命令被执行时，在内部启动一个计时器（精度小于1毫秒），然后立刻返回（以便易语言继续执行后面的程序代码），当计时时间到时才调用参数所指定的子程序。如上所述，本命令不会阻塞易语言程序的运行。本命令的第四个参数“返回值”目前不予使用。请注意保证子程序调用时参数依然有效。被推迟调用的子程序是在另外的线程中调用的，请注意保证线程安全。相对于“推迟调用子程序”，本命令只是计时精确度更高（同时更耗费CPU），其他功能相同。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 推迟调用子程序_高精度计时 （<font color="#000000">推迟时间</font><font color="#000000">，&nbsp;</font><font color="#000000">子程序指针或子程序地址</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">保留参数</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">返回值</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">参数</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">推迟时间</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。单位为毫秒。如果本参数小于或等于0，则子程序将被立刻调用。本参数最大可设置为 2147483647(0x7fffffff) 毫秒（约 596 小时）。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">子程序指针或子程序地址</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;通用型。提示：在子程序名称前加“&”即可得到该子程序的“子程序指针”，如“&子程序1”就是“子程序1”的子程序指针；子程序地址可通过本库中的“取子程序地址()”命令获取，“到整数(&子程序1)”返回的也是子程序1的执行地址，也可通过Windows系统API函数“GetProcAddress()”获取，或由外部程序传入。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">保留参数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;通用型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">返回值</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;通用型，参数数据只能提供变量。本参数用于接收子程序被调用后的返回值；如果该子程序没有返回值或不需要接收返回值，请省略本参数。提供本参数时，请务必提供准确的数据类型，否则所得结果可能不正确。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；通用型。本参数值将作为参数传入被调用子程序。如果相应子程序没有参数，请省略本参数；如果相应子程序有多个参数，请重复提供本参数。请务必提供准确的参数类型和参数个数，否则后果不可预知。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="GB2312" />
+	<title>自动备份</title><!-- 设置的标题 -->
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="common.css" />
+	<link rel="stylesheet" href="bootstrap-theme.min.css" />
+</head>
+<body style="overflow-y : auto; padding: 20px;">
+<fieldset>
+	<legend>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="自动备份源码" checked="checked"> 自动备份源码&nbsp;
+				<a href="http://e.125.la/e.php?mod=demo&eid=57">注意事项</a>
+			</label>
+		</div>
+	</legend>
+	<!-- 开始其它组件 -->
+	<div class="input-group" style="width:410px;">
+		<span class="input-group-addon">备份间隔：</span>
+		<input type="text" class="form-control" name="自动备份_间隔" value="10">
+		<span class="input-group-addon">分钟自动备份1次，最小为1分钟</span>
+	</div>
+
+	<div class="input-group" style="width:550px;">
+		<span class="input-group-addon">最大备份：</span>
+		<input type="text" class="form-control" name="自动备份_最大备份" value="30">
+		<span class="input-group-addon">份 (最大的备份数量，最小值为10，超过将替换较旧的)</span>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">备份格式：</span>
+		<select name="自动备份_格式" class="form-control">
+			<option value="0">名称_xx-xx-xx 12:00</option>
+			<option value="1">名称_xx年x月x日 12:00</option>
+		</select>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">备份模式：</span>
+		<select name="自动备份_模式" class="form-control">
+			<option value="0">备份到指定路径下</option>
+			<option value="1">备份到源码所在目录下 (下方的备份路径请无视)</option>
+		</select>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">备份路径：</span>
+		<input type="text" class="form-control" name="自动备份_路径" value="{pt}backup\">
+		<span class="input-group-btn">
+	    		<button class="btn btn-default" type="button" data-name="自动备份_路径" data-action="folder" >浏览</button>
+	    </span>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" name="自动备份_启用黑名单"> 启用黑名单 (在黑名单中的源码名称将不会自动备份，每个一行，如：助手.e)</label>
+			<textarea class="form-control" name="自动备份_黑名单" rows="5" placeholder="如：助手.e"/></textarea>
+		</div>
+	</div>
+
+	<div class="notes">
+		<h4>备份路径</h4>
+		<p>&nbsp;<kbd>{p}</kbd> = 易语言根目录，如：<kbd>D:\program files (x86)\e\</kbd></p>
+		<p><kbd>{pt}</kbd> = 易语言助手根目录，如：<kbd>D:\program files (x86)\e\lib\eTools\</kbd></p>
+	</div>
+	<!-- 结束其它组件 -->
+</fieldset>
+</body>
+</html>

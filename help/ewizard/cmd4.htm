@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>删除标记程序</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">删除标记程序</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">易向导</a></p>
+<p>删除程序中所有注释内包含指定标记的各类程序项目（不包括程序代码段）。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 删除标记程序 （<font color="#000000">标记名</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标记名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。标记可以在易语言程序中任何可以输入备注的地方设置，譬如程序语句、变量、窗口组件、自定义数据类型等等，所设置标记在易向导最终所生成的程序中将被自动删除。标记的定义格式为“$(标记名称)”或“$(标记名称/)”加“$(/标记名称)”，后两个只能在程序语句中成对使用，用作定义具有多行语句的代码块标记，定义方法为在所选定程序块首语句的备注中加上“$(标记名称/)”，在所选定程序块末语句的备注中加上“$(/标记名称)”，两者名称必须相同。在程序语句备注中使用“$(标记名称)”格式设置标记，可定义该单行语句为一个代码块。同一个地方可以连续设置多个标记，譬如“$(标记名称1)$(标记名称2)”。标记可以与正常备注信息混合排放。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

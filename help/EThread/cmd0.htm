@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>启动线程</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">启动线程</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct0.htm">多线程控制</a></p>
+<p>创建并启动一条线程，可重复使用以创建多条线程，成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 启动线程 （<font color="#000000">欲执行的子程序</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">参数数据</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">线程句柄</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲执行的子程序</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;子程序指针。本参数提供创建线程时欲启动的子程序，根据是否需要传递参数数据，该子程序必须没有或具有一个整数型参数，否则将出错。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数数据</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供线程被启动时传递到欲启动子程序的整数数据。如果本参数未被省略，此时被启动子程序必须接收一个整数型参数，否则将出错。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线程句柄</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。如果提供了本参数，将向参数变量写入线程句柄（Windows下为HANDLE，Linux下为pthread_t），请在适当的时机关闭该句柄。如果不提供本参数接收线程句柄，内部将自动处理线程句柄。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

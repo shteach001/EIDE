@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>定义二维纹理图片</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">定义二维纹理图片</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct6.htm">纹理图片</a></p>
+<p>成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 定义二维纹理图片 （<font color="#000000">等级</font><font color="#000000">，&nbsp;</font><font color="#000000">颜色成份</font><font color="#000000">，&nbsp;</font><font color="#000000">宽度</font><font color="#000000">，&nbsp;</font><font color="#000000">高度</font><font color="#000000">，&nbsp;</font><font color="#000000">格式</font><font color="#000000">，&nbsp;</font><font color="#000000">图片像素</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">等级</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“0”。通常为0，只有在多贴图情况下表，说明贴图的等级。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">颜色成份</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。必须为1、2、3或4。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">宽度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。为范围大于0的数值，并且必须为2的幂数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">高度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。为范围大于0的数值，并且必须为2的幂数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">格式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。指出所读象素数据元素的格式。参数值可以为以下常量：
+	6400、#单个颜色索引，每个元素为一个颜色索引号；
+	6403、#红色分量，每个元素为一个红色分量的值；
+	6404、#绿色分量，每个元素为一个绿色分量的值；
+	6405、#蓝色分量，每个元素为一个蓝色分量的值；
+	6406、#混合通道分量，每个元素为一个混合通道分量的值；
+	6407、#红绿蓝分量，每个元素为一个红绿蓝分量的值；
+	6408、#红绿蓝混合通道分量，每个元素为一个红绿蓝混合通道分量的值；
+	6409、#亮度，每个元素为一个亮度分量的值；
+	6410、#亮度和混合通道分量，每个元素为亮度和混合通道分量的值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片像素</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。一组包含纹理图片像素信息的数组，数组成员组成为[宽度][高度][颜色成份],否则纹理图片将发生变形。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

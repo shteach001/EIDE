@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>进入选择模式</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">进入选择模式</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct12.htm">交互操作</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>进入选择模式后画出的任何图元都不会显示出来。只有在选择模式下对模型进行命名的操作才有效。成功后将所有在选择区域中包含的命中记录存放在数组参数中。并且返回命中记录的个数。否则清空数组，并且返回0。
+	选择缓存内容的排列规则：
+		1.命中级别： 如果为顶级记录，值为1，二级为2，依次类推。
+		2.最近距离：只表示在屏幕内的深度，并不对应Z坐标，数值为VC中的 unsigned int 数据类型，需要转换到0~4294967295范围的值。不同的投影方式，会有不同的结果。
+		3.最远距离：同上。
+		4.名字列表：成员1表示顶级名字，成员2表示二级名字，依次类推，最后一个成员表示命中名字。
+		5.如果存在其他命中记录就重复1-4步。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 进入选择模式 （<font color="#000000">屏幕横向位置</font><font color="#000000">，&nbsp;</font><font color="#000000">屏幕纵向位置</font><font color="#000000">，&nbsp;</font><font color="#000000">选择区域宽度</font><font color="#000000">，&nbsp;</font><font color="#000000">选择区域高度</font><font color="#000000">，&nbsp;</font><font color="#000000">命名图元子程序</font><font color="#000000">，&nbsp;</font><font color="#000000">存放选择选择缓存的数组</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">屏幕横向位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。在当前OPenGL所显示的窗口组件中的横向位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">屏幕纵向位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。在当前OPenGL所显示的窗口组件中的纵向位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选择区域宽度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。需要进行选择的区域的宽度，宽度越大搜索范围越大，计算量也越大。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选择区域高度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。需要进行选择的区域的高度，高度越大搜索范围越大，计算量也越大。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">命名图元子程序</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;子程序指针。子程序没有使用参数和返回值。只有在这个子程序中使用与名字栈有关的命令才有效。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">存放选择选择缓存的数组</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，参数数据只能提供变量数组。原来的数据将被清除。并重新定义为一维数组。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

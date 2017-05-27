@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>编辑</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">编辑</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct18.htm">数据库</a></p>
+<p>提供一个对话框，用作查看或编辑修改当前数据库的记录，起始位置从当前记录开始。本命令退出后当前记录指针被移动到首记录。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 编辑 （<font color="#000000">［</font><font color="#000000">标题</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">编辑方式</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">字段范围</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">... </font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">标题</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数指定对话框的标题，如果被省略，默认为“数据库记录编辑”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">编辑方式</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。可以为 0 或者以下常量值的组合： 1、#禁止修改； 2、#禁止添加； 4、#禁止删除； 8、#禁止自动判断（注：在默认情况下，系统将自动判断当前字节集字段的内容是否为图片或者声音，然后以对应的方式显示。使用本常量值可以禁止此功能）。 如果被省略，默认值为 0 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字段范围</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;<em>可扩充的</em>；文本型，参数数据可以同时提供数组或非数组数据。本参数的各参数值顺序指定所有欲编辑字段的名称。如果被省略，默认为所有字段。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

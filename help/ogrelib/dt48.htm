@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理层操作</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理层操作</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>纹理层操作。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">禁止</font></td>
+<td width="70%" valign="top">常量值为 1 。禁止该纹理层及纹理混合级联中所有的后续层。禁用颜色操作会同时禁用透明操作。当颜色操作被启用时，透明操作无法被禁用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数一</font></td>
+<td width="70%" valign="top">常量值为 2 。将参数一的颜色或透明值做为输出。S=参数一。注：S为输出值,下同。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">参数二</font></td>
+<td width="70%" valign="top">常量值为 3 。将参数二的颜色或透明值做为输出。S=参数二。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">乘</font></td>
+<td width="70%" valign="top">常量值为 4 。参数一和参数二相乘。S=参数一 * 参数二。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">乘除2</font></td>
+<td width="70%" valign="top">常量值为 5 。参数一和参数二相乘再除2。S=参数一 * 参数二 / 2。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">乘除4</font></td>
+<td width="70%" valign="top">常量值为 6 。参数一和参数二相乘再除4。S=参数一 * 参数二 / 4。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">加</font></td>
+<td width="70%" valign="top">常量值为 7 。参数一和参数二相加。S=参数一 + 参数二。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">有符号加</font></td>
+<td width="70%" valign="top">常量值为 8 。参数一和参数二相加再减0.5。S=参数一 + 参数二 - 0.5。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">有符号加除2</font></td>
+<td width="70%" valign="top">常量值为 9 。参数一和参数二相加再减0.5再除2。S=(参数一 + 参数二 - 0.5) / 2。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">减</font></td>
+<td width="70%" valign="top">常量值为 10 。参数一和参数二相减。S=参数一 - 参数二。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">增加光滑</font></td>
+<td width="70%" valign="top">常量值为 11 。S= 参数一 + 参数二 - 参数一 * 参数二。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">颜色透明混合</font></td>
+<td width="70%" valign="top">常量值为 12 。将参数一与参数二使用透明(Alpha)值进行线性插值。S = 参数一 * (透明值) + 参数二 * (1 - 透明值)。透明(Alpha)值是从每个顶点得来的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理透明混合</font></td>
+<td width="70%" valign="top">常量值为 13 。将参数一与参数二使用透明(Alpha)值进行线性插值。S = 参数一 * (透明值) + 参数二 * (1 - 透明值)。透明(Alpha)值是从纹理层得来的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">因子透明混合</font></td>
+<td width="70%" valign="top">常量值为 14 。将参数一与参数二使用透明(Alpha)值进行线性插值。S = 参数一 * (透明值) + 参数二 * (1 - 透明值)。透明(Alpha)值是从“渲染状态”常量数据类型的“纹理因子”中取的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">预乘纹理透明混合</font></td>
+<td width="70%" valign="top">常量值为 15 。用预乘(premultiplied)透明值混合纹理层。S = 参数一 + 参数二 * (1 - 透明值)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">当前纹理透明混合</font></td>
+<td width="70%" valign="top">常量值为 16 。将参数一与参数二使用透明(Alpha)值进行线性插值。S = 参数一 * (透明值) + 参数二 * (1 - 透明值)。透明(Alpha)值是从前一个纹理层取的。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">预乘</font></td>
+<td width="70%" valign="top">常量值为 17 。当纹理层n设为“预乘”时，输出S为参数一。如果n+1层存在并且n+1层的参数为“当前颜色”时，那么“当前颜色” 等于“当前颜色” * “纹理颜色”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调整透明加颜色</font></td>
+<td width="70%" valign="top">常量值为 18 。用参数一的透明值(Alpha)调整参数二的颜色值后再加上参数一的颜色值。S(RGBA) = 参数一(RGB) + 参数一(A) * 参数二(RGB),注：只有“颜色通道操作”支持本类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调整颜色加透明</font></td>
+<td width="70%" valign="top">常量值为 19 。调整颜色后再相加。S(RGBA) = 参数一(RGB) * 参数二(RGB) + 参数一(A),注：只有“颜色通道操作”支持本类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调整反透明加颜色</font></td>
+<td width="70%" valign="top">常量值为 20 。用参数一的反透明值(Alpha)调整参数二的颜色值后再加上参数一的颜色值。S(RGBA) = 参数一(RGB) + (1 - 参数一(A)) * 参数二(RGB),注：只有“颜色通道操作”支持本类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">调整反颜色加透明</font></td>
+<td width="70%" valign="top">常量值为 21 。调整反颜色后再相加。S(RGBA) = (1 - 参数一(RGB)) * 参数二(RGB) + 参数一(A),注：只有“颜色通道操作”支持本类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸环境贴图</font></td>
+<td width="70%" valign="top">常量值为 22 。对每一个像素用凹凸映射，在下一下纹理层中使用无亮度的环境贴图。注：只有“颜色通道操作”支持本类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸加亮环境贴图</font></td>
+<td width="70%" valign="top">常量值为 23 。对每一个像素用凹凸映射，在下一下纹理层中使用加亮度的环境贴图。注：只有“颜色通道操作”支持本类型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">点积</font></td>
+<td width="70%" valign="top">常量值为 24 。对参数颜色进行点积。S(RGBA) = 参数一(R) * 参数二(R) + 参数一(G) * 参数二(G) + 参数一(B) * 参数二(B)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">乖加</font></td>
+<td width="70%" valign="top">常量值为 25 。用三个参数进行操作，前两个先乘再加上后一个。S = 参数一 * 参数二 + 参数三。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线性插值</font></td>
+<td width="70%" valign="top">常量值为 26 。用一个均衡值(参数一)对参数二和参数三进行线性插值。S = 参数一 * 参数二 + (1 - 参数一) * 参数三。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

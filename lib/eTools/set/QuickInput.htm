@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="GB2312" />
+	<title>快捷输入</title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="common.css" />
+	<script src="jquery.js"></script>
+</head>
+<body style="overflow-y : auto; padding: 20px; width: 600px; margin: 0 auto;">
+	<input id="QI_List" type="text" name="QI_List" value="" style="display: none;" />
+	<div class="form-group">
+		<input class="form-control key" placeholder="如：ctrl + f1" style="display: inline-block; width: 246px;" />
+		 => 
+		<input class="form-control value" placeholder="如：abc" style="display: inline-block; width: 246px;" />
+	</div>
+	<div class="notes">
+		<h4>说明</h4>
+		<p>支持的键代码列表: </p>
+		<p>
+			ctrl　alt　shift　a~z　0~9　f1~f12　num0~num9
+		</p>
+		<p>
+			`　=　[　]　\　;　'　,　*　/　-　.
+		</p>
+		<p>
+			注意: 左 / 键用 ? 代替 、 左 . 键用 > 代替 、 左 - 键用 _ 代替
+		</p>
+	</div>
+</body>
+<script type="text/javascript">
+	(function() {
+		var QIList = document.getElementById("QI_List"),
+			$group = $(".form-group"),
+			$del = $('<a class="btn btn-danger" style="vertical-align: baseline;">×</a>'),
+			$glist = $(),
+			list = [];
+
+		function CallEvent(dom, type, name) {
+			var event = document.createEvent(type);
+				event.initMouseEvent(name);
+			dom.dispatchEvent(event);
+		}
+
+		$group.children("input").blur(function() {
+			var $this = $(this),
+				$p = $this.parent(),
+				index = $glist.index($p);
+			if (index == -1) {
+				var value = $.trim(this.value);
+				if (value) {
+					var $g = $group.clone(true),
+						$c = $g.children("input");
+					$g.append($del.clone(true));
+					$glist.push($g[0]);
+					list.push([$c[0].value, $c[1].value]);
+					$group.before($g);
+				}
+				this.value = "";
+			} else {
+				var $c = $p.children("input"),
+					n = $c.index($this);
+				list[index][n] = this.value;
+			}
+			QIList.value = JSON.stringify(list);
+			CallEvent(QIList, "MouseEvents", "blur");
+		});
+
+		$del.click(function() {
+			if (confirm("确认要删除此快捷键吗?")) {
+				var $p = $(this).parent(),
+					index = $glist.index($p);
+				$p.remove();
+				$glist.splice(index, 1);
+				list.splice(index, 1);
+				QIList.value = JSON.stringify(list);
+				CallEvent(QIList, "MouseEvents", "blur");
+			}
+		});
+
+		function Init(json) {
+			list = JSON.parse(json);
+			for (var i = 0; i < list.length; i++) {
+				var $g = $group.clone(true),
+					$c = $g.children("input");
+				$g.append($del.clone(true));
+				$glist.push($g[0]);
+				$c[0].value = list[i][0];
+				$c[1].value = list[i][1];
+				$group.before($g);
+			}
+		}
+
+		var old_SetInput = window.top.SetInput;
+		window.top.SetInput = function(name, value) {
+			if (name == "QI_List") {
+				window.top.SetInput = old_SetInput;
+				Init(value);
+			}
+			old_SetInput(name, value);
+		};
+	})();
+</script>
+</html>

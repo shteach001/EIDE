@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>加入图片</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">加入图片</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">图片组处理</a></p>
+<p>将图片加入到指定图片组数据中，成功返回所加入图片在被加入图片组中的位置索引，该索引值从 0 开始。如果失败，返回 -1 。注意如果欲加入图片的尺寸与图片组的单一图片尺寸参数不一致，该图片会被自动分解或缩放后加入。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 加入图片 （<font color="#000000">图片组数据变量</font><font color="#000000">，&nbsp;</font><font color="#000000">欲加入图片</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图片透明色</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片组数据变量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集，参数数据只能提供变量。本参数提供即将被处理的图片组数据，处理后的图片组数据也被存放回此变量中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲加入图片</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集。本参数提供即将被加入的图片数据，可以是JPG、BMP、GIF、ICO、CUR等各种格式。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片透明色</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数指定图片的背景透明色，如果为常量值“#默认色”，则系统自动取该图片最左上角一点的颜色值为透明色。如果本参数被省略，默认值为常量值“#默认色”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

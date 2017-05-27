@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打开MDB数据库 (外部数据库)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">打开MDB数据库</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt45.htm">外部数据库</a></p>
+<p>本命令是针对 ACCESS MDB 数据库的特定打开方法，通过自建 ODBC 连接文本来打开 MDB 数据库。调用本命令后无需再调用“打开”命令。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>外部数据库</em>．打开MDB数据库 （<font color="#000000">MDB数据库文件名</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">用户名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">密码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否只读</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">不显示ODBC连接对话框</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">MDB数据库文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供即将打开数据库的文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数提供打开数据库所需要的用户名，如果省略本参数，默认为不需要。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">密码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。本参数提供打开数据库所需要的密码，如果省略本参数，默认为不需要。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否只读</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。指定是否以只读方式打开。如果参数被省略，默认值为假。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">不显示ODBC连接对话框</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。指定当数据源连接失败的时候，是否自动显示ODBC的数据源连接对话框。如果参数被省略，默认值为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

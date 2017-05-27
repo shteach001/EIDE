@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>加入子夹 (高级选择夹)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">加入子夹</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">高级选择夹</a></p>
+<p>加入一个新的子夹。如果执行成功，返回新子夹的索引(子夹索引从0开始)，失败则返回-1。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; <em>高级选择夹</em>．加入子夹 （<font color="#000000">子夹标题</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">子夹索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">正常图标</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">点燃图标</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">选中图标</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">子夹标题</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">子夹索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定欲加入的子夹所在位置。如果本参数省略或超出索引范围，将在所有子夹的最后加入新子夹。索引从0开始。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">正常图标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。对应“图标图片组”属性中的图片索引，在正常情况下（子夹未被点燃也未被选中）显示在标题文本前面。如果省略或值为-1，表示不使用图标。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">点燃图标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。对应“图标图片组”属性中的图片索引，在子夹被点燃（鼠标悬停）时显示在标题文本前面。如果省略或值为-1，将使用正常图标。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选中图标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。对应“图标图片组”属性中的图片索引，在子夹被选中时显示在标题文本前面。如果省略或值为-1，将使用正常图标。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

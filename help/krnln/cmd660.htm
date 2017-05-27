@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>卸载易包</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">卸载易包</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct22.htm">易包</a></p>
+<p>为高级用户提供，初级用户无需掌握；<br>卸载已被载入的指定名称的易包,成功返回真,失败返回假.本命令不支持在多线程环境和静态编译模式下使用.执行本命令前,必须确保以下几点,否则后果无法预测:
+  1. 在当前子程序执行堆栈中不存在所指定易包内的任何子程序;
+  2. 所指定易包符合可卸载规范: 任何使用文本/字节集/数组直接常量数据对易包公开子程序以显式或隐式参考方式传递进来的参数进行赋值时,都必须使用"复制常量"方法将该数据脱离常量状态,避免本易包被动态卸载后,外部调用程序引用该常量数据出错.
+另外,最好所指定易包内加载的所有窗口均已经被关闭.</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 卸载易包 （<font color="#000000">易包名称</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">易包名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。指定欲操作易包的名称。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

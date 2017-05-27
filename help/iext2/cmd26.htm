@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>提取加入图片</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">提取加入图片</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct1.htm">图片组处理</a></p>
+<p>从指定文件中提取其中的某一图标，并将其加入到图片组中。成功返回所加入图标在被加入图片组中的位置索引，该索引值从 0 开始。如果失败，返回 -1 。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; 提取加入图片 （<font color="#000000">图片组数据变量</font><font color="#000000">，&nbsp;</font><font color="#000000">图标所在文件</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">图标索引</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">提取小图标</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图片组数据变量</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;字节集，参数数据只能提供变量。本参数提供即将被处理的图片组数据，处理后的图片组数据也被存放回此变量中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图标所在文件</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供图标资源所在的文件名(譬如EXE、DLL或ICO等文件)。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">图标索引</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。本参数提供被提取图标在指定文件内所有图标中的索引位置，从 0 开始。如果本参数被省略，默认值为 0 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">提取小图标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。如果本参数为真，将从图标所在文件中提取小图标（通常为16*16大小）；如果为假，则提供大图标（通常为32*32大小）。如果本参数为真但没有相应小图标，自动提取相同索引处的大图标。如果本参数被省略，默认为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

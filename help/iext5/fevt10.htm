@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>字符输入</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">字符输入</font></big>&nbsp;系统基本事件</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux、Unix</p>
+<p>&nbsp;&nbsp;&nbsp; 当用户按下和松开一个字符键时发生此事件。字符键包括任何可打印的键盘字符及回车（Enter）和退格（BackSpace）键。在用户事件处理子程序中，将事件处理完毕后可返回一个字符代码，用于替换将继续传递到所属对象上字符键事件中的字符代码；如果返回 0 ，则取消此事件，不再将此字符输入事件传递到所属对象上去；如果事件处理完毕后没有返回值，则将本字符键事件继续原样传递到所属对象上去。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">整数型</font>&nbsp; _<em>窗口组件</em>_字符输入 （<font color="#000000">字符代码</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">字符代码</font></td>
+<td width="70%" valign="top">整数型；&nbsp;表明所按下的字符键所对应的字符代码，可以使用“字符”命令取出所对应的具体字符。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

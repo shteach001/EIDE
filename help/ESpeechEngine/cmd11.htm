@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建 (语音识别)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">创建</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">语音识别</a></p>
+<p>创建语音识别引擎，该引擎提供语音识别的功能.成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>语音识别</em>．创建 （<font color="#000000">识别引擎</font><font color="#000000">，&nbsp;</font><font color="#000000">作用域</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">识别引擎</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数应提供由“创建”命令所要求的识别引擎常量。该参数为0代表创建中文识别引擎,为1代表创建英文识别引擎。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">作用域</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数提供由“创建”命令所要创建的识别系统的作用范围常量。该参数为0代表系统作用域，指的是无论识别程序是否拥有系统焦点该识别程序都能进行语音识别。该参数为1代表程序作用域，指的是只有在识别程序拥有系统焦点的时候该识别程序才能进行语音识别。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

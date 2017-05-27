@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>外部数据提供者</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">外部数据提供者</font></big>&nbsp;功能型窗口组件</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">系统核心支持库</a></p><p>外部数据提供者用作为数据源提供对外部ODBC数据库的存取操作。它使用外部数据库作为数据的存储仓库，不支持备注和长字节集类型字段，不支持以下数据操作接口：
+1、置行高； 2、置类型； 3、置文本色； 4、置背景色； 5、置字体名； 6、置字体尺寸； 7、置字体属性； 8、置边距； 9、置文本输入格式； 10、置对齐方式； 11、置密码方式； 12、合并； 13、分解； 14、加线条； 15、删线条； 16、初始尺寸时同时改变列数； 17、在中间插入行； 18、插入列； 19、删除列。
+如果想对数据进行以上操作，应该先将数据通过数据源导出到通用提供者中。
+另外，在支持数据源的“插入行”接口时，将直接插入空白行数据，所以如果目的数据表在某字段上建立了主键索引、强制不为空等类似列约束条件时，将导致插入失败。</p>
+<p><big><strong><a name="成员"></a>属性：</big></strong></p><table border=1 cols=4 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="20%"> <a href="pty0.htm">左边</a></td>
+<td width="20%"> <a href="pty1.htm">顶边</a></td>
+<td width="20%"> <a href="pty2.htm">宽度</a></td>
+<td width="20%"> <a href="pty3.htm">高度</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="pty4.htm">标记</a></td>
+<td width="20%"> <a href="pty5.htm">可视</a></td>
+<td width="20%"> <a href="pty6.htm">禁止</a></td>
+<td width="20%"> <a href="pty7.htm">鼠标指针</a></td>
+</tr>
+<tr>
+<td width="20%"> <a href="p46_8.htm">连接文本</a></td>
+<td width="20%"> <a href="p46_9.htm">查询SQL</a></td>
+<td width="20%"> </td><td width="20%"> </td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>映射资源 (局域网操作)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">映射资源</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">局域网操作</a></p>
+<p>映射一个局域网内的共享资源到本地驱动器。成功返回映射到本地的驱动器名称（比如“X:”），失败返回空文本。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; <em>局域网操作</em>．映射资源 （<font color="#000000">欲映射的资源路径</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">欲映射到的本地设备名称</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">用户名</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">密码</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否提示错误</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否自动重新连接</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲映射的资源路径</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。该参数可以为局域网中的共享文件夹或共享打印机的路径，比如“\\Prog5\共享测试”，“\\Prog5\惠普打印机”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">欲映射到的本地设备名称</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。比如“Y:”，“LPT1”。如果本参数省略，系统将自动选择一个可用的设备名称。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用户名</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。访问指定的共享使用的用户名。如果本参数省略，将使用系统默认值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">密码</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。访问指定的共享使用的密码。如果本参数省略，将使用系统默认值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否提示错误</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。本参数指定当用户名或密码错误时，是否提示重新输入。如果提供的用户名或密码有误，且本参数为假，该命令将失败。如果本参数省略，默认值为“真”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否自动重新连接</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。本参数指定是否在下次登陆计算机时自动重新连接该映射驱动器。如果本参数省略，默认值为“真”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

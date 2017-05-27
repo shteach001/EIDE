@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理层颜色常量</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理层颜色常量</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>纹理层颜色常量。标识为修改标志的值可以与其它值一起使用。用“与”将两种标志连在一起。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">当前颜色</font></td>
+<td width="70%" valign="top">常量值为 1 。用上一个纹理层混合后的颜色，如果当前层是第0层，本常量和下面的“漫射颜色”一样。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">漫射颜色</font></td>
+<td width="70%" valign="top">常量值为 0 。顶点漫射颜色的插值。如果顶点不包括漫射颜色，默认为0xFFFFFFFF。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">选择掩码</font></td>
+<td width="70%" valign="top">常量值为 15 。所有参数的掩码值。设置纹理参数时没用。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">镜面颜色</font></td>
+<td width="70%" valign="top">常量值为 4 。顶点镜面颜色的插值。如果顶点不包括镜面颜色，默认为0xFFFFFFFF。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理颜色</font></td>
+<td width="70%" valign="top">常量值为 2 。使用当前纹理层的颜色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理因子</font></td>
+<td width="70%" valign="top">常量值为 3 。使用“渲染状态”常量数据类型的“纹理因子”的值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透明值复制</font></td>
+<td width="70%" valign="top">常量值为 32 。此标志为修改标志。在操作完成之前将透明值复制到所有的颜色通道中。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">反转颜色</font></td>
+<td width="70%" valign="top">常量值为 16 。此标志为修改标志。反转所有参数，例如参数是X，那么最后值为1 - X。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

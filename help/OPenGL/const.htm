@@ -1,0 +1,338 @@
+<table border=1 cols=3 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="25%"><strong>常量</strong></td>
+<td width="25%"><strong>常量值</strong></td>
+<td width="50%"><strong>描 述</strong></td>
+</tr>
+<tr><td width="25%"><font color="#000000">#GL_画入窗口的像素格式</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_支持GDI像素格式</font></td><td width="25%"><font color="#000000">16</font></td>
+<td width="50%">与#双缓存像素格式互斥。</td></tr>
+<tr><td width="25%"><font color="#000000">#GL_支持OPENGL像素格式</font></td><td width="25%"><font color="#000000">32</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_双缓存像素格式</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%">与#支持GDI像素格式互斥。</td></tr>
+<tr><td width="25%"><font color="#000000">#GL_观察矩阵</font></td><td width="25%"><font color="#000000">5888</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_投影矩阵</font></td><td width="25%"><font color="#000000">5889</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理矩阵</font></td><td width="25%"><font color="#000000">5890</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_点集</font></td><td width="25%"><font color="#000000">0</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线段</font></td><td width="25%"><font color="#000000">1</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_闭合线段</font></td><td width="25%"><font color="#000000">2</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_连续线段</font></td><td width="25%"><font color="#000000">3</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_三角形</font></td><td width="25%"><font color="#000000">4</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_连续三角形</font></td><td width="25%"><font color="#000000">5</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_扇形三角形</font></td><td width="25%"><font color="#000000">6</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_四边形</font></td><td width="25%"><font color="#000000">7</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_连续四边形</font></td><td width="25%"><font color="#000000">8</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_凸多边形</font></td><td width="25%"><font color="#000000">9</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_顺时针</font></td><td width="25%"><font color="#000000">2304</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_逆时针</font></td><td width="25%"><font color="#000000">2305</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_零号裁剪面</font></td><td width="25%"><font color="#000000">12288</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_一号裁剪面</font></td><td width="25%"><font color="#000000">12289</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_二号裁剪面</font></td><td width="25%"><font color="#000000">12290</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_三号裁剪面</font></td><td width="25%"><font color="#000000">12291</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_四号裁剪面</font></td><td width="25%"><font color="#000000">12292</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_五号裁剪面</font></td><td width="25%"><font color="#000000">12293</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_正面</font></td><td width="25%"><font color="#000000">1028</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_背面</font></td><td width="25%"><font color="#000000">1029</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_正面和背面</font></td><td width="25%"><font color="#000000">1032</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_点</font></td><td width="25%"><font color="#000000">6912</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线</font></td><td width="25%"><font color="#000000">6913</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_面</font></td><td width="25%"><font color="#000000">6914</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_透视修正质量</font></td><td width="25%"><font color="#000000">3152</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_点质量</font></td><td width="25%"><font color="#000000">3153</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线质量</font></td><td width="25%"><font color="#000000">3154</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_多边形质量</font></td><td width="25%"><font color="#000000">3155</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾质量</font></td><td width="25%"><font color="#000000">3156</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_不考虑</font></td><td width="25%"><font color="#000000">4352</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_快速</font></td><td width="25%"><font color="#000000">4353</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_最佳</font></td><td width="25%"><font color="#000000">4354</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_失效</font></td><td width="25%"><font color="#000000">512</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_小于</font></td><td width="25%"><font color="#000000">513</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_等于</font></td><td width="25%"><font color="#000000">514</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_小于等于</font></td><td width="25%"><font color="#000000">515</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_大于</font></td><td width="25%"><font color="#000000">516</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_不等于</font></td><td width="25%"><font color="#000000">517</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_大于等于</font></td><td width="25%"><font color="#000000">518</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_有效</font></td><td width="25%"><font color="#000000">519</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_保持当前值</font></td><td width="25%"><font color="#000000">7680</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_替换当前值</font></td><td width="25%"><font color="#000000">7681</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_增加当前值</font></td><td width="25%"><font color="#000000">7682</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_减去当前值</font></td><td width="25%"><font color="#000000">7683</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_倒置当前值</font></td><td width="25%"><font color="#000000">5386</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_源值颜色比例</font></td><td width="25%"><font color="#000000">768</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_源值颜色比例反</font></td><td width="25%"><font color="#000000">769</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_源值通道比例</font></td><td width="25%"><font color="#000000">770</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_源值通道比例反</font></td><td width="25%"><font color="#000000">771</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_目标值通道比例</font></td><td width="25%"><font color="#000000">772</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_目标值通道比例反</font></td><td width="25%"><font color="#000000">773</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_目标值颜色比例</font></td><td width="25%"><font color="#000000">774</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_目标值颜色比例反</font></td><td width="25%"><font color="#000000">775</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_源值饱和通道</font></td><td width="25%"><font color="#000000">776</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_获取缓存</font></td><td width="25%"><font color="#000000">256</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_载入缓存</font></td><td width="25%"><font color="#000000">257</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_返回缓存</font></td><td width="25%"><font color="#000000">258</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_缩放缓存</font></td><td width="25%"><font color="#000000">259</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_加入缓存</font></td><td width="25%"><font color="#000000">260</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_深度缓存位</font></td><td width="25%"><font color="#000000">256</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_累积缓存位</font></td><td width="25%"><font color="#000000">512</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_模板缓存位</font></td><td width="25%"><font color="#000000">1024</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_颜色缓存位</font></td><td width="25%"><font color="#000000">16384</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_通道测试</font></td><td width="25%"><font color="#000000">3008</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_混合测试</font></td><td width="25%"><font color="#000000">3042</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_材质颜色</font></td><td width="25%"><font color="#000000">2903</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_深度测试</font></td><td width="25%"><font color="#000000">2929</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾</font></td><td width="25%"><font color="#000000">2912</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光照</font></td><td width="25%"><font color="#000000">2896</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线型</font></td><td width="25%"><font color="#000000">2852</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_单位法向量</font></td><td width="25%"><font color="#000000">2977</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_精选面</font></td><td width="25%"><font color="#000000">2884</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_图案填充</font></td><td width="25%"><font color="#000000">2882</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_裁剪测试</font></td><td width="25%"><font color="#000000">3089</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_模板测试</font></td><td width="25%"><font color="#000000">2960</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_一维纹理</font></td><td width="25%"><font color="#000000">3552</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_二维纹理</font></td><td width="25%"><font color="#000000">3553</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_生成S向纹理</font></td><td width="25%"><font color="#000000">3168</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_生成T向纹理</font></td><td width="25%"><font color="#000000">3169</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_零号光源</font></td><td width="25%"><font color="#000000">16384</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_一号光源</font></td><td width="25%"><font color="#000000">16385</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_二号光源</font></td><td width="25%"><font color="#000000">16386</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_三号光源</font></td><td width="25%"><font color="#000000">16387</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_四号光源</font></td><td width="25%"><font color="#000000">16388</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_五号光源</font></td><td width="25%"><font color="#000000">16389</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_六号光源</font></td><td width="25%"><font color="#000000">16390</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_七号光源</font></td><td width="25%"><font color="#000000">16391</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_环境光</font></td><td width="25%"><font color="#000000">4608</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_漫反射光</font></td><td width="25%"><font color="#000000">4609</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_镜面光</font></td><td width="25%"><font color="#000000">4610</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光源位置</font></td><td width="25%"><font color="#000000">4611</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光源聚光方向</font></td><td width="25%"><font color="#000000">4612</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光源聚光指数</font></td><td width="25%"><font color="#000000">4613</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_点光源聚光截止角</font></td><td width="25%"><font color="#000000">4614</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_常量衰减</font></td><td width="25%"><font color="#000000">4615</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线形衰减</font></td><td width="25%"><font color="#000000">4616</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_二次方衰减</font></td><td width="25%"><font color="#000000">4617</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光源观察点模式</font></td><td width="25%"><font color="#000000">2897</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_双面光模式</font></td><td width="25%"><font color="#000000">2898</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_全局光模式</font></td><td width="25%"><font color="#000000">2899</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_散射光</font></td><td width="25%"><font color="#000000">5632</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_亮光</font></td><td width="25%"><font color="#000000">5633</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_环境光和漫反射光</font></td><td width="25%"><font color="#000000">5634</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_颜色索引</font></td><td width="25%"><font color="#000000">5635</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾索引</font></td><td width="25%"><font color="#000000">2913</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾密度</font></td><td width="25%"><font color="#000000">2914</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾起点</font></td><td width="25%"><font color="#000000">2915</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾终点</font></td><td width="25%"><font color="#000000">2916</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾模式</font></td><td width="25%"><font color="#000000">2917</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线性</font></td><td width="25%"><font color="#000000">9729</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾颜色</font></td><td width="25%"><font color="#000000">2918</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾模式1</font></td><td width="25%"><font color="#000000">2048</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_雾模式2</font></td><td width="25%"><font color="#000000">2049</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_平坦</font></td><td width="25%"><font color="#000000">7424</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光滑</font></td><td width="25%"><font color="#000000">7425</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理插值约束</font></td><td width="25%"><font color="#000000">10496</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理重复约束</font></td><td width="25%"><font color="#000000">10497</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_放大纹理滤波</font></td><td width="25%"><font color="#000000">10240</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_缩小纹理滤波</font></td><td width="25%"><font color="#000000">10241</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_S向纹理约束</font></td><td width="25%"><font color="#000000">10242</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_T向纹理约束</font></td><td width="25%"><font color="#000000">10243</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_最近滤镜</font></td><td width="25%"><font color="#000000">9728</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线性滤镜</font></td><td width="25%"><font color="#000000">9729</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_最近多贴图滤镜</font></td><td width="25%"><font color="#000000">9984</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_多贴图线性内插滤镜</font></td><td width="25%"><font color="#000000">9985</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_线性内插多贴图滤镜</font></td><td width="25%"><font color="#000000">9986</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_内插多贴图的线性内插滤镜</font></td><td width="25%"><font color="#000000">9987</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_单个颜色索引</font></td><td width="25%"><font color="#000000">6400</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_模板索引</font></td><td width="25%"><font color="#000000">6401</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_红色分量</font></td><td width="25%"><font color="#000000">6403</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_绿色分量</font></td><td width="25%"><font color="#000000">6404</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_蓝色分量</font></td><td width="25%"><font color="#000000">6405</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_混合通道分量</font></td><td width="25%"><font color="#000000">6406</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_红绿蓝分量</font></td><td width="25%"><font color="#000000">6407</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_红绿蓝混合通道分量</font></td><td width="25%"><font color="#000000">6408</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_亮度</font></td><td width="25%"><font color="#000000">6409</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_亮度和混合通道分量</font></td><td width="25%"><font color="#000000">6410</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理映射模式</font></td><td width="25%"><font color="#000000">8704</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理映射颜色</font></td><td width="25%"><font color="#000000">8705</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_调节处理</font></td><td width="25%"><font color="#000000">8448</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_粘贴处理</font></td><td width="25%"><font color="#000000">8449</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_S分量</font></td><td width="25%"><font color="#000000">8192</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_T分量</font></td><td width="25%"><font color="#000000">8193</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理生成模式</font></td><td width="25%"><font color="#000000">9472</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_模型平面</font></td><td width="25%"><font color="#000000">9473</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_观测平面</font></td><td width="25%"><font color="#000000">9474</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_观测线性插值</font></td><td width="25%"><font color="#000000">9216</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_模型线性插值</font></td><td width="25%"><font color="#000000">9217</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_纹理贴图形状</font></td><td width="25%"><font color="#000000">9218</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_编译列表</font></td><td width="25%"><font color="#000000">4864</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_编译并且执行列表</font></td><td width="25%"><font color="#000000">4865</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_颜色类型</font></td><td width="25%"><font color="#000000">6144</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_深度类型</font></td><td width="25%"><font color="#000000">6145</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_模板类型</font></td><td width="25%"><font color="#000000">6146</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光滑线</font></td><td width="25%"><font color="#000000">2848</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_光滑点</font></td><td width="25%"><font color="#000000">2832</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_曲线坐标</font></td><td width="25%"><font color="#000000">3479</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_曲面坐标</font></td><td width="25%"><font color="#000000">3511</font></td>
+<td width="50%"></td></tr>
+<tr><td width="25%"><font color="#000000">#GL_自动法向量</font></td><td width="25%"><font color="#000000">3456</font></td>
+<td width="50%"></td></tr>
+</table>

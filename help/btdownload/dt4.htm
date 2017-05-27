@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>发布文件信息</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">发布文件信息</font></big>&nbsp;普通类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">BT下载支持库</a></p><p>本数据类型包括了发布文件(Torrent)中的信息。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">服务器列表</font></td>
+<td width="70%" valign="top">文本型；&nbsp;初始值为“”。本参数表示服务器(Tracker)列表，多个服务器用“;”分隔开。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">注释</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示此文件的注释。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">建立者</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示此文件的建立者。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件目录或名称</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示此Torrent包含的文件名称，如果是单文件则就是文件名，如果是多文件则为目录名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件总长度</font></td>
+<td width="70%" valign="top">长整数型；&nbsp;本参数表示此Torrent包含的文件总长度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">每块长度</font></td>
+<td width="70%" valign="top">整数型；&nbsp;本参数表示每一块的长度。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">块数</font></td>
+<td width="70%" valign="top">整数型；&nbsp;本参数表示本文件一共有多少块。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件长度[1]</font></td>
+<td width="70%" valign="top">长整数型；&nbsp;本参数表示如果是多文件时每一个文件的长度，数组下标与“文件名称”相对应。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">文件名称[1]</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示如果是多文件时每一个文件的名称，数组下标与“文件长度”相对应。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">效验码</font></td>
+<td width="70%" valign="top">文本型；&nbsp;本参数表示此文件的效验码。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">建立时间</font></td>
+<td width="70%" valign="top">日期时间型；&nbsp;本参数表示此文件建立的时间。</td>
+</tr>
+</table>
+<p><big><strong><a name="方法"></a>方法：</big></strong></p>
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

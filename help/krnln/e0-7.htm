@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>空闲 (窗口)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">空闲</font></big>&nbsp;事件</strong>&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">窗口</a>
+&nbsp;&nbsp;&nbsp;操作系统支持：Windows</p>
+<p>&nbsp;&nbsp;&nbsp; 当系统正处于空闲状态时产生此事件，用户可以在响应此事件时做一些后台处理工作。如果事件处理子程序返回假或者不返回值，在此次空闲期间系统将不再产生空闲事件（可以降低 CPU 占用率）。如果返回真，系统将继续产生空闲事件。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; _<em>窗口</em>_空闲 （<font color="#000000">已空闲时间</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">已空闲时间</font></td>
+<td width="70%" valign="top">整数型；&nbsp;指示自系统本次进入空闲状态后到现在所经过的空闲时间，单位为毫秒。用户程序在空闲状态下所进行的大工作量操作最好等到此值较大时进行。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

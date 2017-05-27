@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>输出声音文件 (机读文本)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">输出声音文件</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">机读文本</a></p>
+<p>通过已经启动的发音引擎，把文本或者文件转换成为语音输出到指定WAV文件，成功返回真，失败返回假。该方法采用同步执行方式，即执行完毕后才返回。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>机读文本</em>．输出声音文件 （<font color="#000000">数据类别</font><font color="#000000">，&nbsp;</font><font color="#000000">发音数据</font><font color="#000000">，&nbsp;</font><font color="#000000">保存文件名</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据类别</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数应提供由“输出声音文件”命令所要求的数据类别常量。0 为字符串；1 为文本文件名；2 为XML文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发音数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供“输出声音文件”命令所要求的发声数据。该参数的内容以第一个参数的值来确定，对应关系参见参数“数据类别”的详细解释。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">保存文件名</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供“输出声音文件”命令所要求的保存声音文件的全名称。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

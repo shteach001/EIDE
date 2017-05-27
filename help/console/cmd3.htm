@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>输入 (控制台对象)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">输入</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows、Linux&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">控制台对象</a></p>
+<p>从控制台接收输入的数据，如果“横坐标”或“纵坐标”为空，那么从当前光标位置开始输入，注意，输入时不过滤特殊字符，如退格键等。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">文本型</font>&nbsp; <em>控制台对象</em>．输入 （<font color="#000000">［</font><font color="#000000">横坐标</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">纵坐标</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">保存当前光标</font><font color="#000000">，&nbsp;</font><font color="#000000">是否回显</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">回显数据</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">回车结束</font><font color="#000000">，&nbsp;</font><font color="#000000">最大接收长度</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">横坐标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定输入数据时光标的横坐标。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纵坐标</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。指定输入数据时光标的纵坐标。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">保存当前光标</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“假”。是否保存当前光标位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否回显</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。是否把输入的数据回显到控制台设备。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">回显数据</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;文本型。回显的数据，如果忽略，则使用输入的字符，在“是否回显”为真时有意义。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">回车结束</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;逻辑型，初始值为“真”。是否以回车结束输入。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最大接收长度</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型，初始值为“1024”。最大接收数据长度，“回车结束”为真时有意义。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理通道过滤</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理通道过滤</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>指定操作哪个纹理通道。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">不支持放缩或过滤</font></td>
+<td width="70%" valign="top">常量值为 1 。不支持放缩或过滤。边界外的点填充为透明的黑色。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">最近点采样过滤</font></td>
+<td width="70%" valign="top">常量值为 2 。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">线性纹理过滤</font></td>
+<td width="70%" valign="top">常量值为 3 。线性纹理过滤方式，放缩比例小于2时，效果最好。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">由点生成目标点</font></td>
+<td width="70%" valign="top">常量值为 4 。目标纹理中的每个点都由原图中的每个点计算生成，速度最慢。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">由区域生成目标点</font></td>
+<td width="70%" valign="top">常量值为 5 。目标纹理中的每个点都由原图中的一个2×2的区域计算生成。只有在目标纹理是一半原图大小时工作，比如多级渐进纹理。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">U轴镜像</font></td>
+<td width="70%" valign="top">常量值为 65536 。纹理边缘外的点在U轴上是原图的镜像。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">V轴镜像</font></td>
+<td width="70%" valign="top">常量值为 131072 。纹理边缘外的点在V轴上是原图的镜像。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">W轴镜像</font></td>
+<td width="70%" valign="top">常量值为 262144 。纹理边缘外的点在W轴上是原图的镜像。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">镜像</font></td>
+<td width="70%" valign="top">常量值为 458752 。相当于：U轴镜像 + V轴镜像 + W轴镜像。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">用抖动运算产生</font></td>
+<td width="70%" valign="top">常量值为 524288 。目标纹理的像素由一个4 x 4区域用抖动运算产生。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">输入数据在sRGB颜色空间</font></td>
+<td width="70%" valign="top">常量值为 1048576 。输入数据在sRGB（gamma 2.2）颜色空间。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">输出数据在sRGB颜色空间</font></td>
+<td width="70%" valign="top">常量值为 2097152 。输出数据在sRGB（gamma 2.2）颜色空间。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">sRGB颜色空间</font></td>
+<td width="70%" valign="top">常量值为 3145728 。相当于：输入数据在sRGB颜色空间 + 输出数据在sRGB颜色空间。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>文本到语音 (机读文本)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">文本到语音</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">机读文本</a></p>
+<p>通过已经启动的发音引擎，把文本或者文件转换成为语音输出，成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>机读文本</em>．文本到语音 （<font color="#000000">数据类别</font><font color="#000000">，&nbsp;</font><font color="#000000">发音数据</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">等待超时</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">事件反馈标签</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">数据类别</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数应提供由“文本到语音”命令所要求的数据类别常量。0 为字符串；1 为文本文件名；2 为XML文件名。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">发音数据</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数提供“文本到语音”命令所要求的发声数据。该参数的内容以第一个参数的值来确定，对应关系参见参数“数据类别”的详细解释。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">等待超时</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。如果大于0，本方法将等待直到语音输出完毕或超时才返回；如果小于0，表示不设超时时间，等待直到语音输出完毕；如果等于0，或参数被省略，本方法将在启动语音输出后立刻返回，不等待语音输出完毕（语音在后台线程播放，不影响程序执行）。单位为毫秒。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">事件反馈标签</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;标签。如果提供了本参数，可通过该标签的“反馈事件”得到语音输出过程中的相关通知。反馈事件的第一个参数指定了通知类型：1: 开始播放语音；2: 结束播放语音。注意1：如果与上一次调用本方法指定的不是同一个标签，会导致之前的标签不再接收通知。注意2：因为等待超时会阻塞主线程的执行，导致标签反馈事件被延迟处理，所以最好不要同时使用超时等待和反馈标签。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

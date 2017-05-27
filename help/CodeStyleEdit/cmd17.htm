@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>查找文本 (代码编辑框)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">查找文本</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt0.htm">代码编辑框</a></p>
+<p>在文档中根据指定的查找方式查找文本，查找结果保存在“符合文本开始位置”及“符合文本结束位置”中，查找失败返回假，上述2个变量无意义。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>代码编辑框</em>．查找文本 （<font color="#000000">查找方式</font><font color="#000000">，&nbsp;</font><font color="#000000">开始查找位置</font><font color="#000000">，&nbsp;</font><font color="#000000">结束查找位置</font><font color="#000000">，&nbsp;</font><font color="#000000">待查找文本</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">符合文本开始位置</font><font color="#000000">］</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">符合文本结束位置</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">查找方式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。查找文本的方式，可以为“#代码编辑框常量.全字匹配”或“#代码编辑框常量.区分大小写”或“#代码编辑框常量.正则表达式”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">开始查找位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。开始查找的字符位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">结束查找位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。结束查找的字符位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">待查找文本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。待查找的文本。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">符合文本开始位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。匹配到的符合要求的文本在文档中的开始位置。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">符合文本结束位置</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型，参数数据只能提供变量。匹配到的符合要求的文本在文档中的结束位置。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

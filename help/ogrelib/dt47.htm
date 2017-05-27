@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>纹理层状态类型</title>
+</head>
+<body>
+<p><strong><big><font color="#000000">纹理层状态类型</font></big>&nbsp;枚举常量集合类型</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 跳至：<a href="index.htm">DirectX3D支持库</a></p><p>纹理层状态类型。</p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><a name="成员"></a><tr>
+<td width="30%" valign="top"><strong>成员</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">颜色通道操作</font></td>
+<td width="70%" valign="top">常量值为 1 。指定的层将进行什么样的操作，如加，减... 值可以为“纹理层操作”常量数据类型的值。注：第一层默认为“乘”，其它层默认为“禁止”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">颜色操作参数一</font></td>
+<td width="70%" valign="top">常量值为 2 。指定参数一用哪种颜色。值可为“纹理层颜色常量”常量数据类型中的值。默认值为“纹理颜色”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">颜色操作参数二</font></td>
+<td width="70%" valign="top">常量值为 3 。指定参数二用哪种颜色。值可为“纹理层颜色常量”常量数据类型中的值。默认值为“当前颜色”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透明通道操作</font></td>
+<td width="70%" valign="top">常量值为 4 。指定的层将进行什么样的操作，如加，减... 值可以为“纹理层操作”常量数据类型的值。注：第一层默认为“参数一”，其它层默认为“禁止”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透明操作参数一</font></td>
+<td width="70%" valign="top">常量值为 5 。指定参数一用哪种透明值。值可为“纹理层颜色常量”常量数据类型中的值。默认值为“纹理颜色”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透明操作参数二</font></td>
+<td width="70%" valign="top">常量值为 6 。指定参数二用哪种透明值。值可为“纹理层颜色常量”常量数据类型中的值。默认值为“当前颜色”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸映射00</font></td>
+<td width="70%" valign="top">常量值为 7 。本状态是一个凹凸映射距阵[0][0]的浮点值，默认值为0.0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸映射01</font></td>
+<td width="70%" valign="top">常量值为 8 。本状态是一个凹凸映射距阵[0][1]的浮点值，默认值为0.0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸映射10</font></td>
+<td width="70%" valign="top">常量值为 9 。本状态是一个凹凸映射距阵[1][0]的浮点值，默认值为0.0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸映射11</font></td>
+<td width="70%" valign="top">常量值为 10 。本状态是一个凹凸映射距阵[1][1]的浮点值，默认值为0.0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">纹理坐标</font></td>
+<td width="70%" valign="top">常量值为 11 。可以使在顶点格式中定义的一组纹理和某层纹理联系起来,或让系统自动生成纹理坐标。值可以为“纹理层坐标”常量数据类型中的值。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸贴图因子</font></td>
+<td width="70%" valign="top">常量值为 22 。凹凸贴图亮度因子，是浮点值。默认为0.0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">凹凸贴图位移</font></td>
+<td width="70%" valign="top">常量值为 23 。凹凸贴图亮度位移，是浮点值。默认为0.0。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">坐标变换</font></td>
+<td width="70%" valign="top">常量值为 24 。设定系统传送至光栅化器的输出坐标的数量。值可以为“纹理层坐标变换”常量数据类型中的值。默认值为“禁止”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">颜色操作参数三</font></td>
+<td width="70%" valign="top">常量值为 26 。指定参数三用哪种颜色。值可为“纹理层颜色常量”常量数据类型中的值。默认值为“当前颜色”。注：此参数只有在操作是三个参数时有效。如：“乖加”和“线性插值”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">透明操作参数三</font></td>
+<td width="70%" valign="top">常量值为 27 。指定参数三用哪种透明值。值可为“纹理层颜色常量”常量数据类型中的值。默认值为“当前颜色”。注：此参数只有在操作是三个参数时有效。如：“乖加”和“线性插值”。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

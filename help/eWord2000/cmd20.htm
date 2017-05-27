@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>转到 (Word文档集)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">转到</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">Word文档集</a></p>
+<p>转到文档中的某一位置。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; <em>Word文档集</em>．转到 （<font color="#000000">项目类型</font><font color="#000000">，&nbsp;</font><font color="#000000">项目位置</font><font color="#000000">，&nbsp;</font><font color="#000000">项数</font><font color="#000000">，&nbsp;</font><font color="#000000">项名称</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">项目类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。区域或所选内容将移至的项的类型。可以取下列 WdGoToItem(参阅Word开发文档) 常量之一：-1、#标签；0、#段落；1、#页面；2、#表格；3、#线；4、#脚注；5、#尾注；6、#注解；7、#域；8、#图形；9、#对象；10、#等式；11、#标题；12、#百分比；13、#拼写错误；14、#语法错误；15、#阅读错误；。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">项目位置</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。区域或所选内容要移至的项。可以取下列 WdGoToDirection(参阅Word开发文档) 常量之一：1、#首；-1、#尾；2、#下一个；2、#关联；3、#上一个；1、#绝对位置；。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">项数</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。文档中的项数。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">项名称</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型，初始值为“”。如果 "项目类型" 参数是 标签、注解、域 或 对象，则本参数指定名称。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

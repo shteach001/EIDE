@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打开 (记录集)</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">打开</font></big>&nbsp;方法</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属对象：<a href="dt1.htm">记录集</a></p>
+<p>打开记录集。根据参数“命令类型”的不同，可以打开SQL记录集、数据库表、XML或ADTG持久文件，或执行存储过程。执行成功返回真，否则返回假。注意：必须先使用“数据库连接”连接数据库，再用“记录集.置连接()”关联数据库连接，然后才能打开记录集进行数据操作。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; <em>记录集</em>．打开 （<font color="#000000">命令文本</font><font color="#000000">，&nbsp;</font><font color="#000000">命令类型</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">游标类型</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">命令文本</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;文本型。本参数可以是SQL语句、数据表名、XML或ADTG持久文件名，或存储过程调用语句，具体视参数“命令类型”而定。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">命令类型</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数提供指定命令文本的类型，可以为以下常量或数值之一：1、#SQL语句；2、#数据表名；4、#存储过程；256、持久文件名。如果要打开持久文件，与本记录集绑定的数据库连接可先调用“数据库连接.连接持久文件()”。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">游标类型</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;整数型。可以为以下常量或数值之一：1、#无游标；2、#服务器端游标；3、#客户端游标。如果此参数被省略，默认为 #客户端游标。以上三个常量分别对应ADO中CursorLocationEnum类型常量 adUseNone, adUseServer, adUseClient，如不理解请保持默认值不变。在某些情况下设置为 #服务器端游标 可解决对Access数据库执行SQL语句不能应用like操作符的错误。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

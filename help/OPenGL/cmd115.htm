@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>画曲面</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">画曲面</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">建模操作</a></p>
+<p>先使用“设置曲面控制点”命令生成曲面，然后才能画出曲面。U向显示范围在“曲面U向起点”和“曲面U向起点”之间。V向显示范围在“曲面V向起点”和“曲面V向起点”之间。必须启用“#曲面坐标”才有效，不使用的时候需要关闭。如果需要使用法向量，必须启用“#自动法向量”才有效，不使用的时候需要关闭。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">无返回值</font>&nbsp; 画曲面 （<font color="#000000">画出模式</font><font color="#000000">，&nbsp;</font><font color="#000000">曲面U向起点</font><font color="#000000">，&nbsp;</font><font color="#000000">曲面U向终点</font><font color="#000000">，&nbsp;</font><font color="#000000">曲面V向起点</font><font color="#000000">，&nbsp;</font><font color="#000000">曲面V向终点</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">画出模式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值可以为以下常量：
+	6912、#点，将画出的多边形显示为点；
+	6913、#线，将画出的多边形显示为线段；
+	6914、#面，将画出的多边形显示为填充颜色的多边形。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">曲面U向起点</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值应该介于 0 和“设置曲面等分网格”命令中的“U向等分数”之间。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">曲面U向终点</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值应该介于 0 和“设置曲面等分网格”命令中的“U向等分数”之间。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">曲面V向起点</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值应该介于 0 和“设置曲面等分网格”命令中的“V向等分数”之间。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">曲面V向终点</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。参数值应该介于 0 和“设置曲面等分网格”命令中的“V向等分数”之间。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>关闭系统</title>
+</head>
+<body>
+<p><big><strong><font color="#000000">关闭系统</font></big>&nbsp;命令</strong>&nbsp;&nbsp;&nbsp;操作系统支持：Windows&nbsp;&nbsp;&nbsp; 所属类别：<a href="ct2.htm">杂类</a></p>
+<p>本命令可以执行关机、重启、注销等Windows系统操作。成功返回真，失败返回假。</p>
+<p><em>语法：</em> &nbsp;<font color="#000000">逻辑型</font>&nbsp; 关闭系统 （<font color="#000000">关闭方式</font><font color="#000000">，&nbsp;</font><font color="#000000">［</font><font color="#000000">是否强制执行</font><font color="#000000">］</font><font color="#000000">）</font></p>
+<table border=1 cols=2 frame=below rules=rows width="100%" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellspacing="0" cellpadding="5"><tr>
+<td width="30%" valign="top"><strong>参数名</strong></td>
+<td width="70%" valign="top"><strong>描 述</strong></td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">关闭方式</font></td>
+<td width="70%" valign="top"><em>必需的</em>；&nbsp;整数型。本参数可以为以下常量值之一： 1: #关机;  2: #重启;  3: #注销; 4: #休眠  5: #冬眠。 注意在Windows95/98/ME下冬眠等同于休眠。</td>
+</tr>
+<tr>
+<td width="30%" valign="top"><font color="#000000">是否强制执行</font></td>
+<td width="70%" valign="top"><em><font color="#808080">可选的</font></em>；&nbsp;逻辑型。本参数指定是否不等待当前正在运行的所有软件正常结束而立即执行指定的操作。如果本参数被省略，默认值为假。</td>
+</tr>
+</table>
+
+<p>　</p>
+<p><em>参见：</em><a href="../rule.htm">语法的描述规则</a>、<a href="../datatype.htm">基本数据类型</a></p>
+</body>
+</html>

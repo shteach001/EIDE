@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="GB2312" />
+	<title>常规</title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="common.css" />
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12" id="main-header">
+			<button type="button" class="btn btn-default update" data-action="Update">检测更新</button>
+			<div class="savemsg" style="margin-left: -51px; display: none;">设置保存成功</div>
+			<h1 class="title">易语言助手设置</h1>
+		</div>
+	</div>
+
+	<div class="row content">
+		<div class="_left">
+			<div id="navbar-container" class="navbar-bg">
+				<ul id="navbar"></ul>
+			</div>
+		</div>
+
+		<div class="_iframe">
+			<iframe id="_iframe" name="_iframe" src="" frameborder="0" width="100%" height="100%" scrolling="yes"></iframe>
+		</div>
+	</div>
+	<textarea name=""></textarea>
+</div>
+
+<script src="jquery.js"></script>
+<script type="text/javascript">
+	var Load=[], _iframe1, clock=0;
+	function SetContent(selected){
+		for(var v in Load){
+			if (selected == v) {
+				$("#navbar").append('<li class="navbar-item navbar-item-selected" data-name="'+v+'">'+Load[v]+'</li>');
+			} else{
+				$("#navbar").append('<li class="navbar-item" data-name="'+v+'">'+Load[v]+'</li>');
+			}
+		}
+		$("#navbar>li").click(function(){
+			// if ($(this).hasClass("navbar-item-selected") && $("iframe").attr('src')!='') return;
+			$(this).addClass("navbar-item-selected").siblings('li').removeClass("navbar-item-selected");
+			$("iframe").attr("src", $(this).attr("data-name"));
+		});
+
+		// 默认选择
+		$("#navbar").find("li.navbar-item-selected").click();
+
+		// 子框架开始
+		var _iframe = $("#_iframe");
+		_iframe.load(function(){
+			_iframe1 = $(window.frames["_iframe"].document);
+			window.frames["_iframe"].document.body.onselectstart = new Function('return false;');
+
+			// 保存开始
+			_iframe1.find("input[type=checkbox],input[type=radio]").click(function(){
+				SendMsg(g_hwnd,"Save", $(this).attr("name"), $(this).get()[0].checked);
+			});
+			_iframe1.find("input[type=text],textarea").blur(function(){
+				SendMsg(g_hwnd,"Save", $(this).attr("name"), $(this).val());
+			});
+			_iframe1.find("select").change(function(){
+				SendMsg(g_hwnd,"Save", $(this).attr("name"), $(this).val());
+			});
+
+			// 读取开始
+			_iframe1.find("input[type=checkbox],input[type=radio]").each(function(index, e) {
+				SendMsg(g_hwnd,"Read", "SetInputCheckRadio", $(e).attr("name")+"|"+$(e).attr("checked"));
+			});
+			_iframe1.find("input[type=text]").each(function(index, e) {
+				SendMsg(g_hwnd,"Read", "SetInput", $(e).attr("name")+"|"+$(e).val());
+			});
+			_iframe1.find("textarea").each(function(index, e) {
+				SendMsg(g_hwnd,"Read", "SetTextarea", $(e).attr("name")+"|"+$(e).val());
+			});
+			_iframe1.find("select").each(function(index, e) {
+				SendMsg(g_hwnd,"Read", "SetSelect", $(e).attr("name") + "|" + $(e).find("option:selected").val());
+			});
+
+			// 链接被点击
+			_iframe1.find("a").click(function() {
+				SendMsg(g_hwnd,"ClickA", $(this).attr("href"));
+				return false;
+			});
+
+			// 按钮被点击，浏览目录，打开文件
+			_iframe1.find("button").click(function() {
+				SendMsg(g_hwnd,"ClickButton", $(this).attr("data-action"), $(this).attr("data-name"));
+				return false;
+			});
+
+			// 重启易语言生效
+			_iframe1.find("code").each(function(index, e) {
+				$(this).attr("title", "重启易语言生效");
+			});
+
+			// 分组框开始 - - - - - - - - - - - - - - - - - - - - - - - - - - -
+			if (_iframe1.find("fieldset").length>0 && _iframe1.find("fieldset").find("legend input[type=checkbox]").length) {
+				_iframe1.find("fieldset>legend input[type=checkbox]").click(function(){
+					var fieldset = $(this).parents().parents("fieldset");
+					SetFieldset(fieldset);
+				});
+
+				function SetFieldset(fieldset){
+					var _this = _iframe1.find("fieldset>legend input[type=checkbox]");
+					if ($(_this).get()[0].checked==false) {
+						$(fieldset).find("input,select,textarea").each(function(){
+							$(this).attr("disabled", "disabled");
+						});
+					}else{
+						$(fieldset).find("input,select,textarea").each(function(){
+							$(this).removeAttr("disabled");
+						});
+					}
+					$(_this).removeAttr("disabled");
+				}
+				SetFieldset(_iframe1.find("fieldset"));
+			}
+			// 分组框结束 - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+			// 加载插件列表
+			if (_iframe1.find("#pluginlist").length>0) {
+				SendMsg(g_hwnd,"LoadPlugin");
+			}
+		});
+	}
+
+	function SetInputCheckRadio(name, value){
+		_iframe1.find("input[name="+name+"]").get()[0].checked = (value=="真" ? true : false);
+	}
+
+	function SetInput(name, value){
+		_iframe1.find("input[name="+name+"]").val(value);
+	}
+
+	function SetTextarea(name, value){
+		_iframe1.find("textarea[name="+name+"]").val(value);
+	}
+	function SetSelect(name, value){
+		_iframe1.find("select[name="+name+"] option[value="+value+"]").get()[0].selected = true;
+	}
+
+	function LoadPlugin(Name, Describe, DllFile, SetFile, Enable, Author){
+		Enable = Enable == '真' ? ' checked="checked"' : "";
+		_iframe1.find("#pluginlist").append('<tr><td><div class="checkbox"><label><input type="checkbox" name="'+DllFile+'"'+Enable+'> '+Name+'<br/>'+Author+'</label></div></td><td>'+DllFile+'<br/>'+SetFile+'</td><td>'+ Describe +'</td></tr>');
+	}
+
+
+	// 保存成功提示
+	function SaveRemind(){
+		$("div.savemsg").css({"opacity":1});
+		$("div.savemsg").hide();
+		$("div.savemsg").show("fast", function(){
+			if (clock>0) clearInterval(clock);
+			clock = setInterval("CloseClock()",1500);
+		});
+	}
+
+	$(function(){
+		SendMsg(g_hwnd,"load");
+		document.onselectstart = new Function('event.returnValue=false;');
+
+		// 按钮被点击
+		$("button").click(function() {
+			SendMsg(g_hwnd,"ClickButton", $(this).attr("data-action"), $(this).attr("data-name"));
+			return false;
+		});
+	});
+
+	function CloseClock(){
+		$("div.savemsg").css({"opacity":0});
+	}
+
+</script>
+</body>
+</html>
